@@ -1,17 +1,41 @@
-<!DOCTYPE html>
-<html>
-	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="Expires" content="30" />
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-	    <title>Home</title>
-	    <meta name="csrf-token" content="{!! csrf_token() !!}">
-	    <meta name="description" content="">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    {!! Html::style('assets/site/css/styles.css') !!}
-	    
-	</head>
-    <body  id="body" class="{!! $section !!}">
+<!doctype html>
+<html class="no-js" lang="pt-BR" dir="ltr">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aperol Spritz | Campari Brasil</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="csrf-token" content="{!! csrf_token() !!}">
+    <meta http-equiv="content-language" content="pt-br" />
+    <!-- <link rel="stylesheet" href="/aperol/assets/styles/owl.carousel.css"> -->
+    
+     {!! Html::style('assets/styles/animate.css') !!}
+     {!! Html::style('assets/styles/font-awesome.min.css') !!}
+     {!! Html::style('assets/styles/bootstrap.min.css') !!}
+     {!! Html::style('assets/styles/styles.css') !!}
+
+
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PBZKKG3');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
     
