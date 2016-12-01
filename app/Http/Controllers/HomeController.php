@@ -12,7 +12,16 @@ class HomeController extends Controller {
     public function index(Request $request)
     {
         $section = 'users';
-        return view('site.home',compact('section'));
+        $posts = Posts::where('active',1)->orderBy('id','desc')->limit(9)->get();
+
+        if($request->session()->get('age') == 'sim'){
+            return view('site.home',compact('section','posts'));
+        }else{
+            $request->session()->put('age', 'sim');
+            return view('site.age',compact('section','posts'));
+            
+        }
+        //return view('site.home',compact('section','posts'));
 
     }
 
