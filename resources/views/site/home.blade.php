@@ -193,39 +193,39 @@
             </div>
             <div class="mural">
               <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
               </div>
 
               <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
               </div>
 
               <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
               </div>
 
               <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
               </div>
 
               <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
               </div>
 
               <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
               </div>
 
               <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
               </div>
 
               <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
               </div>
 
               <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
               </div>
 
             </div>
