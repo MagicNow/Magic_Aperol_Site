@@ -191,6 +191,44 @@
                     <span>que você pode aparecer <br>
                     aqui no mural.</span></p>
             </div>
+            <div class="mural">
+              <div class="insta">
+                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+              </div>
+
+              <div class="insta">
+                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+              </div>
+
+              <div class="insta">
+                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+              </div>
+
+              <div class="insta">
+                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+              </div>
+
+              <div class="insta">
+                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+              </div>
+
+              <div class="insta">
+                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+              </div>
+
+              <div class="insta">
+                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+              </div>
+
+              <div class="insta">
+                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+              </div>
+
+              <div class="insta">
+                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
+              </div>
+
+            </div>
         </section>
     </div>
 @endsection

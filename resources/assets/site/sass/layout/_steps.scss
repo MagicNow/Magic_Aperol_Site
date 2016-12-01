@@ -513,4 +513,26 @@ section {
             }
         }
     }
+    .mural {
+        position: absolute;
+        width: 510px;
+        height: 511px;
+        overflow: hidden;
+        right: 0;
+        .insta {
+            display: block;
+            float: left;
+
+            &:nth-child(4) {
+              opacity: 0;
+              pointer-events: none;
+            }
+            a {
+                display: block;
+                width: 170px;
+                height: 170px;
+                background-size: cover;
+            }
+        }
+    }
 }
