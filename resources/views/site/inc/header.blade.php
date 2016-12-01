@@ -11,11 +11,11 @@
     <meta name="csrf-token" content="{!! csrf_token() !!}">
     <meta http-equiv="content-language" content="pt-br" />
     <!-- <link rel="stylesheet" href="/aperol/assets/styles/owl.carousel.css"> -->
-    
-     {!! Html::style('assets/styles/animate.css') !!}
-     {!! Html::style('assets/styles/font-awesome.min.css') !!}
-     {!! Html::style('assets/styles/bootstrap.min.css') !!}
-     {!! Html::style('assets/styles/styles.css') !!}
+
+     {!! Html::style('assets/site/styles/animate.css') !!}
+     {!! Html::style('assets/site/styles/font-awesome.min.css') !!}
+     {!! Html::style('assets/site/styles/bootstrap.min.css') !!}
+     {!! Html::style('assets/site/styles/styles.css') !!}
 
 
     <!-- Google Tag Manager -->
@@ -38,4 +38,4 @@
     <!-- End Google Tag Manager -->
 </head>
 <body>
-    
+

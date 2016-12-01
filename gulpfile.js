@@ -94,7 +94,7 @@ gulp.task('styles', function() {
             //get our sources via sourceMaps
             .pipe(sourceMaps.write())
             //where to save our final, compressed css file
-            .pipe(gulp.dest('public/assets/site/css'));
+            .pipe(gulp.dest('public/assets/site/styles'));
             //notify browserSync to refresh
 });
 

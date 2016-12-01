@@ -12,10 +12,10 @@
                 <span class="text-color-orange">SIGA APEROL</span>
                 <ul class="no-bullet">
                     <li class="icon-instagram">
-                        <a href="#" target="_blank">Instagram</a>
+                        <a href="https://www.instagram.com/APEROLSPRITZBRASIL/" target="_blank">Instagram</a>
                     </li>
                     <li class="icon-facebook">
-                        <a href="#" target="_blank">Facebook</a>
+                        <a href="https://www.facebook.com/aperolspritz.bra/?fref=ts" target="_blank">Facebook</a>
                     </li>
                 </ul>
             </div>

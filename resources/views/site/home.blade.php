@@ -2,21 +2,6 @@
 
 @section('content')
     <div class="initial">
-        <div class="age-gate">
-            <div class="row">
-                <h1 class="col-sm-12 logo">Aperol Spritz</h1>
-                <h2 class="col-sm-12 text-color-orange">BEM-VINDO</h2>
-                <p class="col-sm-12">Você tem mais de 18 anos?</p>
-                <div class="col-sm-12">
-                    <button class="button--orange">
-                        SIM <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </button>
-                    <button class="button--orange">
-                        NÃO <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
         <header>
             <div class="row">
                 <h1 class="col-sm-6 logo">Aperol Spritz</h1>
@@ -86,17 +71,20 @@
                     <br> prosecco</div>
                 <div class="part2">partes de
                     <br> Aperol</div>
-                <div class="part1">partes de água
+                <div class="part1">parte de água
                     <br> com gás</div>
             </div>
         </section>
-        <section class="step-03">
+        <section class="step step-03">
             <!-- Influencer  -->
-            {{ Html::image('assets/images/raul.png', '', array('class' => '')) }}
+            {{ Html::image('assets/images/raul.png', '', array('class' => 'tit')) }}
+            <div class="foto">
+            {{ Html::image('assets/images/foto_raul.png', '', array('class' => '')) }}
+            </div>
             <p class="desc">Um cara que não tem tempo ruim.
                 <br> Parece até que todo dia pra ele
                 <br> é verão. Play na trilha do Raul.
-                <a href="#" class="bt_mais" id="detalhes_raul">MAIS</a>
+                <!-- <a href="#" class="bt_mais" id="detalhes_raul">MAIS</a> -->
             </p>
             <p class="desc_details">O Raul é fotógrafo, mas além de tirar umas
               fotos incríveis, vive as festas e lugares mais <br>
@@ -105,36 +93,45 @@
               a estação pra sempre, por isso ele está aqui<br>
               com a gente, dá uma olhada.<br>
 
-                <a href="#" class="bt_fechar" id="fechar_raul">fechar</a>
+                <!-- <a href="#" class="bt_fechar" id="fechar_raul">fechar</a> -->
             </p>
         </section>
-        <section class="step-04">
+        <section class="step step-04">
             <!-- Influencer  -->
-            {{ Html::image('assets/images/maga.png', '', array('class' => '')) }}
+            {{ Html::image('assets/images/maga.png', '', array('class' => 'tit')) }}
+              <div class="foto">
+            {{ Html::image('assets/images/foto_maga.png', '', array('class' => '')) }}
+            </div>
             <p class="desc">Rapidinho você já percebe que ela
                 <br>está sempre fazendo alguma coisa
-                <br>diferente. Ouça a playlist dela aqui.
-                <a href="#" class="bt_mais">MAIS</a>
+                <br>diferente. <!-- Ouça a playlist dela aqui. -->
+                <!-- <a href="#" class="bt_mais">MAIS</a> -->
             </p>
         </section>
-        <section class="step-05">
+        <section class="step step-05">
             <!-- Influencer  -->
-            {{ Html::image('assets/images/andre.png', '', array('class' => '')) }}
+            {{ Html::image('assets/images/andre.png', '', array('class' => 'tit')) }}
+              <div class="foto">
+            {{ Html::image('assets/images/foto_andre.png', '', array('class' => '')) }}
+            </div>
             <p class="desc">Quando você vê o que ele está
                 <br> fazendo dá até aquela vontade
-                <br> de tentar também. Pra melhorar
-                <br> no calor, tem também a playlist.
-                <a href="#" class="bt_mais">MAIS</a>
+                <br> de tentar também. <!-- Pra melhorar
+                <br> no calor, tem também a playlist. -->
+                <!-- <a href="#" class="bt_mais">MAIS</a> -->
             </p>
         </section>
-        <section class="step-06">
+        <section class="step step-06">
             <!-- Influencer  -->
-            {{ Html::image('assets/images/luiza.png', '', array('class' => '')) }}
+            {{ Html::image('assets/images/luiza.png', '', array('class' => 'tit')) }}
+              <div class="foto">
+            {{ Html::image('assets/images/foto_luiza.png', '', array('class' => '')) }}
+            </div>
             <p class="desc">Enquanto você lê aqui, provavelmente
                 <br>ela está fazendo alguma coisa que
                 <br>você vai querer participar.
-                <br>Ouça a playlist do verão dela.
-                <a href="#" class="bt_mais">MAIS</a>
+                <br><!-- Ouça a playlist do verão dela. -->
+                <!-- <a href="#" class="bt_mais">MAIS</a> -->
             </p>
         </section>
         <section class="step-07 clearfix">

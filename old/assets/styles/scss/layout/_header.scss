@@ -1,0 +1,109 @@
+body {
+    background-color: $color-gray;
+    font-family: 'Dosis', serif;
+    margin: 0 auto !important;
+    max-width: 1024px;
+    width: 1024px;
+    letter-spacing: 1.8px;
+}
+
+.initial {
+    position: relative;
+}
+
+a {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.age-gate {
+    background-color: $color-gray;
+    display: none;
+    padding: 65px 0 150px 0;
+    // position: absolute;
+    text-align: center;
+    // top: 0;
+    width: 100%;
+    .logo {
+        background: url('../../images/logo-large.png') center no-repeat;
+        height: 138px;
+        text-indent: -99999px;
+    }
+}
+
+header {
+    background: url('../../images/background-step-01.png') right no-repeat;
+    height: 506px;
+    position: relative;
+    .logo {
+        background: url('../../images/logo-medium.png') 0 0 no-repeat;
+        height: 111px;
+        overflow: hidden;
+        text-indent: -99999px;
+        width: 111px;
+        margin-left: 88px;
+        margin-top: 14px
+    }
+    .endless_summer {
+        margin-top: 131px;
+        margin-left: -106px;
+    }
+    .text-head {
+        margin-top: 79px;
+        margin-left: 47px;
+        h2 {
+            text-align: left;
+            letter-spacing: 5px;
+            color: #fff;
+            font-size: 37px;
+            line-height: 44px;
+        }
+        p {
+            margin-top: 10px;
+            text-align: left;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 15px;
+            line-height: 26px;
+            text-decoration: underline;
+            padding-bottom: 5px;
+            strong {
+                font-size: 18px;
+                line-height: 29px;
+                font-weight: 500;
+            }
+        }
+    }
+    .scroll-down {
+        bottom: 13px;
+        position: absolute;
+        font-size: 10px;
+        line-height: 32px;
+        color: #616161;
+        margin-left: 40px;
+        .fa {
+            color: #f86f2e;
+        }
+    }
+    nav {
+        float: right;
+        vertical-align: middle;
+        .nav-button {
+            background: url('../../images/icon-menu-hamburguer.png') 0 0 no-repeat;
+            height: 17px;
+            width: 22px;
+            margin-right: 52px;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+footer {
+    background: url('../../images/background-image-footer.png') center top no-repeat;
+    padding-bottom: 10px;
+    border-bottom: 10px solid $color-orange;
+    padding-top: 24px;
+    font-weight: bold;
+    // Logo
+    .logo {
+        background: url(../../images/logo-small.png) no-repeat;
+        height: 69px;
+        text-indent: -99999px;
+        width: 69px;
+        margin-left: 78px;
+        margin-top: 35px;
+    }
+    // Contact
+    .contact {
+        width: 417px;
+        margin-left: 172px;
+        margin-top: 50px;
+        span {
+            display: block;
+            a {
+                color: $color-orange;
+            }
+        }
+        .highlight {
+            border: 1px solid $color-orange;
+            padding: 9px 0;
+        }
+    }
+    // Social Mídia
+    .social-midia {
+        margin-left: 70px;
+        letter-spacing: 5px;
+        width: 210px;
+        margin-top: 77px;
+        ul {
+            display: inline-block;
+            li {
+                display: inline-block;
+                > a {
+                    cursor: pointer;
+                    display: block;
+                    height: 100%;
+                }
+            }
+            .icon {
+                height: 23px;
+                overflow: hidden;
+                text-indent: 999px;
+                vertical-align: middle;
+                width: 23px;
+                &-instagram {
+                    @extend .icon;
+                    background: url('../../images/icon-instagram.png') 0 0 no-repeat;
+                }
+                &-facebook {
+                    @extend .icon;
+                    background: url('../../images/icon-facebook.png') 0 0 no-repeat;
+                }
+            }
+        }
+    }
+}
