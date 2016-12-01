@@ -12,12 +12,12 @@ class HomeController extends Controller {
     public function index(Request $request)
     {
         $section = 'users';
-        $posts = Posts::where('active',1)->orderBy('id','desc')->limit(9)->get();
+        $posts = Posts::where('active',1)->inRandomOrder()->limit(9)->get();
 
         if($request->session()->get('age') == 'sim'){
             return view('site.home',compact('section','posts'));
         }else{
-            $request->session()->put('age', 'sim');
+            
             return view('site.age',compact('section','posts'));
             
         }
@@ -26,14 +26,12 @@ class HomeController extends Controller {
     }
 
     public function ageGate(Request $request){
-        if($request->session()->get('age') == 'sim'){
-            return 1;
-        }else{
-            $request->session()->put('age', 'sim');
-            return 0;
-            
-        }
+        $request->session()->put('age', 'sim');
     }
 
-    
+    public function getFotos($num = 81){
+        $posts = Posts::where('active',1)->inRandomOrder()->limit($num)->get();
+
+        return json_encode($posts);
+    }
 }
