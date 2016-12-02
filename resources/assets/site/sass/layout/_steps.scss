@@ -147,6 +147,7 @@ section {
     background: url('../images/vejaomapa.png') left no-repeat;
     text-indent: -9999px;
     &:hover {
+        opacity: 0.7;
         background: url('../images/vejaomapa.png') left no-repeat;
         transition: background 0.6s;
         -webkit-transition: background 0.6s;
@@ -316,7 +317,7 @@ section {
     .party {
         float: left;
         margin-top: 339px;
-        margin-left: 113px;
+        margin-left: 93px;
         width: 505px;
         padding-top: 36px;
         padding-left: 110px;
@@ -328,6 +329,8 @@ section {
             letter-spacing: 2px;
             font-weight: 600;
             text-transform: uppercase;
+            min-height: 82px;
+            padding-right: 25px;
         }
         .sub_tit {
             color: #3f3c3b;
@@ -335,6 +338,7 @@ section {
             font-size: 16px;
             text-transform: uppercase;
             font-weight: 600;
+            display: block;
         }
         p {
             color: #fff;
@@ -343,6 +347,10 @@ section {
             text-transform: uppercase;
             margin-top: 15px;
             text-decoration: underline;
+        }
+        #partyText {
+            overflow: auto;
+            height: 178px;
         }
     }
     .party-calendar {
@@ -362,7 +370,8 @@ section {
         a {
             display: block;
             border-bottom: solid 1px #fe5000;
-            height: 39px;
+            height: auto;
+            min-height: 39px;
             font-size: 11px;
             line-height: 34px;
             color: #3e3c3c;
@@ -376,7 +385,19 @@ section {
                 font-size: 11px;
                 line-height: 38px;
                 font-weight: 400;
-                margin-left: 30px;
+                margin-left: 10px;
+                letter-spacing: 1.6px;
+            }
+            &.active {
+                font-weight: bold;
+                text-decoration: none;
+                span {
+                    font-weight: bold;
+                }
+                &:after {
+                    right: 5px;
+                    top: 13px;
+                }
             }
             &:hover {
                 text-decoration: none;
@@ -385,7 +406,7 @@ section {
                     font-weight: bold;
                 }
                 &:after {
-                    right: 20px;
+                    right: 5px;
                     top: 13px;
                 }
             }
@@ -404,7 +425,6 @@ section {
 }
 
 .step-08 {
-    background: url('../images/background-step-08.png') left no-repeat;
     height: 488px;
     margin-top: 28px;
     position: relative;
@@ -418,6 +438,21 @@ section {
         strong {
             display: block;
             color: #403c3b;
+        }
+    }
+    .kombi {
+        position: absolute;
+        top: 0px;
+        right: 273px;
+        z-index: 3;
+    }
+    .mapas {
+        width: 554px;
+        margin-top: 17px;
+        position: absolute;
+        iframe {
+            width: 553px;
+            height: 367px;
         }
     }
     .kombi-desc {
@@ -442,11 +477,13 @@ section {
         }
     }
     .kombi-calendar {
-        width: 367px;
+        width: 407px;
         float: right;
-        margin-right: 79px;
-        margin-top: 155px;
-        border-top: solid 1px #fe5000;
+        margin-right: 51px;
+        margin-top: 151px;
+        overflow: auto;
+        height: 228px;
+        padding-right: 20px;
         .tit {
             color: #fe5000;
             font-size: 17px;
@@ -469,6 +506,12 @@ section {
             margin-top: -2px;
             padding-top: 2px;
             padding-bottom: 2px;
+            &.active {
+                font-weight: bold;
+                span {
+                    font-weight: bold;
+                }
+            }
             span {
                 font-size: 11px;
                 line-height: 38px;
