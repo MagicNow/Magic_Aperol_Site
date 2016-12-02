@@ -194,46 +194,9 @@
             <div class="mural">
                 @foreach($posts as $post)
                     <div class="insta">
-                      <a href="{!!$post->link!!}" style="background-image:url({!!$post->image!!});"></a>
+                      <a target="_blank" href="{!!$post->link!!}" style="background-image:url({!!$post->image!!});"></a>
                   </div>
                 @endforeach
-              {{-- <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
-
-              </div>
-
-              <div class="insta">
-                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
-              </div>
-
-              <div class="insta">
-                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
-              </div>
-
-              <div class="insta">
-                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
-              </div>
-
-              <div class="insta">
-                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
-              </div>
-
-              <div class="insta">
-                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
-              </div>
-
-              <div class="insta">
-                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
-              </div>
-
-              <div class="insta">
-                  <a href="#" target="_blank" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
-              </div>
-
-              <div class="insta">
-                  <a href="#" style="background-image:url('http://lorempixel.com/400/200/sports');"></a>
-              </div> --}}
-
             </div>
         </section>
     </div>

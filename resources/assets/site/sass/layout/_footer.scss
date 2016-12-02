@@ -1,12 +1,12 @@
 footer {
-    background: url('../../images/background-image-footer.png') center top no-repeat;
+    background: url('../images/background-image-footer.png') center top no-repeat;
     padding-bottom: 10px;
     border-bottom: 10px solid $color-orange;
     padding-top: 24px;
     font-weight: bold;
     // Logo
     .logo {
-        background: url(../../images/logo-small.png) no-repeat;
+        background: url(../images/logo-small.png) no-repeat;
         height: 69px;
         text-indent: -99999px;
         width: 69px;
@@ -53,11 +53,11 @@ footer {
                 width: 23px;
                 &-instagram {
                     @extend .icon;
-                    background: url('../../images/icon-instagram.png') 0 0 no-repeat;
+                    background: url('../images/icon-instagram.png') 0 0 no-repeat;
                 }
                 &-facebook {
                     @extend .icon;
-                    background: url('../../images/icon-facebook.png') 0 0 no-repeat;
+                    background: url('../images/icon-facebook.png') 0 0 no-repeat;
                 }
             }
         }

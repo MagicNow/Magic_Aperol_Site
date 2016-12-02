@@ -17,6 +17,18 @@ var gulp			= require('gulp'),
 	sourceMaps  	= require('gulp-sourcemaps');
 
 
+gulp.task('browserSync', function() {
+    browserSync({
+        server: {
+            baseDir: "app/"
+        },
+        options: {
+            reloadDelay: 250
+        },
+        notify: false
+    });
+});
+
 //compressing images & handle SVG files
 gulp.task('images', function(tmp) {
     gulp.src(['resources/assets/site/images/*.jpg', 'public/assets/site/images/*.png'])
@@ -45,8 +57,9 @@ gulp.task('scripts', function() {
             //catch errors
             .on('error', gutil.log)
             //where we will store our finalized, compressed script
-            .pipe(gulp.dest('public/assets/site/js'));
+            .pipe(gulp.dest('public/assets/site/js'))
             //notify browserSync to refresh
+            .pipe(browserSync.reload({ stream: true }));
 });
 
 //compiling our Javascripts for deployment
@@ -94,8 +107,9 @@ gulp.task('styles', function() {
             //get our sources via sourceMaps
             .pipe(sourceMaps.write())
             //where to save our final, compressed css file
-            .pipe(gulp.dest('public/assets/site/styles'));
+            .pipe(gulp.dest('public/assets/site/'))
             //notify browserSync to refresh
+            .pipe(browserSync.reload({ stream: true }));
 });
 
 //compiling our SCSS files for deployment

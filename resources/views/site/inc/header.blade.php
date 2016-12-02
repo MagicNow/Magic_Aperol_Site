@@ -12,30 +12,23 @@
     <meta http-equiv="content-language" content="pt-br" />
     <!-- <link rel="stylesheet" href="/aperol/assets/styles/owl.carousel.css"> -->
 
-     {!! Html::style('assets/site/styles/animate.css') !!}
-     {!! Html::style('assets/site/styles/font-awesome.min.css') !!}
-     {!! Html::style('assets/site/styles/bootstrap.min.css') !!}
-     {!! Html::style('assets/site/styles/styles.css') !!}
+     {!! Html::style('assets/site/animate.css') !!}
+     {!! Html::style('assets/site/font-awesome.min.css') !!}
+     {!! Html::style('assets/site/bootstrap.min.css') !!}
+     {!! Html::style('assets/site/styles.css') !!}
 
 
-    <!-- Google Tag Manager -->
-    <script>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PBZKKG3');
-    </script>
-    <!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PBZKKG3');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBZKKG3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
