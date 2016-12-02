@@ -11,7 +11,8 @@
 |
 */
 Route::get('/', ['as'   => 'home','uses' => 'HomeController@index']);
-Route::get('/age', ['as'   => 'home','uses' => 'HomeController@ageGate']);
+Route::post('/age', ['as'   => 'age','uses' => 'HomeController@ageGate']);
+Route::get('/getFotos', ['as'   => 'getFotos','uses' => 'HomeController@getFotos']);
 
 Route::group(['prefix' => 'admin'], function() {
 	Route::get('/', ['as'=> 'admin.index','uses' => 'Admin\AdminController@index']);
