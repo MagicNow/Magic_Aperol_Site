@@ -1,14 +1,14 @@
     <footer>
         <div class="row">
-            <h1 class="col-sm-12 col-lg-4 logo">Aperol Spritz</h1>
-            <div class="col-sm-12 col-lg-4 text-center contact">
+            <h1 class="col-lg-4 logo ">Aperol Spritz</h1>
+            <div class="col-xs-12 col-lg-4 text-center contact">
                 <span class="text-color-orange">
                   SAC: Tel: <a href="tel:08007737599">0800 7737599</a>
                   e-mail: <a href="mailto:camparibrasil@campari.com" target="_blank">camparibrasil@campari.com</a>
                 </span>
                 <span class="text-color-orange highlight">SE BEBER, NÃO DIRIJA. NÃO COMPARTILHE ESSE CONTEÚDO COM MENORES DE 18 ANOS.</span>
                 </div>
-            <div class="col-sm-12 col-lg-4 social-midia">
+            <div class="col-12 col-lg-4 social-midia">
                 <span class="text-color-orange">SIGA APEROL</span>
                 <ul class="no-bullet">
                     <li class="icon-instagram">

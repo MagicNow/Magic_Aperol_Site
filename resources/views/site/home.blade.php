@@ -15,7 +15,9 @@
             <div class="row" id="aperolspritz">
                 <h1 class="col-sm-6 logo">Aperol Spritz</h1>
 
-                <button id="bt-menu" class="c-hamburger c-hamburger-b-htx">
+               {{ Html::image('assets/images/taca.png', '', array('class' => 'visible-xs-block', 'id' => 'taca')) }}
+
+                <button id="bt-menu" class="c-hamburger c-hamburger--htx">
                   <span>toggle menu</span>
                 </button>
 
@@ -24,16 +26,19 @@
                     <div class="endless_summer col-sm-5">
                     {{ Html::image('assets/images/endless_summer.png', '', array('class' => '')) }}
                     </div>
-                    <div class="text-head col-sm-4">
-                        <h2>COMO ETERNIZAR <br>O SEU VERÃO</h2>
-                        <p>Verão é olho no olho, muita água,
-                            <br> esquecer o caminho de volta pra casa,
-                            <br> sorrir com quase nada, amar todo
-                            <br> mundo com mais calor.<strong>
-                            <br> Aqui é o lugar pra você fazer
-                            <br> a estação não ter fim.</strong></p>
+                    <div class="text-head-wrapper">
+                      <div class="text-head col-sm-4">
+                          <h2>COMO ETERNIZAR <br>O SEU VERÃO</h2>
+                          <p>Verão é olho no olho, muita água,
+                              <br> esquecer o caminho de volta pra casa,
+                              <br> sorrir com quase nada, amar todo
+                              <br> mundo com mais calor.<strong>
+                              <br> Aqui é o lugar pra você fazer
+                              <br> a estação não ter fim.</strong></p>
+                      </div>
+                      {{ Html::image('assets/images/aperol_m.png', '', array('class' => 'visible-xs-block', 'id' => 'aperol')) }}
                     </div>
-                    <div class="col-sm-12 text-center scroll-down">
+                    <div class="col-sm-12 hidden-xs text-center scroll-down">
                         <span> SCROLL DOWN <i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                     </div>
                 </div>
@@ -43,19 +48,22 @@
     <div class="content">
         <section class="step-02">
             <div class="clearfix">
-                <div class="col-md-02 text-doit">
+                <div class="col-md-02 text-doit hidden-xs">
                     <h3>Em uma taça<br>
-                  com gelo<br>
-                  e uma fatia<br>
-                  de laranja<br>
-                  coloque:
-                </h3>
+                    com gelo<br>
+                    e uma fatia<br>
+                    de laranja<br>
+                    coloque:
+                  </h3>
                 </div>
-                <div class="doit">
+                <div class="doit hidden-xs">
                 {{ Html::image('assets/images/facaoseu.png', '', array('class' => '')) }}
                 </div>
+                <div class="doit-mobile visible-xs-block">
+                    {{ Html::image('assets/images/facaoseu_m.jpg', '', array('class' => '')) }}
+                </div>
             </div>
-            <div class="recipe clearfix">
+            <div class="recipe clearfix hidden-xs">
                 <div class="part3">partes de
                     <br> prosecco</div>
                 <div class="part2">partes de
@@ -72,7 +80,7 @@
             </div>
             <p class="desc">Um cara que não tem tempo ruim.
                 <br> Parece até que todo dia pra ele
-                <br> é verão. Play na trilha do Raul.
+                <br> é verão.
                 <!-- <a href="#" class="bt_mais" id="detalhes_raul">MAIS</a> -->
             </p>
             <p class="desc_details">O Raul é fotógrafo, mas além de tirar umas
@@ -126,6 +134,7 @@
         <section class="step-07 clearfix" id="festascomaperol">
             <h2 class="main_tit">FESTAS COM
               <strong>#APEROLSPRITZ</strong></h2>
+              {{ Html::image('assets/images/festas_aperol_m.jpg', '', array('class' => 'visible-xs-block img-responsive')) }}
             <div class="party">
                 <h2 class="tit">REVEILON<br>
                   DO GOSTOSO <br><span class="sub_tit">SãO MIGUEL DO GOSTOSO - RN</span></h2>
@@ -207,7 +216,7 @@
                     <span>que você pode aparecer <br>
                     aqui no mural.</span></p>
             </div>
-            <div class="mural">
+            <div class="mural clearfix">
                 @foreach($posts as $post)
                     <div class="insta">
                       <a target="_blank" href="{!!$post->link!!}" style="background-image:url({!!$post->image!!});"></a>

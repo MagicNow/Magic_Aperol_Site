@@ -5,6 +5,10 @@ body {
     max-width: 1024px;
     width: 1024px;
     letter-spacing: 1.8px;
+    @media screen and (max-width: 414px) {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .initial {
@@ -72,6 +76,10 @@ header {
     background: url('../images/background-step-01.png') right no-repeat;
     height: 506px;
     position: relative;
+    @media screen and (max-width: 414px) {
+        background: url() #ebdfd9;
+        height: auto;
+    }
     .logo {
         background: url('../images/logo-medium.png') 0 0 no-repeat;
         height: 111px;
@@ -79,21 +87,69 @@ header {
         text-indent: -99999px;
         width: 111px;
         margin-left: 88px;
-        margin-top: 14px
+        margin-top: 14px;
+        @media screen and (max-width: 414px) {
+            margin-left: 23px;
+            margin-top: 5px;
+            height: 85px;
+            background-size: contain;
+        }
+    }
+    #taca {
+        @media screen and (max-width: 414px) {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -51%;
+            width: 90%;
+        }
     }
     .endless_summer {
-        margin-top: 131px;
+        margin-top: 171px;
         margin-left: -106px;
+        @media screen and (max-width: 414px) {
+            width: 300px;
+            margin: 20% auto 0;
+            img {
+                width: 100%;
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+    .text-head-wrapper {
+        position: relative;
+        @media screen and (max-width: 414px) {
+            #aperol {
+                position: absolute;
+                bottom: -15%;
+                pointer-events: none;
+                right: 0;
+                width: 40%;
+            }
+        }
     }
     .text-head {
         margin-top: 79px;
         margin-left: 47px;
+        @media screen and (max-width: 414px) {
+            background-color: #fe5000;
+            padding: 20px 15% 20px 4%;
+            max-width: 90%;
+            margin-left: 8%;
+            margin-top: 5%;
+        }
         h2 {
             text-align: left;
             letter-spacing: 5px;
             color: #fff;
             font-size: 37px;
             line-height: 44px;
+            @media screen and (max-width: 414px) {
+                font-size: 22px;
+                line-height: 28px;
+            }
         }
         p {
             margin-top: 10px;
@@ -108,6 +164,14 @@ header {
                 font-size: 18px;
                 line-height: 29px;
                 font-weight: 500;
+            }
+            @media screen and (max-width: 414px) {
+                font-size: 11px;
+                line-height: 18px;
+                strong {
+                    font-size: 13px;
+                    line-height: 22px;
+                }
             }
         }
     }
@@ -140,6 +204,11 @@ header {
         margin-right: -464px;
         margin-top: 16px;
         background-color: transparent;
+        @media screen and (max-width: 414px) {
+            right: 10px;
+            margin-top: -58px;
+            margin-right: 0;
+        }
     }
     #menu {
         height: 100vh;
@@ -154,6 +223,9 @@ header {
         -o-transition: all 0.2s ease-in-out;
         -ms-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
+        @media screen and (max-width: 414px) {
+            max-width: 100%;
+        }
         &.active {
             opacity: 100;
             pointer-events: all;
@@ -179,6 +251,9 @@ header {
             position: absolute;
             padding-top: 125px;
             height: 100vh;
+            @media screen and (max-width: 414px) {
+                width: 100%;
+            }
             &:hover {
                 text-shadow: 0px 0px 6px #fff;
             }
@@ -189,10 +264,10 @@ header {
                 text-align: center;
                 padding-bottom: 10px;
                 a {
-                    color: transparent;
+                    color: $color-orange;
+                    position: relative;
                     display: block;
                     text-transform: uppercase;
-                    text-shadow: 0px 0px 4px $color-orange;
                     letter-spacing: 4px;
                     -webkit-transition: all 0.2s ease-in-out;
                     -moz-transition: all 0.2s ease-in-out;
@@ -201,9 +276,20 @@ header {
                     transition: all 0.2s ease-in-out;
                     &:hover {
                         color: $color-orange;
-                        text-shadow: 0px 0px 1px $color-orange;
                         padding-left: 10px;
                         text-decoration: none;
+                        &::after {
+                            width: 300px;
+                            content: '';
+                            display: block;
+                            height: 3px;
+                            background-color: $color-orange;
+                            margin: 0 auto;
+                            position: absolute;
+                            bottom: -5px;
+                            left: 50%;
+                            margin-left: -150px;
+                        }
                     }
                 }
             }

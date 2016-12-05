@@ -19,6 +19,10 @@ section {
         transform: rotate(-90deg);
         bottom: 158px;
         white-space: nowrap;
+        @media screen and (max-width: 414px) {
+            bottom: 0;
+            font-size: 22px;
+        }
     }
 }
 
@@ -34,17 +38,41 @@ section {
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: 500;
+    @media screen and (max-width: 414px) {
+        font-size: 11px;
+        line-height: 18px;
+    }
 }
 
 .step {
     position: relative;
+    @media screen and (max-width: 414px) {
+        min-height: 220px;
+        background: #fe5000;
+        margin-bottom: 30px;
+        height: auto!important;
+        margin-top: 20px!important;
+    }
     &:nth-child(even) {
         &:before {
             margin-left: 133px;
         }
         .foto {
+            @media screen and (max-width: 414px) {
+                margin-left: 8%;
+                margin-top: 10px;
+                width: 40%;
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
             &::before {
                 margin-left: -201px;
+                @media screen and (max-width: 414px) {
+                    margin-left: -72%;
+                    bottom: 47%;
+                }
             }
         }
     }
@@ -53,8 +81,22 @@ section {
             margin-left: 103px;
         }
         .foto {
+            @media screen and (max-width: 414px) {
+                margin-left: 8%;
+                margin-top: 10px;
+                width: 40%;
+                  right: 8%;
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
             &::before {
                 margin-left: 155px;
+                @media screen and (max-width: 414px) {
+                    margin-left: 46%;
+                    bottom: 47%;
+                }
             }
         }
     }
@@ -67,6 +109,9 @@ section {
         position: absolute;
         z-index: -1;
         margin-top: 44px;
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
     }
     &:after {
         content: '';
@@ -78,6 +123,9 @@ section {
         position: absolute;
         z-index: 2;
         top: 60px;
+        @media screen and (max-width: 414px) {
+            display: none;
+        }
     }
     &:nth-child(even) {
         &:after {
@@ -146,6 +194,11 @@ section {
     margin-top: 9px;
     background: url('../images/vejaomapa.png') left no-repeat;
     text-indent: -9999px;
+    @media screen and (max-width: 414px) {
+        width: 105px;
+        height: 19px;
+        background-size: contain;
+    }
     &:hover {
         opacity: 0.7;
         background: url('../images/vejaomapa.png') left no-repeat;
@@ -173,6 +226,10 @@ section {
 .step-02 {
     background: url('../images/background-step-02.png') center no-repeat;
     height: 544px;
+    @media screen and (max-width: 414px) {
+        height: auto;
+        margin-top: 50px;
+    }
     h3 {
         color: #fe5000;
         font-size: 18px;
@@ -185,12 +242,34 @@ section {
         margin-left: 80px;
         float: left;
         margin-top: 20px;
+        @media screen and (max-width: 414px) {
+            margin-left: 0;
+            float: none;
+            margin-top: 50px;
+            img {
+                width: 50%;
+                margin: 0 auto;
+                display: block;
+            }
+        }
     }
     .text-doit {
         width: 120px;
         float: left;
         margin-left: 190px;
         margin-top: 200px;
+    }
+    .doit-mobile {
+        @media screen and (max-width: 414px) {
+            margin: 0 auto;
+            width: 100%;
+            img {
+                width: 100%;
+                max-width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
     }
     .recipe {
         margin-top: 45px;
@@ -224,10 +303,24 @@ section {
     .tit {
         margin-left: 422px;
         margin-top: 65px;
+        @media screen and (max-width: 414px) {
+            margin-left: 45%;
+            margin-top: 5px;
+            width: 50%;
+            max-width: 100%;
+        }
     }
     .desc {
         margin-left: 465px;
         margin-top: 41px;
+        @media screen and (max-width: 414px) {
+            margin-left: 0;
+            position: absolute;
+            right: 0;
+            width: 46%;
+            margin-top: 10px;
+            padding-right: 10px;
+        }
     }
     .foto {
         left: 0;
@@ -253,15 +346,32 @@ section {
     .tit {
         margin-left: 264px;
         margin-top: 58px;
+        @media screen and (max-width: 414px) {
+            margin-left: 5%;
+            margin-top: 5px;
+            width: 50%;
+            max-width: 100%;
+        }
     }
     .desc {
         margin-left: 267px;
         margin-top: 26px;
+        @media screen and (max-width: 414px) {
+            margin-left: 5%;
+            margin-top: 6px;
+            width: 48%;
+        }
     }
     .foto {
         right: 0;
         right: 155px;
         margin-top: 9px;
+        @media screen and (max-width: 414px) {
+            margin-left: 48%;
+            margin-top: 10px;
+            width: 40%;
+            right: 5%;
+        }
     }
 }
 
@@ -270,10 +380,24 @@ section {
     .tit {
         margin-left: 377px;
         margin-top: 55px;
+        @media screen and (max-width: 414px) {
+            margin-left: 45%;
+            margin-top: 5px;
+            width: 50%;
+            max-width: 100%;
+        }
     }
     .desc {
         margin-left: 455px;
         margin-top: 11px;
+        @media screen and (max-width: 414px) {
+            margin-left: 0;
+            position: absolute;
+            right: 0;
+            width: 46%;
+            margin-top: 10px;
+            padding-right: 10px;
+        }
     }
     .foto {
         left: 0;
@@ -287,14 +411,31 @@ section {
     .tit {
         margin-left: 247px;
         margin-top: 65px;
+        @media screen and (max-width: 414px) {
+            margin-left: 5%;
+            margin-top: 5px;
+            width: 50%;
+            max-width: 100%;
+        }
     }
     .desc {
         margin-left: 256px;
         margin-top: 2px;
+        @media screen and (max-width: 414px) {
+            margin-left: 5%;
+            margin-top: 6px;
+            width: 48%;
+        }
     }
     .foto {
         right: 165px;
         margin-top: 10px;
+        @media screen and (max-width: 414px) {
+            margin-left: 48%;
+            margin-top: 10px;
+            width: 40%;
+            right: 5%;
+        }
     }
 }
 
@@ -302,6 +443,10 @@ section {
     background: url('../images/background-step-07.png') center bottom no-repeat;
     height: 865px;
     margin-top: 53px;
+    @media screen and (max-width: 414px) {
+        background: url();
+        height: auto;
+    }
     .main_tit {
         font-size: 44px;
         line-height: 50px;
@@ -313,6 +458,11 @@ section {
             display: block;
             color: #fe5000;
         }
+        @media screen and (max-width: 414px) {
+            font-size: 32px;
+            line-height: 38px;
+            margin-left: 5%;
+        }
     }
     .party {
         float: left;
@@ -322,6 +472,15 @@ section {
         padding-top: 36px;
         padding-left: 110px;
         padding-right: 31px;
+        @media screen and (max-width: 414px) {
+            margin-top: 19px;
+            width: 100%;
+            margin-left: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #fe5000;
+            float: none;
+        }
         .tit {
             color: #fff;
             line-height: 41px;
@@ -331,6 +490,10 @@ section {
             text-transform: uppercase;
             min-height: 82px;
             padding-right: 25px;
+            @media screen and (max-width: 414px) {
+                line-height: 28px;
+                font-size: 26px;
+            }
         }
         .sub_tit {
             color: #3f3c3b;
@@ -347,10 +510,17 @@ section {
             text-transform: uppercase;
             margin-top: 15px;
             text-decoration: underline;
+            @media screen and (max-width: 414px) {
+                line-height: 21px;
+                font-size: 11px;
+            }
         }
         #partyText {
             overflow: auto;
             height: 178px;
+            @media screen and (max-width: 414px) {
+                height: 138px;
+            }
         }
     }
     .party-calendar {
@@ -358,6 +528,12 @@ section {
         float: right;
         margin-right: 77px;
         margin-top: 510px;
+        @media screen and (max-width: 414px) {
+            margin-top: 30px;
+            float: none;
+            width: 100%;
+            padding-left: 5%;
+        }
         .tit {
             color: #fe5000;
             font-size: 17px;
@@ -428,6 +604,9 @@ section {
     height: 488px;
     margin-top: 28px;
     position: relative;
+    @media screen and (max-width: 414px) {
+        height: 950px;
+    }
     .main_tit {
         font-size: 44px;
         line-height: 50px;
@@ -439,20 +618,43 @@ section {
             display: block;
             color: #403c3b;
         }
+        @media screen and (max-width: 414px) {
+            font-size: 29px;
+            line-height: 33px;
+            margin-left: 5%;
+        }
     }
     .kombi {
         position: absolute;
         top: 0px;
         right: 273px;
         z-index: 3;
+        @media screen and (max-width: 414px) {
+            top: 430px;
+            right: 52%;
+            width: 48%;
+            img {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
     }
     .mapas {
         width: 554px;
         margin-top: 17px;
         position: absolute;
+        @media screen and (max-width: 414px) {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+        }
         iframe {
             width: 553px;
             height: 367px;
+            @media screen and (max-width: 414px) {
+                width: 100%;
+                max-width: 100%;
+            }
         }
     }
     .kombi-desc {
@@ -462,6 +664,12 @@ section {
         margin-right: 17px;
         position: absolute;
         right: 8px;
+        @media screen and (max-width: 414px) {
+            float: none;
+            width: 47%;
+            margin-top: 388px;
+            margin-right: 0;
+        }
         p {
             font-size: 11px;
             line-height: 23px;
@@ -474,6 +682,10 @@ section {
                 color: #403c3b;
                 text-decoration: underline;
             }
+            @media screen and (max-width: 414px) {
+                font-size: 8px;
+                line-height: 13px;
+            }
         }
     }
     .kombi-calendar {
@@ -484,6 +696,13 @@ section {
         overflow: auto;
         height: 228px;
         padding-right: 20px;
+        @media screen and (max-width: 414px) {
+            width: 100%;
+            padding-right: 0;
+            margin-right: 0;
+            padding-left: 5%;
+            height: auto;
+        }
         .tit {
             color: #fe5000;
             font-size: 17px;
@@ -506,6 +725,9 @@ section {
             margin-top: -2px;
             padding-top: 2px;
             padding-bottom: 2px;
+            @media screen and (max-width: 414px) {
+                font-size: 9px;
+            }
             &.active {
                 font-weight: bold;
                 span {
@@ -517,6 +739,10 @@ section {
                 line-height: 38px;
                 font-weight: 400;
                 margin-left: 30px;
+                @media screen and (max-width: 414px) {
+                    margin-left: 10px;
+                    font-size: 9px;
+                }
             }
         }
     }
@@ -525,6 +751,10 @@ section {
 .step-09 {
     background: url('../images/background-step-09.png') center no-repeat;
     height: 556px;
+    @media screen and (max-width: 414px) {
+        height: auto;
+        background: url() $color-orange;
+    }
     .text {
         float: left;
         margin-top: 12px;
@@ -533,6 +763,11 @@ section {
         padding-top: 88px;
         padding-left: 110px;
         padding-right: 31px;
+        @media screen and (max-width: 414px) {
+            float: none;
+            width: 100%;
+            padding: 5%;
+        }
         .tit {
             color: #fff;
             line-height: 41px;
@@ -540,6 +775,10 @@ section {
             letter-spacing: 12px;
             font-weight: 600;
             text-transform: uppercase;
+            @media screen and (max-width: 414px) {
+                line-height: 35px;
+                font-size: 31px;
+            }
         }
         p {
             color: #fff;
@@ -549,6 +788,11 @@ section {
             margin-top: 34px;
             text-decoration: underline;
             letter-spacing: 3px;
+            @media screen and (max-width: 414px) {
+                line-height: 25px;
+                font-size: 14px;
+                margin-top: 14px;
+            }
             span {
                 font-weight: bold;
                 color: #403c3b;
@@ -562,6 +806,11 @@ section {
         height: 511px;
         overflow: hidden;
         right: 0;
+        @media screen and (max-width: 414px) {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
         .insta {
             display: block;
             float: left;
@@ -569,6 +818,9 @@ section {
                 opacity: 0;
                 pointer-events: none;
             }
+            @media screen and (max-width: 414px) {
+                    width: 33%;
+                }
             a {
                 position: relative;
                 display: block;
@@ -576,6 +828,10 @@ section {
                 height: 170px;
                 background-size: cover;
                 cursor: pointer;
+                @media screen and (max-width: 414px) {
+                    width: 100%;
+                    height: 136px;
+                }
                 &:hover {
                     cursor: pointer;
                     &:before {
@@ -605,3 +861,8 @@ section {
         }
     }
 }
+  @media screen and (max-width: 414px) {
+        .row {
+          margin: 0!important;
+        }
+    }
