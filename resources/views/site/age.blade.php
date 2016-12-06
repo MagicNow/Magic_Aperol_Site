@@ -17,7 +17,9 @@
                 </div>
 
                 <div class="col-sm-12" id="nope">
-                    <p class="col-sm-12">Acesso não autorizado</p>
+                    <p class="col-sm-12">Desculpe.<br>
+                      Por determinação legal este site não<br>
+                      é indicado para menores de 18 anos.</p>
 
                 </div>
             </div>

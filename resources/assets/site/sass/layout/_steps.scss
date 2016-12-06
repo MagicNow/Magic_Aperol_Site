@@ -208,7 +208,7 @@ section {
 }
 
 .bt_oevento {
-    display: block;
+    display: none;
     width: 185px;
     height: 45px;
     text-indent: -9999px;
@@ -557,12 +557,13 @@ section {
             margin-top: -2px;
             padding-top: 2px;
             padding-bottom: 2px;
+            letter-spacing: 0;
             span {
                 font-size: 11px;
                 line-height: 38px;
                 font-weight: 400;
                 margin-left: 10px;
-                letter-spacing: 1.6px;
+                letter-spacing: 0px;
             }
             &.active {
                 font-weight: bold;
@@ -577,14 +578,15 @@ section {
             }
             &:hover {
                 text-decoration: none;
-                font-weight: bold;
-                span {
-                    font-weight: bold;
-                }
-                &:after {
-                    right: 5px;
-                    top: 13px;
-                }
+                cursor: default;
+            //     font-weight: bold;
+            //     span {
+            //         font-weight: bold;
+            //     }
+            //     &:after {
+            //         right: 5px;
+            //         top: 13px;
+            //     }
             }
             &:after {
                 display: block;
@@ -738,7 +740,7 @@ section {
                 font-size: 11px;
                 line-height: 38px;
                 font-weight: 400;
-                margin-left: 30px;
+                margin-left: 5px;
                 @media screen and (max-width: 414px) {
                     margin-left: 10px;
                     font-size: 9px;

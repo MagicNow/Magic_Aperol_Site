@@ -149,32 +149,32 @@
             </div>
             <div class="party-calendar">
                 <h3 class="tit">FESTAS</h3>
-                <a href="#" data-tit="Reveillon Mareh" data-sub="Cumuruxatiba/BA" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque quasi cumque mollitia officiis deserunt id fugit assumenda repudiandae obcaecati, provident expedita rerum recusandae facere distinctio, cum sunt ipsum voluptatem." data-link="#festascomaperol" class="bt_detalhes_calendar">26/12 a 04/01 <span> Cumuruxatiba/BA</span></a>
+                <a href="#" data-tit="Reveillon Mareh" data-sub="Cumuruxatiba/BA" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque quasi cumque mollitia officiis deserunt id fugit assumenda repudiandae obcaecati, provident expedita rerum recusandae facere distinctio, cum sunt ipsum voluptatem." data-link="#festascomaperol" class="bt_detalhes_calendar">26/12 a 04/01 <span> Reveillon Mareh - Cumuruxatiba/BA</span></a>
                 <a href="#" data-tit="Reveillon Tikal" data-sub="Barra Grande/ BA" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-link="#festascomaperol" class="bt_detalhes_calendar">27/12 a 02/01<span> Barra Grande/ BA</span></a>
-                <a href="#" data-tit="REVEILON DO GOSTOSO" data-sub="São Miguel do Gostoso/RN" data-desc="O REVEILLON MAIS GOSTOSO DO BRASIL NASCE NO ANO DE 2016, EM UMA DAS PRAIAS MAIS PARADISÍACAS DO NORDESTE BRASILEIRO. SERÃO 5 DIAS DE DIVERSÃO COM MUITO SOL, MAR, PRAIA, ALEGRIA, ESPORTE E MUITA AZARAÇÃO" data-link="" class="bt_detalhes_calendar">27/12 a 01/01 <span> São Miguel do Gostoso/RN</span></a>
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-link="#festascomaperol" class="bt_detalhes_calendar">27/12 a 02/01<span>  Reveillon Tikal – Barra Grande/ BA</span></a>
+                <a href="#" data-tit="REVEILON DO GOSTOSO" data-sub="São Miguel do Gostoso/RN" data-desc="O REVEILLON MAIS GOSTOSO DO BRASIL NASCE NO ANO DE 2016, EM UMA DAS PRAIAS MAIS PARADISÍACAS DO NORDESTE BRASILEIRO. SERÃO 5 DIAS DE DIVERSÃO COM MUITO SOL, MAR, PRAIA, ALEGRIA, ESPORTE E MUITA AZARAÇÃO" data-link="" class="bt_detalhes_calendar">27/12 a 01/01 <span>São Miguel do Gostoso/RN</span></a>
                 <a href="#" data-tit="Reveillon Taipe" data-sub="Trancoso/BA" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-link="#festascomaperol" class="bt_detalhes_calendar">31/12 <span>Trancoso/BA</span></a>
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-link="#festascomaperol" class="bt_detalhes_calendar">31/12 <span>Reveillon Taipe – Trancoso/BA</span></a>
                 <a href="#" data-tit="Reveillon Vai Tapajós" data-sub="Alter do Chão/PA" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-link="#festascomaperol" class="bt_detalhes_calendar">26/12 a 02/01 <span> Alter do Chão/PA</span></a>
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-link="#festascomaperol" class="bt_detalhes_calendar">26/12 a 02/01 <span>Reveillon Vai Tapajós – Alter do Chão/PA</span></a>
                 <a href="#" data-tit="Reveillon da Gavea" data-sub=" Rio de Janeiro/RJ" data-desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-link="#festascomaperol" class="bt_detalhes_calendar">31/12 <span>Rio de Janeiro/RJ</span></a>
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-link="#festascomaperol" class="bt_detalhes_calendar">31/12 <span>Reveillon da Gavea - Rio de Janeiro/RJ</span></a>
             </div>
         </section>
         <section class="step-08" id="kombisummertour">
@@ -195,14 +195,10 @@
             </div>
             <div class="kombi-calendar">
                 <p class="active"> 07/12 <span>Pina, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1247996139637!2d-34.88783198461048!3d-8.088753394176441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f38b35faae5%3A0xf49b97bbd48b9663!2sHaus+%7C+Lajetop+%26+Beergarden!5e0!3m2!1spt-BR!2sbr!4v1480673284725" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 08/12 <span>Boa Viagem, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.734266583387!2d-34.906071984610364!3d-8.128513994148607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fb57fde8bb1%3A0x5bbc3810408e71b0!2sQuintal+Estelita!5e0!3m2!1spt-BR!2sbr!4v1480673852830" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 09/12 <span>Boa Viagem, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.734266583387!2d-34.906071984610364!3d-8.128513994148607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fb57fde8bb1%3A0x5bbc3810408e71b0!2sQuintal+Estelita!5e0!3m2!1spt-BR!2sbr!4v1480673852830" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 10/12 <span>Pina, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.971410715156!2d-34.889486384610294!3d-8.104393194165503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f0dadaca23f%3A0x12e6fe35800eeef6!2sCervejaria+Alphaiate!5e0!3m2!1spt-BR!2sbr!4v1480673915009" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 11/12 <span>Pina, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.971410715156!2d-34.889486384610294!3d-8.104393194165503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f0dadaca23f%3A0x12e6fe35800eeef6!2sCervejaria+Alphaiate!5e0!3m2!1spt-BR!2sbr!4v1480673915009" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 15/12 <span>Manaira, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.16096848944!2d-34.82919958461523!3d-7.107336394867437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18671d5f51%3A0x5ff948306e4e73d9!2sThe+W+Restaurante!5e0!3m2!1spt-BR!2sbr!4v1480673987403" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 16/12 <span>Manaira, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.16096848944!2d-34.82919958461523!3d-7.107336394867437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18671d5f51%3A0x5ff948306e4e73d9!2sThe+W+Restaurante!5e0!3m2!1spt-BR!2sbr!4v1480673987403" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 17/12 <span>Cabedelo, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.829758578746!2d-34.83229828461556!3d-7.029287194922634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acde44c582b275%3A0x7f756be4d16d6036!2sLovina!5e0!3m2!1spt-BR!2sbr!4v1480674085841" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 18/12 <span>Cabedelo, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.829758578746!2d-34.83229828461556!3d-7.029287194922634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acde44c582b275%3A0x7f756be4d16d6036!2sLovina!5e0!3m2!1spt-BR!2sbr!4v1480674085841" class="bt_vejamapa">veja o mapa</a></p>
+                <p> 08/12 e 09/12 <span>Boa Viagem, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.734266583387!2d-34.906071984610364!3d-8.128513994148607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fb57fde8bb1%3A0x5bbc3810408e71b0!2sQuintal+Estelita!5e0!3m2!1spt-BR!2sbr!4v1480673852830" class="bt_vejamapa">veja o mapa</a></p>
+                <p> 10/12 e 11/12 <span>Pina, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.971410715156!2d-34.889486384610294!3d-8.104393194165503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f0dadaca23f%3A0x12e6fe35800eeef6!2sCervejaria+Alphaiate!5e0!3m2!1spt-BR!2sbr!4v1480673915009" class="bt_vejamapa">veja o mapa</a></p>
+                <p> 15/12 e 16/12 <span>Manaira, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.16096848944!2d-34.82919958461523!3d-7.107336394867437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18671d5f51%3A0x5ff948306e4e73d9!2sThe+W+Restaurante!5e0!3m2!1spt-BR!2sbr!4v1480673987403" class="bt_vejamapa">veja o mapa</a></p>
+                <p> 17/12 e 18/12 <span>Cabedelo, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.829758578746!2d-34.83229828461556!3d-7.029287194922634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acde44c582b275%3A0x7f756be4d16d6036!2sLovina!5e0!3m2!1spt-BR!2sbr!4v1480674085841" class="bt_vejamapa">veja o mapa</a></p>
             </div>
         </section>
         <section class="step-09" id="endlesssummer">

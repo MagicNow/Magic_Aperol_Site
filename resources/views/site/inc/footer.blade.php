@@ -6,7 +6,8 @@
                   SAC: Tel: <a href="tel:08007737599">0800 7737599</a>
                   e-mail: <a href="mailto:camparibrasil@campari.com" target="_blank">camparibrasil@campari.com</a>
                 </span>
-                <span class="text-color-orange highlight">SE BEBER, NÃO DIRIJA. NÃO COMPARTILHE ESSE CONTEÚDO COM MENORES DE 18 ANOS.</span>
+                <span class="text-color-orange highlight">SE BEBER, NÃO DIRIJA. NÃO COMPARTILHE ESSE CONTEÚDO COM MENORES DE 18 ANOS.<br>
+                Conteúdo destinado apenas a maiores de 18 anos. Conteúdo impróprio pode ser removido.</span>
                 </div>
             <div class="col-12 col-lg-4 social-midia">
                 <span class="text-color-orange">SIGA APEROL</span>

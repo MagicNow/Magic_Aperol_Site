@@ -1602,15 +1602,15 @@ $(document).ready(function() {
         var itemDesc = $('#partyText');
         var party = $('.party');
 
-        $('.bt_detalhes_calendar').removeClass('active');
-        $(this).addClass('active');
+        // $('.bt_detalhes_calendar').removeClass('active');
+        // $(this).addClass('active');
 
-        party.fadeOut('fast', function() {
-            itemTit.text(tit).append(itemSub.text(sub));
-            itemLink.attr('href', link);
-            itemDesc.text(desc);
-            party.fadeIn('slow');
-        });
+        // party.fadeOut('fast', function() {
+        //     itemTit.text(tit).append(itemSub.text(sub));
+        //     itemLink.attr('href', link);
+        //     itemDesc.text(desc);
+        //     party.fadeIn('slow');
+        // });
 
     });
     $('.kombi-calendar').niceScroll({ cursorcolor: "#fe5000" });
