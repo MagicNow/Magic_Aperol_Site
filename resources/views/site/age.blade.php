@@ -8,10 +8,10 @@
                 <h2 class="col-sm-12 text-color-orange">BEM-VINDO</h2>
                 <div class="col-sm-12 selection">
                     <p class="col-sm-12">Você tem mais<br> de 18 anos?</p>
-                    <a href="#" id="sim" class="button--orange">
+                    <a href="#" id="sim" class="bt_sim">
                         SIM <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </a>
-                    <a href="#" id="nao" class="button--orange">
+                    <a href="#" id="nao" class="bt_nao">
                         NÃO <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </a>
                 </div>

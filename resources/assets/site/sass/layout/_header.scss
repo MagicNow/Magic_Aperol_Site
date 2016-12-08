@@ -204,6 +204,23 @@ header {
         margin-right: -464px;
         margin-top: 16px;
         background-color: transparent;
+        @media screen and (min-width: 416px) {
+            &:hover {
+                margin-right: -459px;
+                span {
+                    left: 24px;
+                    width: 11px;
+                    &:before {
+                        width: 26px;
+                        left: -14px;
+                    }
+                    &:after {
+                        width: 26px;
+                        left: -14px;
+                    }
+                }
+            }
+        }
         @media screen and (max-width: 414px) {
             right: 10px;
             margin-top: -58px;
@@ -262,34 +279,34 @@ header {
                 display: block;
                 font-weight: bold;
                 text-align: center;
-                padding-bottom: 10px;
+                padding-bottom: 24px;
                 a {
                     color: $color-orange;
                     position: relative;
                     display: block;
                     text-transform: uppercase;
-                    letter-spacing: 4px;
+                    letter-spacing: 1.6px;
                     -webkit-transition: all 0.2s ease-in-out;
                     -moz-transition: all 0.2s ease-in-out;
                     -o-transition: all 0.2s ease-in-out;
                     -ms-transition: all 0.2s ease-in-out;
                     transition: all 0.2s ease-in-out;
+                    &::after {
+                        width: 300px;
+                        content: '';
+                        display: block;
+                        height: 1px;
+                        background-color: $color-orange;
+                        margin: 0 auto;
+                        position: absolute;
+                        bottom: -13px;
+                        left: 50%;
+                        margin-left: -150px;
+                    }
                     &:hover {
                         color: $color-orange;
                         padding-left: 10px;
                         text-decoration: none;
-                        &::after {
-                            width: 300px;
-                            content: '';
-                            display: block;
-                            height: 3px;
-                            background-color: $color-orange;
-                            margin: 0 auto;
-                            position: absolute;
-                            bottom: -5px;
-                            left: 50%;
-                            margin-left: -150px;
-                        }
                     }
                 }
             }

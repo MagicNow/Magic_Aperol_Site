@@ -85,7 +85,7 @@ section {
                 margin-left: 8%;
                 margin-top: 10px;
                 width: 40%;
-                  right: 8%;
+                right: 8%;
                 img {
                     width: 100%;
                     max-width: 100%;
@@ -150,6 +150,50 @@ section {
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: 500;
+}
+
+.bt_sim {
+    display: inline-block;
+    width: 184px;
+    height: 40px;
+    margin-right: 60px;
+    text-indent: -9999px;
+    background: url('../images/bt_sim.png') left no-repeat;
+    transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    background-size: contain;
+    margin-top: 15px;
+    @media screen and (max-width: 414px) {
+        margin-right: 0;
+        width: 144px;
+        height: 40px;
+    }
+    &:hover {
+        background: url('../images/bt_sim_over.png') left no-repeat;
+        transition: background 0.6s;
+        -webkit-transition: background 0.6s;
+    }
+}
+
+.bt_nao {
+    display: inline-block;
+    width: 184px;
+    height: 40px;
+    text-indent: -9999px;
+    background: url('../images/bt_nao.png') left no-repeat;
+    transition: background 0.6s;
+    background-size: contain;
+    -webkit-transition: background 0.6s;
+    margin-top: 15px;
+    @media screen and (max-width: 414px) {
+        width: 144px;
+        height: 40px;
+    }
+    &:hover {
+        background: url('../images/bt_nao_over.png') left no-repeat;
+        transition: background 0.6s;
+        -webkit-transition: background 0.6s;
+    }
 }
 
 .bt_mais {
@@ -442,7 +486,6 @@ section {
 .step-07 {
     background: url('../images/background-step-07.png') center bottom no-repeat;
     height: 865px;
-    margin-top: 53px;
     @media screen and (max-width: 414px) {
         background: url();
         height: auto;
@@ -579,14 +622,14 @@ section {
             &:hover {
                 text-decoration: none;
                 cursor: default;
-            //     font-weight: bold;
-            //     span {
-            //         font-weight: bold;
-            //     }
-            //     &:after {
-            //         right: 5px;
-            //         top: 13px;
-            //     }
+                //     font-weight: bold;
+                //     span {
+                //         font-weight: bold;
+                //     }
+                //     &:after {
+                //         right: 5px;
+                //         top: 13px;
+                //     }
             }
             &:after {
                 display: block;
@@ -821,8 +864,8 @@ section {
                 pointer-events: none;
             }
             @media screen and (max-width: 414px) {
-                    width: 33%;
-                }
+                width: 33%;
+            }
             a {
                 position: relative;
                 display: block;
@@ -863,8 +906,9 @@ section {
         }
     }
 }
-  @media screen and (max-width: 414px) {
-        .row {
-          margin: 0!important;
-        }
+
+@media screen and (max-width: 414px) {
+    .row {
+        margin: 0!important;
     }
+}

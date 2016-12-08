@@ -90,19 +90,8 @@ $(document).ready(function() {
     //age gate
     $("#sim").click(function(e) {
         e.preventDefault();
-        var request = $.ajax({
-            url: "age",
-            dataType: "html"
-        });
 
-        request.done(function(msg) {
-            location.reload();
-        });
-
-        request.fail(function(jqXHR, textStatus) {
-            console.log('erro');
-            location.reload();
-        });
+        location.href = 'home.html'
 
     });
 
