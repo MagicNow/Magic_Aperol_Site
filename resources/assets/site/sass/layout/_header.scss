@@ -2,13 +2,19 @@ body {
     background-color: $color-gray;
     font-family: 'Dosis', serif;
     margin: 0 auto !important;
-    max-width: 1024px;
-    width: 1024px;
+    // max-width: 1024px;
+    // width: 1024px;
     letter-spacing: 1.8px;
+      overflow-x: hidden;
+    position: relative;
     @media screen and (max-width: 414px) {
         width: 100%;
         max-width: 100%;
     }
+}
+
+.row {
+    margin: 0;
 }
 
 .initial {
@@ -73,29 +79,31 @@ a {
 }
 
 header {
-    background: url('../images/background-step-01.png') right no-repeat;
-    height: 506px;
+    // background: url('../images/background-step-01.png') right no-repeat;
+    min-height: 506px;
     position: relative;
     @media screen and (max-width: 414px) {
         background: url() #ebdfd9;
         height: auto;
     }
     .logo {
-        background: url('../images/logo-medium.png') 0 0 no-repeat;
-        height: 111px;
         overflow: hidden;
-        text-indent: -99999px;
-        width: 111px;
-        margin-left: 88px;
-        margin-top: 14px;
-        @media screen and (max-width: 414px) {
-            margin-left: 23px;
-            margin-top: 5px;
-            height: 85px;
-            background-size: contain;
-        }
+        margin-left: 8%;
+        margin-top: 1%;
+        width: 10%;
+        height: 40%;
+        position: relative;
+        float: left;
     }
     #taca {
+        position: relative;
+        margin-top: -3%;
+        left: 50%;
+        margin-left: -48%;
+        width: 34%;
+        z-index: 3;
+        pointer-events: none;
+        float: left;
         @media screen and (max-width: 414px) {
             position: absolute;
             top: 0;
@@ -105,8 +113,13 @@ header {
         }
     }
     .endless_summer {
-        margin-top: 171px;
-        margin-left: -106px;
+        margin-top: 16%;
+        margin-left: -59%;
+        position: relative;
+        z-index: 4;
+        float: left;
+        left: 50%;
+        width: 45%;
         @media screen and (max-width: 414px) {
             width: 300px;
             margin: 20% auto 0;
@@ -120,6 +133,14 @@ header {
     }
     .text-head-wrapper {
         position: relative;
+        #aperol {
+            position: absolute;
+            pointer-events: none;
+            right: 0.5%;
+            width: 22%;
+            z-index: 2;
+            margin-top: 13%;
+        }
         @media screen and (max-width: 414px) {
             #aperol {
                 position: absolute;
@@ -131,8 +152,15 @@ header {
         }
     }
     .text-head {
-        margin-top: 79px;
-        margin-left: 47px;
+        margin-top: 4%;
+        left: 48%;
+        width: 47%;
+        background: #fe5000;
+        position: relative;
+        z-index: 2;
+        padding: 7.5% 6% 4% 9%;
+        float: left;
+        margin-left: -18%;
         @media screen and (max-width: 414px) {
             background-color: #fe5000;
             padding: 20px 15% 20px 4%;
@@ -142,28 +170,34 @@ header {
         }
         h2 {
             text-align: left;
-            letter-spacing: 5px;
+            letter-spacing: 0.3vw;
             color: #fff;
             font-size: 37px;
             line-height: 44px;
+            font-size: 3.7vw;
+            line-height: 4.3vw;
             @media screen and (max-width: 414px) {
                 font-size: 22px;
                 line-height: 28px;
             }
         }
         p {
-            margin-top: 10px;
+            margin-top: 5%;
             text-align: left;
             text-transform: uppercase;
             color: #fff;
             font-size: 15px;
             line-height: 26px;
             text-decoration: underline;
-            padding-bottom: 5px;
+            padding-bottom: 5%;
+            line-height: 2.5vw;
+            font-size: 1.4vw;
+            letter-spacing: 0.2vw;
             strong {
-                font-size: 18px;
-                line-height: 29px;
-                font-weight: 500;
+                line-height: 2.5vw;
+                font-size: 1.6vw;
+                font-weight: bold;
+                letter-spacing: 0.2vw;
             }
             @media screen and (max-width: 414px) {
                 font-size: 11px;
@@ -199,16 +233,19 @@ header {
     }
     #bt-menu {
         z-index: 11;
-        position: fixed;
-        right: 50%;
-        margin-right: -464px;
-        margin-top: 16px;
+        position: absolute;
+        right: 10%;
+        margin-top: 2%;
+        z-index: 15;
         background-color: transparent;
+        float: left;
+        left: 50%;
+        margin-left: 43.4%;
         @media screen and (min-width: 416px) {
             &:hover {
                 margin-right: -459px;
                 span {
-                    left: 24px;
+                    left: 19px;
                     width: 11px;
                     &:before {
                         width: 26px;
@@ -230,7 +267,7 @@ header {
     #menu {
         height: 100vh;
         width: 100%;
-        max-width: 1024px;
+        // max-width: 1024px;
         position: fixed;
         z-index: 10;
         opacity: 0;
@@ -261,12 +298,12 @@ header {
         }
         .bmenu {
             right: 0;
-            width: 450px;
+            width: 50%;
             background-color: #fff;
             padding: 0px;
             margin: 0 0 10px 0;
             position: absolute;
-            padding-top: 125px;
+            padding-top: 10%;
             height: 100vh;
             @media screen and (max-width: 414px) {
                 width: 100%;

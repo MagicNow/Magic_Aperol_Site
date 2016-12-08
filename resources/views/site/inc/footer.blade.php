@@ -1,6 +1,6 @@
     <footer>
-        <div class="row">
-            <h1 class="col-lg-4 logo ">Aperol Spritz</h1>
+
+            {{ Html::image('assets/images/logo-medium.png', '', array('class' => 'logo', 'id' => 'logofooter')) }}
             <div class="col-xs-12 col-lg-4 text-center contact">
                 <span class="text-color-orange">
                   SAC: Tel: <a href="tel:08007737599">0800 7737599</a>
@@ -20,7 +20,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+
     </footer>
     <!--
     <script src="/scripts/src/jquery/jquery.min.js"></script>

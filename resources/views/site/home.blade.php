@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="initial">
-        <header>
+        <header class="clearfix">
             <div id="menu" class="pull-right">
               <ul class="bmenu">
                 <li><a href="#aperolspritz">APEROL SPRITZ</a></li>
@@ -13,21 +13,21 @@
               </ul>
             </div>
             <div class="row" id="aperolspritz">
-                <h1 class="col-sm-6 logo">Aperol Spritz</h1>
+                   {{ Html::image('assets/images/logo-medium.png', '', array('class' => 'logo', 'id' => 'logo')) }}
 
-               {{ Html::image('assets/images/taca.png', '', array('class' => 'visible-xs-block', 'id' => 'taca')) }}
+               {{ Html::image('assets/images/taca.png', '', array('class' => '', 'id' => 'taca')) }}
 
                 <button id="bt-menu" class="c-hamburger c-hamburger--htx">
                   <span>toggle menu</span>
                 </button>
 
 
-                <div class="row">
-                    <div class="endless_summer col-sm-5">
-                      <img src="http://localhost:8000/assets/images/endless_summer.png" class="" alt="">
-                    </div>
+
+
+                      <img src="http://localhost:8000/assets/images/endless_summer.png" class="endless_summer" alt="">
+
                     <div class="text-head-wrapper">
-                      <div class="text-head col-sm-4">
+                      <div class="text-head">
                           <h2>COMO ETERNIZAR <br>O SEU VERÃO</h2>
                           <p>Verão é olho no olho, muita água,
                               <br> esquecer o caminho de volta pra casa,
@@ -36,19 +36,20 @@
                               <br> Aqui é o lugar pra você fazer
                               <br> a estação não ter fim.</strong></p>
                       </div>
-                      {{ Html::image('assets/images/aperol_m.png', '', array('class' => 'visible-xs-block', 'id' => 'aperol')) }}
+                      {{ Html::image('assets/images/aperol_.png', '', array('class' => '', 'id' => 'aperol')) }}
                     </div>
-                    <div class="col-sm-12 hidden-xs text-center scroll-down">
+                    <div class="col-sm-12 text-center scroll-down">
                         <span> SCROLL DOWN <i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                     </div>
-                </div>
+
             </div>
         </header>
     </div>
-    <div class="content">
-        <section class="step-02">
-            <div class="clearfix">
-                <div class="col-md-02 text-doit hidden-xs">
+    <div class="content clearfix">
+        <section class="step-02 clearfix">
+
+                {{ Html::image('assets/images/laranja.png', '', array('class' => 'laranja', 'id' => 'laranja')) }}
+                <div class="col-md-02 text-doit">
                     <h3>Em uma taça<br>
                     com gelo<br>
                     e uma fatia<br>
@@ -56,26 +57,25 @@
                     coloque:
                   </h3>
                 </div>
-                <div class="doit hidden-xs">
-                {{ Html::image('assets/images/facaoseu.png', '', array('class' => '')) }}
+                {{ Html::image('assets/images/facaoseu.png', '', array('class' => 'doit', 'id' => 'doit')) }}
+                {{ Html::image('assets/images/gelo1.png', '', array('class' => 'gelo1', 'id' => 'gelo1')) }}
+                {{ Html::image('assets/images/gelo2.png', '', array('class' => 'gelo2', 'id' => 'gelo2')) }}
+                {{ Html::image('assets/images/taca.png', '', array('class' => 'taca2', 'id' => 'taca2')) }}
+                <div class="recipe clearfix ">
+                    <div class="part3"><span>3</span> partes de
+                        <br> prosecco</div>
+                    <div class="part2"><span>2</span>  partes de
+                        <br> Aperol</div>
+                    <div class="part1"><span>1</span>  parte de água
+                        <br> com gás</div>
                 </div>
-                <div class="doit-mobile visible-xs-block">
-                    {{ Html::image('assets/images/facaoseu_m.jpg', '', array('class' => '')) }}
-                </div>
-            </div>
-            <div class="recipe clearfix hidden-xs">
-                <div class="part3">partes de
-                    <br> prosecco</div>
-                <div class="part2">partes de
-                    <br> Aperol</div>
-                <div class="part1">parte de água
-                    <br> com gás</div>
-            </div>
+
+
         </section>
         <section class="step-07 clearfix" id="festascomaperol">
             <h2 class="main_tit">FESTAS COM
               <strong>#APEROLSPRITZ</strong></h2>
-              {{ Html::image('assets/images/festas_aperol_m.jpg', '', array('class' => 'visible-xs-block img-responsive')) }}
+              {{ Html::image('assets/images/foto_Festas.png', '', array('class' => 'img-festas img-responsive')) }}
             <div class="party">
                 <h2 class="tit">REVEILON<br>
                   DO GOSTOSO <br><span class="sub_tit">SãO MIGUEL DO GOSTOSO - RN</span></h2>
@@ -118,31 +118,42 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum." data-link="#festascomaperol" class="bt_detalhes_calendar">31/12 <span>Reveillon da Gavea - Rio de Janeiro/RJ</span></a>
             </div>
         </section>
-        <section class="step-08" id="kombisummertour">
+        <section class="step-08 clearfix" id="kombisummertour">
             <h2 class="main_tit">KOMBI
               <strong>SUMMER TOUR</strong></h2>
-            <div class="kombi-desc">
-                <p>Nesse verão a nossa Kombi vai
-                    <br> rodar pelos pontos mais agitados
-                    <br> do Brasil para eternizar
-                    <br> a melhor estação do ano com você.
-                    <br> <strong>Quer saber por onde ela vai passar?
-                    <br> Dá uma olhada.</strong>
-                </p>
-            </div>
-            <div class="kombi">{{ Html::image('assets/images/kombi.jpg', '', array('class' => '')) }}</div>
-            <div class="mapas">
+            <div class="mapas clearfix">
               <iframe id="mapa" class="active" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1247996139637!2d-34.88783198461048!3d-8.088753394176441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f38b35faae5%3A0xf49b97bbd48b9663!2sHaus+%7C+Lajetop+%26+Beergarden!5e0!3m2!1spt-BR!2sbr!4v1480673284725" width="553" height="367" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <div class="kombi-calendar">
-                <p class="active"> 07/12 <span>Pina, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1247996139637!2d-34.88783198461048!3d-8.088753394176441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f38b35faae5%3A0xf49b97bbd48b9663!2sHaus+%7C+Lajetop+%26+Beergarden!5e0!3m2!1spt-BR!2sbr!4v1480673284725" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 08/12 e 09/12 <span>Boa Viagem, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.734266583387!2d-34.906071984610364!3d-8.128513994148607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fb57fde8bb1%3A0x5bbc3810408e71b0!2sQuintal+Estelita!5e0!3m2!1spt-BR!2sbr!4v1480673852830" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 10/12 e 11/12 <span>Pina, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.971410715156!2d-34.889486384610294!3d-8.104393194165503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f0dadaca23f%3A0x12e6fe35800eeef6!2sCervejaria+Alphaiate!5e0!3m2!1spt-BR!2sbr!4v1480673915009" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 15/12 e 16/12 <span>Manaira, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.16096848944!2d-34.82919958461523!3d-7.107336394867437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18671d5f51%3A0x5ff948306e4e73d9!2sThe+W+Restaurante!5e0!3m2!1spt-BR!2sbr!4v1480673987403" class="bt_vejamapa">veja o mapa</a></p>
-                <p> 17/12 e 18/12 <span>Cabedelo, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.829758578746!2d-34.83229828461556!3d-7.029287194922634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acde44c582b275%3A0x7f756be4d16d6036!2sLovina!5e0!3m2!1spt-BR!2sbr!4v1480674085841" class="bt_vejamapa">veja o mapa</a></p>
+            <div class="kombi-side clearfix">
+
+               <div class="kombi-desc">
+                  {{ Html::image('assets/images/kombi.jpg', '', array('class' => 'kombi')) }}
+                  <p>Nesse verão a nossa Kombi vai
+                      <br> rodar pelos pontos mais agitados
+                      <br> do Brasil para eternizar
+                      <br> a melhor estação do ano com você.
+                      <br> <strong>Quer saber por onde ela vai passar?
+                      <br> Dá uma olhada.</strong>
+                  </p>
+
+                  <div class="kombi-calendar">
+                  <p class="active"> 07/12 <span>Pina, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1247996139637!2d-34.88783198461048!3d-8.088753394176441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f38b35faae5%3A0xf49b97bbd48b9663!2sHaus+%7C+Lajetop+%26+Beergarden!5e0!3m2!1spt-BR!2sbr!4v1480673284725" class="bt_vejamapa">veja o mapa</a></p>
+                  <p> 08/12 e 09/12 <span>Boa Viagem, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.734266583387!2d-34.906071984610364!3d-8.128513994148607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1fb57fde8bb1%3A0x5bbc3810408e71b0!2sQuintal+Estelita!5e0!3m2!1spt-BR!2sbr!4v1480673852830" class="bt_vejamapa">veja o mapa</a></p>
+                  <p> 10/12 e 11/12 <span>Pina, Recife/PE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.971410715156!2d-34.889486384610294!3d-8.104393194165503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f0dadaca23f%3A0x12e6fe35800eeef6!2sCervejaria+Alphaiate!5e0!3m2!1spt-BR!2sbr!4v1480673915009" class="bt_vejamapa">veja o mapa</a></p>
+                  <p> 15/12 e 16/12 <span>Manaira, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.16096848944!2d-34.82919958461523!3d-7.107336394867437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd18671d5f51%3A0x5ff948306e4e73d9!2sThe+W+Restaurante!5e0!3m2!1spt-BR!2sbr!4v1480673987403" class="bt_vejamapa">veja o mapa</a></p>
+                  <p> 17/12 e 18/12 <span>Cabedelo, João Pessoa/PB</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.829758578746!2d-34.83229828461556!3d-7.029287194922634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acde44c582b275%3A0x7f756be4d16d6036!2sLovina!5e0!3m2!1spt-BR!2sbr!4v1480674085841" class="bt_vejamapa">veja o mapa</a></p>
+              </div>
+              </div>
+
+
             </div>
+
+
+
+
         </section>
-<section class="step-09" id="endlesssummer">
+<section class="step-09 clearfix" id="endlesssummer">
+                {{ Html::image('assets/images/gelo1.png', '', array('class' => 'gelo', 'id' => 'gelo')) }}
             <div class="text">
                 <h2 class="tit">#Endless<br>
                   summer</h2>
@@ -155,33 +166,34 @@
             </div>
             <div class="mural clearfix">
                                     <div class="insta">
-                      <a target="_blank" href="https://www.instagram.com/p/BM9Xv06h55A/" style="background-image:url(https://scontent.cdninstagram.com/t51.2885-15/e35/15035024_1861754220748848_3171278515630768128_n.jpg?ig_cache_key=MTM4NjM2ODcwMjAwMTY4NDAzMg%3D%3D.2);"></a>
+                      <a target="_blank" href="https://www.instagram.com/p/BM9Xv06h55A/"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/15035024_1861754220748848_3171278515630768128_n.jpg?ig_cache_key=MTM4NjM2ODcwMjAwMTY4NDAzMg%3D%3D.2"></a>
                   </div>
                                     <div class="insta">
-                      <a target="_blank" href="https://www.instagram.com/p/BM9VSQ6Dl8I/" style="background-image:url(https://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/14488366_1105184499598202_6753518962639634432_n.jpg?ig_cache_key=MTM4NjM1Nzg3NDM4MTE4NDc3Ng%3D%3D.2);"></a>
+                      <a target="_blank" href="https://www.instagram.com/p/BM9VSQ6Dl8I/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/14488366_1105184499598202_6753518962639634432_n.jpg?ig_cache_key=MTM4NjM1Nzg3NDM4MTE4NDc3Ng%3D%3D.2"></a>
                   </div>
                                     <div class="insta">
-                      <a target="_blank" href="https://www.instagram.com/p/BMxeJz5g4ah/" style="background-image:url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14596721_551696518358978_2308530799747530752_n.jpg?ig_cache_key=MTM4MzAxOTE3NjE3NTgzMDY4OQ%3D%3D.2);"></a>
+                      <a target="_blank" href="https://www.instagram.com/p/BMxeJz5g4ah/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14596721_551696518358978_2308530799747530752_n.jpg?ig_cache_key=MTM4MzAxOTE3NjE3NTgzMDY4OQ%3D%3D.2"></a>
                   </div>
                                     <div class="insta">
-                      <a target="_blank" href="https://www.instagram.com/p/BM9VkvUAvD8/" style="background-image:url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15043968_135190050291188_9118560493936574464_n.jpg?ig_cache_key=MTM4NjM1OTE0Mzk3OTQ3OTI5Mg%3D%3D.2);"></a>
+                      <a target="_blank" href="https://www.instagram.com/p/BM9VkvUAvD8/""><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15043968_135190050291188_9118560493936574464_n.jpg?ig_cache_key=MTM4NjM1OTE0Mzk3OTQ3OTI5Mg%3D%3D.2"></a>
                   </div>
                                     <div class="insta">
-                      <a target="_blank" href="https://www.instagram.com/p/BM9WI0jgs5V/" style="background-image:url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15048135_1855332521378823_2793828869738594304_n.jpg?ig_cache_key=MTM4NjM2MTYyMzUwOTM4ODg4NQ%3D%3D.2);"></a>
+                      <a target="_blank" href="https://www.instagram.com/p/BM9WI0jgs5V/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15048135_1855332521378823_2793828869738594304_n.jpg?ig_cache_key=MTM4NjM2MTYyMzUwOTM4ODg4NQ%3D%3D.2);"></a>
                   </div>
                                     <div class="insta">
-                      <a target="_blank" href="https://www.instagram.com/p/BM9iCsdhKAc/" style="background-image:url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14449119_1152950264759907_1169208755032686592_n.jpg?ig_cache_key=MTM4NjQxMzk3OTA2MDE4MzA2OA%3D%3D.2);"></a>
+                      <a target="_blank" href="https://www.instagram.com/p/BM9iCsdhKAc/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14449119_1152950264759907_1169208755032686592_n.jpg?ig_cache_key=MTM4NjQxMzk3OTA2MDE4MzA2OA%3D%3D.2"></a>
                   </div>
                                     <div class="insta">
-                      <a target="_blank" href="https://www.instagram.com/p/BM9VxWHAnaO/" style="background-image:url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15047024_911684202264354_5087540593500880896_n.jpg?ig_cache_key=MTM4NjM2MDAxMDI3MDk5NjExMA%3D%3D.2);"></a>
+                      <a target="_blank" href="https://www.instagram.com/p/BNwHSWRlhjp/"><img src="https://scontent-gru2-1.cdninstagram.com/t51.2885-15/e35/15034563_349106235461087_5810160899658350592_n.jpg?ig_cache_key=MTQwMDY1MTUzMTMwNTc1MjgwOQ%3D%3D.22"></a>
                   </div>
                                     <div class="insta">
-                      <a target="_blank" href="https://www.instagram.com/p/BMxeDRHhKhg/" style="background-image:url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15034693_900036993460759_3405668199667073024_n.jpg?ig_cache_key=MTM4MzAxODcyNjUxMjk2MTYzMg%3D%3D.2);"></a>
+                      <a target="_blank" href="https://www.instagram.com/p/BM9V0DkBSiT/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15099503_161807730953219_1303356638274519040_n.jpg?ig_cache_key=MTM4NjM2MDE5NjUxNTA0NzU3MQ%3D%3D.2"></a>
                   </div>
                                     <div class="insta">
-                      <a target="_blank" href="https://www.instagram.com/p/BM9WmKLhlBI/" style="background-image:url(https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15048015_198403187280821_4495248222377213952_n.jpg?ig_cache_key=MTM4NjM2MzYzOTU5NDExMTA0OA%3D%3D.2);"></a>
+                      <a target="_blank" href="https://www.instagram.com/p/BM9WmKLhlBI/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15048015_198403187280821_4495248222377213952_n.jpg?ig_cache_key=MTM4NjM2MzYzOTU5NDExMTA0OA%3D%3D.2"></a>
                   </div>
                             </div>
+                  {{ Html::image('assets/images/laranja.png', '', array('class' => 'laranja2', 'id' => 'laranja2')) }}
         </section>
     </div>
 @endsection

@@ -19,10 +19,6 @@ section {
         transform: rotate(-90deg);
         bottom: 158px;
         white-space: nowrap;
-        @media screen and (max-width: 414px) {
-            bottom: 0;
-            font-size: 22px;
-        }
     }
 }
 
@@ -38,41 +34,17 @@ section {
     text-transform: uppercase;
     text-decoration: underline;
     font-weight: 500;
-    @media screen and (max-width: 414px) {
-        font-size: 11px;
-        line-height: 18px;
-    }
 }
 
 .step {
     position: relative;
-    @media screen and (max-width: 414px) {
-        min-height: 220px;
-        background: #fe5000;
-        margin-bottom: 30px;
-        height: auto!important;
-        margin-top: 20px!important;
-    }
     &:nth-child(even) {
         &:before {
             margin-left: 133px;
         }
         .foto {
-            @media screen and (max-width: 414px) {
-                margin-left: 8%;
-                margin-top: 10px;
-                width: 40%;
-                img {
-                    width: 100%;
-                    max-width: 100%;
-                }
-            }
             &::before {
                 margin-left: -201px;
-                @media screen and (max-width: 414px) {
-                    margin-left: -72%;
-                    bottom: 47%;
-                }
             }
         }
     }
@@ -81,22 +53,8 @@ section {
             margin-left: 103px;
         }
         .foto {
-            @media screen and (max-width: 414px) {
-                margin-left: 8%;
-                margin-top: 10px;
-                width: 40%;
-                right: 8%;
-                img {
-                    width: 100%;
-                    max-width: 100%;
-                }
-            }
             &::before {
                 margin-left: 155px;
-                @media screen and (max-width: 414px) {
-                    margin-left: 46%;
-                    bottom: 47%;
-                }
             }
         }
     }
@@ -109,9 +67,6 @@ section {
         position: absolute;
         z-index: -1;
         margin-top: 44px;
-        @media screen and (max-width: 414px) {
-            display: none;
-        }
     }
     &:after {
         content: '';
@@ -123,9 +78,6 @@ section {
         position: absolute;
         z-index: 2;
         top: 60px;
-        @media screen and (max-width: 414px) {
-            display: none;
-        }
     }
     &:nth-child(even) {
         &:after {
@@ -163,11 +115,6 @@ section {
     -webkit-transition: background 0.6s;
     background-size: contain;
     margin-top: 15px;
-    @media screen and (max-width: 414px) {
-        margin-right: 0;
-        width: 144px;
-        height: 40px;
-    }
     &:hover {
         background: url('../images/bt_sim_over.png') left no-repeat;
         transition: background 0.6s;
@@ -185,10 +132,6 @@ section {
     background-size: contain;
     -webkit-transition: background 0.6s;
     margin-top: 15px;
-    @media screen and (max-width: 414px) {
-        width: 144px;
-        height: 40px;
-    }
     &:hover {
         background: url('../images/bt_nao_over.png') left no-repeat;
         transition: background 0.6s;
@@ -229,23 +172,20 @@ section {
 
 .bt_vejamapa {
     display: inline-block;
-    width: 125px;
-    height: 19px;
+    width: 27%;
+    height: 50%;
     position: absolute;
     transition: background .6s;
     -webkit-transition: background .6s;
     right: 0;
     margin-top: 9px;
-    background: url('../images/vejaomapa.png') left no-repeat;
+    background: url(../images/vejaomapa.png) left no-repeat;
     text-indent: -9999px;
-    @media screen and (max-width: 414px) {
-        width: 105px;
-        height: 19px;
-        background-size: contain;
-    }
+    background-size: contain;
     &:hover {
         opacity: 0.7;
         background: url('../images/vejaomapa.png') left no-repeat;
+        background-size: contain;
         transition: background 0.6s;
         -webkit-transition: background 0.6s;
     }
@@ -268,76 +208,124 @@ section {
 }
 
 .step-02 {
-    background: url('../images/background-step-02.png') center no-repeat;
-    height: 544px;
-    @media screen and (max-width: 414px) {
-        height: auto;
-        margin-top: 50px;
+    margin-top: 5%;
+    .gelo1 {
+        position: relative;
+        float: left;
+        left: 50%;
+        margin-left: 1%;
+        width: 12%;
+        z-index: 1;
     }
-    h3 {
-        color: #fe5000;
-        font-size: 18px;
-        line-height: 27px;
-        text-transform: uppercase;
-        font-weight: 500;
-        text-decoration: underline;
+    .gelo2 {
+        position: relative;
+        float: left;
+        left: 50%;
+        margin-left: -5%;
+        width: 12%;
+        z-index: 1;
+        margin-top: 4%;
+    }
+    .taca2 {
+        position: relative;
+        float: left;
+        left: 50%;
+        margin-left: -29%;
+        width: 40%;
+        margin-top: 15%;
     }
     .doit {
-        margin-left: 80px;
+        margin-top: 4%;
+        left: 50%;
+        width: 27%;
+        position: relative;
+        z-index: 3;
         float: left;
-        margin-top: 20px;
-        @media screen and (max-width: 414px) {
-            margin-left: 0;
-            float: none;
-            margin-top: 50px;
-            img {
-                width: 50%;
-                margin: 0 auto;
-                display: block;
-            }
-        }
+        margin-left: -12%;
+        z-index: 3;
+    }
+    .laranja {
+        margin-top: 4%;
+        left: 50%;
+        width: 25%;
+        position: relative;
+        z-index: 2;
+        float: left;
+        margin-left: -40%;
     }
     .text-doit {
-        width: 120px;
+        margin-top: 22%;
+        left: 50%;
+        width: 13%;
+        position: relative;
+        z-index: 2;
         float: left;
-        margin-left: 190px;
-        margin-top: 200px;
-    }
-    .doit-mobile {
-        @media screen and (max-width: 414px) {
-            margin: 0 auto;
-            width: 100%;
-            img {
-                width: 100%;
-                max-width: 100%;
-                display: block;
-                margin: 0 auto;
-            }
+        margin-left: -32%;
+        h3 {
+            color: #fe5000;
+            font-size: 18px;
+            line-height: 27px;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-decoration: underline;
+            line-height: 2.7vw;
+            font-size: 2.0vw;
+            letter-spacing: 0.1vw;
         }
     }
     .recipe {
-        margin-top: 45px;
+        margin-top: -16.4%;
         font-size: 22px;
         line-height: 29px;
         text-transform: uppercase;
         color: #fe5000;
         font-weight: bold;
+        position: relative;
+        float: left;
+        left: 50%;
+        margin-left: -33%;
+        width: 70%;
+        clear: both;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #48413e;
+        }
         .part3,
         .part2,
         .part1 {
-            width: 180px;
+            width: 32%;
             float: left;
+            text-align: center;
+            line-height: 2.7vw;
+            font-size: 2vw;
+            letter-spacing: 0.1vw;
+            padding-top: 3%;
+            position: relative;
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 2%;
+                height: 33%;
+                background-color: #fe5000;
+                margin-top: -15%;
+                left: 50%;
+                margin-left: -1%;
+            }
+            span {
+                line-height: 5.7vw;
+                font-size: 7vw;
+                float: left;
+                margin-right: -15%;
+            }
         }
-        .part3 {
-            margin-left: 260px;
-        }
-        .part2 {
-            margin-left: 45px;
-        }
-        .part1 {
-            width: 190px;
-            margin-left: 25px;
-        }
+        .part3 {}
+        .part2 {}
+        .part1 {}
     }
 }
 
@@ -347,24 +335,10 @@ section {
     .tit {
         margin-left: 422px;
         margin-top: 65px;
-        @media screen and (max-width: 414px) {
-            margin-left: 45%;
-            margin-top: 5px;
-            width: 50%;
-            max-width: 100%;
-        }
     }
     .desc {
         margin-left: 465px;
         margin-top: 41px;
-        @media screen and (max-width: 414px) {
-            margin-left: 0;
-            position: absolute;
-            right: 0;
-            width: 46%;
-            margin-top: 10px;
-            padding-right: 10px;
-        }
     }
     .foto {
         left: 0;
@@ -390,32 +364,15 @@ section {
     .tit {
         margin-left: 264px;
         margin-top: 58px;
-        @media screen and (max-width: 414px) {
-            margin-left: 5%;
-            margin-top: 5px;
-            width: 50%;
-            max-width: 100%;
-        }
     }
     .desc {
         margin-left: 267px;
         margin-top: 26px;
-        @media screen and (max-width: 414px) {
-            margin-left: 5%;
-            margin-top: 6px;
-            width: 48%;
-        }
     }
     .foto {
         right: 0;
         right: 155px;
         margin-top: 9px;
-        @media screen and (max-width: 414px) {
-            margin-left: 48%;
-            margin-top: 10px;
-            width: 40%;
-            right: 5%;
-        }
     }
 }
 
@@ -424,24 +381,10 @@ section {
     .tit {
         margin-left: 377px;
         margin-top: 55px;
-        @media screen and (max-width: 414px) {
-            margin-left: 45%;
-            margin-top: 5px;
-            width: 50%;
-            max-width: 100%;
-        }
     }
     .desc {
         margin-left: 455px;
         margin-top: 11px;
-        @media screen and (max-width: 414px) {
-            margin-left: 0;
-            position: absolute;
-            right: 0;
-            width: 46%;
-            margin-top: 10px;
-            padding-right: 10px;
-        }
     }
     .foto {
         left: 0;
@@ -455,88 +398,79 @@ section {
     .tit {
         margin-left: 247px;
         margin-top: 65px;
-        @media screen and (max-width: 414px) {
-            margin-left: 5%;
-            margin-top: 5px;
-            width: 50%;
-            max-width: 100%;
-        }
     }
     .desc {
         margin-left: 256px;
         margin-top: 2px;
-        @media screen and (max-width: 414px) {
-            margin-left: 5%;
-            margin-top: 6px;
-            width: 48%;
-        }
     }
     .foto {
         right: 165px;
         margin-top: 10px;
-        @media screen and (max-width: 414px) {
-            margin-left: 48%;
-            margin-top: 10px;
-            width: 40%;
-            right: 5%;
-        }
     }
 }
 
 .step-07 {
-    background: url('../images/background-step-07.png') center bottom no-repeat;
-    height: 865px;
-    @media screen and (max-width: 414px) {
-        background: url();
-        height: auto;
-    }
+    clear: both;
     .main_tit {
         font-size: 44px;
         line-height: 50px;
         font-weight: 700;
         color: #403c3b;
         letter-spacing: 5px;
-        margin-left: 70px;
+        margin-left: 6%;
+        line-height: 4.7vw;
+        font-size: 4.7vw;
+        letter-spacing: 0.4vw;
+        float: left;
+        position: relative;
         strong {
             display: block;
             color: #fe5000;
         }
-        @media screen and (max-width: 414px) {
-            font-size: 32px;
-            line-height: 38px;
-            margin-left: 5%;
-        }
+    }
+    .img-festas {
+        position: relative;
+        float: left;
+        left: 50%;
+        margin-left: -28%;
+        width: 72%;
+        margin-top: 1%;
+        clear: both;
     }
     .party {
+        background-color: $color-orange;
         float: left;
-        margin-top: 339px;
-        margin-left: 93px;
-        width: 505px;
-        padding-top: 36px;
-        padding-left: 110px;
-        padding-right: 31px;
-        @media screen and (max-width: 414px) {
-            margin-top: 19px;
-            width: 100%;
-            margin-left: 0;
-            padding-left: 20px;
-            padding-right: 20px;
-            background-color: #fe5000;
-            float: none;
+        position: relative;
+        margin-top: -17%;
+        margin-left: -40%;
+        width: 50%;
+        left: 50%;
+        padding-top: 3%;
+        padding-bottom: 11%;
+        padding-left: 11%;
+        padding-right: 3%;
+        clear: both;
+        &:before {
+            content: '';
+            display: block;
+            width: 22%;
+            height: 15%;
+            position: absolute;
+            margin-top: -5%;
+            margin-left: -32%;
+            background: url(../images/sol.png) center bottom no-repeat;
+            background-size: contain;
         }
         .tit {
             color: #fff;
             line-height: 41px;
             font-size: 41px;
-            letter-spacing: 2px;
             font-weight: 600;
             text-transform: uppercase;
-            min-height: 82px;
-            padding-right: 25px;
-            @media screen and (max-width: 414px) {
-                line-height: 28px;
-                font-size: 26px;
-            }
+            padding-right: 5%;
+            line-height: 4.4vw;
+            font-size: 4vw;
+            letter-spacing: 0.2vw;
         }
         .sub_tit {
             color: #3f3c3b;
@@ -545,46 +479,43 @@ section {
             text-transform: uppercase;
             font-weight: 600;
             display: block;
+            line-height: 2.1vw;
+            font-size: 1.8vw;
+            letter-spacing: 0.1vw;
         }
         p {
             color: #fff;
             line-height: 26px;
             font-size: 16px;
             text-transform: uppercase;
-            margin-top: 15px;
+            margin-top: 6%;
             text-decoration: underline;
-            @media screen and (max-width: 414px) {
-                line-height: 21px;
-                font-size: 11px;
-            }
+            line-height: 2.7vw;
+            font-size: 1.7vw;
+            letter-spacing: 0.1vw;
         }
         #partyText {
             overflow: auto;
-            height: 178px;
-            @media screen and (max-width: 414px) {
-                height: 138px;
-            }
         }
     }
     .party-calendar {
-        width: 290px;
-        float: right;
-        margin-right: 77px;
-        margin-top: 510px;
-        @media screen and (max-width: 414px) {
-            margin-top: 30px;
-            float: none;
-            width: 100%;
-            padding-left: 5%;
-        }
+        width: 30%;
+        float: left;
+        margin-left: 4.1%;
+        margin-top: 1%;
+        position: relative;
+        left: 50%;
         .tit {
             color: #fe5000;
             font-size: 17px;
             letter-spacing: 10px;
             text-transform: uppercase;
-            font-weight: 500;
+            font-weight: bold;
             border-bottom: solid 1px #fe5000;
             padding-bottom: 9px;
+            line-height: 2.3vw;
+            font-size: 2.3vw;
+            letter-spacing: 0.5vw;
         }
         a {
             display: block;
@@ -597,16 +528,22 @@ section {
             font-weight: 700;
             text-transform: uppercase;
             position: relative;
-            margin-top: -2px;
-            padding-top: 2px;
-            padding-bottom: 2px;
+            margin-top: -1%;
+            padding-top: 2%;
+            padding-bottom: 1%;
             letter-spacing: 0;
+            line-height: 2.8vw;
+            font-size: 1.0vw;
+            letter-spacing: 0.2vw;
             span {
                 font-size: 11px;
                 line-height: 38px;
                 font-weight: 400;
-                margin-left: 10px;
+                margin-left: 2%;
                 letter-spacing: 0px;
+                line-height: 2.8vw;
+                font-size: 0.8vw;
+                letter-spacing: 0.1vw;
             }
             &.active {
                 font-weight: bold;
@@ -631,90 +568,86 @@ section {
                 //         top: 13px;
                 //     }
             }
+            &:active {
+                text-decoration: none;
+            }
             &:after {
                 display: block;
                 width: 10px;
                 height: 10px;
                 content: '';
                 position: absolute;
-                right: 10px;
+                right: 1%;
                 background: url(../images/plus.png) center bottom no-repeat;
-                top: 13px;
+                top: 49%;
             }
         }
     }
 }
 
 .step-08 {
-    height: 488px;
-    margin-top: 28px;
+    clear: both;
+    margin-top: 5%;
     position: relative;
-    @media screen and (max-width: 414px) {
-        height: 950px;
-    }
     .main_tit {
         font-size: 44px;
         line-height: 50px;
         font-weight: 700;
         color: #fe5000;
         letter-spacing: 5px;
-        margin-left: 70px;
+        margin-left: 10%;
+        line-height: 4.7vw;
+        font-size: 4.7vw;
+        letter-spacing: 0.4vw;
+        float: left;
+        position: relative;
+        z-index: 5;
+        clear: both;
         strong {
             display: block;
             color: #403c3b;
         }
-        @media screen and (max-width: 414px) {
-            font-size: 29px;
-            line-height: 33px;
-            margin-left: 5%;
-        }
+    }
+    .kombi-side {
+        position: absolute;
+        top: 12%;
+        width: 54%;
+        right: 0;
+        margin-right: 0;
     }
     .kombi {
-        position: absolute;
-        top: 0px;
-        right: 273px;
+        position: relative;
+        top: 0;
+        left: 0;
         z-index: 3;
-        @media screen and (max-width: 414px) {
-            top: 430px;
-            right: 52%;
-            width: 48%;
-            img {
-                width: 100%;
-                max-width: 100%;
-            }
-        }
+        margin-left: 0;
+        width: 36%;
+        float: left;
+        margin-top: 0;
+        margin-right: 3%;
     }
     .mapas {
-        width: 554px;
-        margin-top: 17px;
-        position: absolute;
-        @media screen and (max-width: 414px) {
-            width: 100%;
-            max-width: 100%;
-            position: relative;
-        }
+        width: 55%;
+        margin-top: 2%;
+        position: relative;
+        float: left;
+        clear: both;
+        left: 50%;
+        margin-left: -50%;
         iframe {
-            width: 553px;
-            height: 367px;
-            @media screen and (max-width: 414px) {
-                width: 100%;
-                max-width: 100%;
-            }
+            width: 100%;
+            height: 70vh;
         }
     }
     .kombi-desc {
-        width: 240px;
-        float: right;
-        margin-top: 8px;
-        margin-right: 17px;
-        position: absolute;
-        right: 8px;
-        @media screen and (max-width: 414px) {
-            float: none;
-            width: 47%;
-            margin-top: 388px;
-            margin-right: 0;
-        }
+        width: 100%;
+        float: left;
+        margin-top: 0;
+        margin-left: 0;
+        position: relative;
+        left: 0;
+        clear: both;
+        margin-left: 0;
         p {
             font-size: 11px;
             line-height: 23px;
@@ -723,31 +656,23 @@ section {
             color: #fe5000;
             text-decoration: underline;
             text-transform: uppercase;
+            line-height: 2.1vw;
+            font-size: 1vw;
+            letter-spacing: 0.1vw;
             strong {
                 color: #403c3b;
                 text-decoration: underline;
             }
-            @media screen and (max-width: 414px) {
-                font-size: 8px;
-                line-height: 13px;
-            }
         }
     }
     .kombi-calendar {
-        width: 407px;
-        float: right;
-        margin-right: 51px;
-        margin-top: 151px;
-        overflow: auto;
-        height: 228px;
-        padding-right: 20px;
-        @media screen and (max-width: 414px) {
-            width: 100%;
-            padding-right: 0;
-            margin-right: 0;
-            padding-left: 5%;
-            height: auto;
-        }
+        width: 67%;
+        float: none;
+        margin-left: 0;
+        margin-top: 12%;
+        position: relative;
+        left: 22%;
+        clear: both;
         .tit {
             color: #fe5000;
             font-size: 17px;
@@ -760,19 +685,20 @@ section {
         p {
             display: block;
             border-bottom: solid 1px #fe5000;
-            height: 39px;
+            min-height: 39px;
             font-size: 11px;
             line-height: 34px;
             color: #3e3c3c;
             font-weight: 700;
             text-transform: uppercase;
             position: relative;
-            margin-top: -2px;
-            padding-top: 2px;
-            padding-bottom: 2px;
-            @media screen and (max-width: 414px) {
-                font-size: 9px;
-            }
+            margin-top: -1%;
+            padding-top: 2%;
+            padding-bottom: 1%;
+            letter-spacing: 0;
+            line-height: 2.8vw;
+            font-size: 1.0vw;
+            letter-spacing: 0.2vw;
             &.active {
                 font-weight: bold;
                 span {
@@ -784,35 +710,39 @@ section {
                 line-height: 38px;
                 font-weight: 400;
                 margin-left: 5px;
-                @media screen and (max-width: 414px) {
-                    margin-left: 10px;
-                    font-size: 9px;
-                }
+                margin-left: 2%;
+                letter-spacing: 0px;
+                line-height: 2.8vw;
+                font-size: 0.8vw;
+                letter-spacing: 0.1vw;
             }
         }
     }
 }
 
 .step-09 {
-    background: url('../images/background-step-09.png') center no-repeat;
-    height: 556px;
-    @media screen and (max-width: 414px) {
-        height: auto;
-        background: url() $color-orange;
+    margin-top: 10%;
+    position: relative;
+    clear: both;
+    .gelo {
+        position: absolute;
+        float: left;
+        left: 50%;
+        margin-left: -50%;
+        width: 12%;
+        z-index: 4;
+        opacity: 0.8;
     }
     .text {
+        margin-top: 0%;
+        left: 50%;
+        width: 49%;
+        background: #fe5000;
+        position: relative;
+        z-index: 2;
+        padding: 10.5% 6% 10% 9%;
         float: left;
-        margin-top: 12px;
-        margin-left: 4px;
-        width: 508px;
-        padding-top: 88px;
-        padding-left: 110px;
-        padding-right: 31px;
-        @media screen and (max-width: 414px) {
-            float: none;
-            width: 100%;
-            padding: 5%;
-        }
+        margin-left: -49%;
         .tit {
             color: #fff;
             line-height: 41px;
@@ -820,10 +750,10 @@ section {
             letter-spacing: 12px;
             font-weight: 600;
             text-transform: uppercase;
-            @media screen and (max-width: 414px) {
-                line-height: 35px;
-                font-size: 31px;
-            }
+            text-transform: uppercase;
+            line-height: 4.4vw;
+            font-size: 4vw;
+            letter-spacing: 1.2vw;
         }
         p {
             color: #fff;
@@ -833,11 +763,9 @@ section {
             margin-top: 34px;
             text-decoration: underline;
             letter-spacing: 3px;
-            @media screen and (max-width: 414px) {
-                line-height: 25px;
-                font-size: 14px;
-                margin-top: 14px;
-            }
+            line-height: 3.4vw;
+            font-size: 2vw;
+            letter-spacing: 0.2vw;
             span {
                 font-weight: bold;
                 color: #403c3b;
@@ -845,37 +773,84 @@ section {
             }
         }
     }
+    .laranja2 {
+        margin-top: -10%;
+        left: 50%;
+        width: 25%;
+        position: relative;
+        z-index: 2;
+        float: left;
+        margin-left: -23%;
+    }
     .mural {
-        position: absolute;
-        width: 510px;
-        height: 511px;
+        position: relative;
+        width: 50%;
         overflow: hidden;
-        right: 0;
-        @media screen and (max-width: 414px) {
-            position: relative;
-            width: 100%;
-            height: auto;
-        }
+        left: 50%;
+        margin-left: 0;
+        margin-top: -1%;
+        z-index: 5;
         .insta {
-            display: block;
+            display: inline-block;
+            position: relative;
+            width: 33%;
+            height: auto;
+            font-size: 0!important;
+            line-height: 0!important;
             float: left;
             &:nth-child(4) {
-                opacity: 0;
+                opacity: 1;
                 pointer-events: none;
-            }
-            @media screen and (max-width: 414px) {
-                width: 33%;
+                a {
+                    background-color: $color-orange;
+                    img {
+                        opacity: 0;
+                    }
+                }
+                &:before {
+                    content: '';
+                    display: block;
+                    width: 72%;
+                    height: 35%;
+                    z-index: 4;
+                    position: absolute;
+                    margin-top: 9%;
+                    margin-left: 38%;
+                    background: url(../images/sol.png) center bottom no-repeat;
+                    background-size: contain;
+                }
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 72%;
+                    height: 35%;
+                    z-index: 4;
+                    position: absolute;
+                    margin-top: -41%;
+                    margin-left: -22%;
+                    background: url(../images/gelo2.png) center bottom no-repeat;
+                    background-size: contain;
+                }
             }
             a {
                 position: relative;
                 display: block;
-                width: 170px;
-                height: 170px;
+                width: 33%;
+                height: auto;
+                min-height: 170px;
                 background-size: cover;
                 cursor: pointer;
-                @media screen and (max-width: 414px) {
+                width: 100%;
+                height: 100%;
+                img {
+                    border: none;
+                    max-width: 100%;
                     width: 100%;
-                    height: 136px;
+                    border: none;
+                    max-width: 100%;
+                    width: 100%;
+                    height: auto;
+                    max-height: 150%;
                 }
                 &:hover {
                     cursor: pointer;
@@ -894,8 +869,8 @@ section {
                         display: block;
                         width: 34px;
                         height: 34px;
-                        top: 69px;
-                        left: 69px;
+                        top: 45%;
+                        left: 45%;
                         background-image: url('../images/instaimage.png');
                         position: absolute;
                         pointer-events: none;
@@ -904,11 +879,5 @@ section {
                 }
             }
         }
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .row {
-        margin: 0!important;
     }
 }

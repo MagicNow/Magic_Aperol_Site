@@ -2,32 +2,25 @@ footer {
     background: url('../images/background-image-footer.png') center top no-repeat;
     padding-bottom: 10px;
     border-bottom: 10px solid $color-orange;
-    padding-top: 24px;
+    padding-top: 5%;
     font-weight: bold;
     // Logo
     .logo {
-        background: url(../images/logo-small.png) no-repeat;
-        height: 69px;
-        text-indent: -99999px;
-        width: 69px;
-        margin-left: 78px;
-        margin-top: 35px;
-        @media screen and (max-width: 414px) {
-            margin: 10px auto;
-        }
+        overflow: hidden;
+        margin-left: 8%;
+        margin-top: 2%;
+        width: 5%;
+        height: 20%;
+        position: relative;
+        float: left;
     }
     // Contact
     .contact {
-        width: 417px;
-        margin-left: 172px;
-        margin-top: 50px;
-         @media screen and (max-width: 414px) {
-            width: 100%;
-            padding: 5%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0;
-        }
+        position: relative;
+        float: left;
+        width: 40%;
+        margin-left: 17%;
+        margin-top: 3%;
         span {
             display: block;
             a {
@@ -41,14 +34,12 @@ footer {
     }
     // Social Mídia
     .social-midia {
-        margin-left: 70px;
         letter-spacing: 5px;
-        width: 210px;
-        margin-top: 77px;
-        @media screen and (max-width: 414px) {
-          margin: 5px auto;
-          width: 62%;
-        }
+        position: relative;
+        float: left;
+        width: 12%;
+        margin-left: 7%;
+        margin-top: 4%;
         ul {
             display: inline-block;
             li {
