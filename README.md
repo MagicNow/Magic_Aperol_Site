@@ -4,7 +4,7 @@
 Aerol é uma aplicação feita com Laravel 5.3.
 
 
-* Clone o repositório para sua máquina local ou remóta, siga os comandos:
+* Clone o repositório para sua máquina local ou remota, siga os comandos:
 
 
 * É necessário ter o gerenciador de dependência do PHP [Composer](https://getcomposer.org/) e [Nasty Popsicle Machine (NPM)](https://www.npmjs.com/) e o [Gulp](http://gulpjs.com/). Se ainda não tem instalado use a [Documentação do Composer](https://getcomposer.org/doc/00-intro.md), [Documentação do NPM](https://docs.npmjs.com/) e [Documentação do Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md).
