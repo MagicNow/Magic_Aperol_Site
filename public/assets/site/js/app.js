@@ -1613,8 +1613,8 @@ $(document).ready(function() {
         // });
 
     });
-    $('.kombi-calendar').niceScroll({ cursorcolor: "#fe5000" });
-    $('#partyText').niceScroll({ cursorcolor: "#fe5000" });
+    // $('.kombi-calendar').niceScroll({ cursorcolor: "#fe5000" });
+    // $('#partyText').niceScroll({ cursorcolor: "#fe5000" });
 
     $("#bt-menu").click(function(e) {
         e.preventDefault();
@@ -1642,23 +1642,19 @@ $(document).ready(function() {
             }
         }
     });
+
     //age gate
     $("#sim").click(function(e) {
         e.preventDefault();
-
         location.href = 'home.html'
-
     });
 
     $("#nao").click(function(e) {
         e.preventDefault();
-
         $('.age-gate h2').hide();
         $('.selection').hide();
         $('#nope').fadeIn('slow');
     });
-
-
 
 
 });
