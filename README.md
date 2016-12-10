@@ -31,11 +31,7 @@ $ gulp admin-deploy && gulp
 
 * criar um banco de dados local com os dados que estão no arquivo .env
 
-database : aperol
-user: aperol
-pass: aperol@123
-
-* Importar a base de dados db_sump.sql que esta no root do projeto para a database aperol que foi criada localmente.
+* Importar a base de dados db_sump.sql para a database local
 
 * Pronto! Para iniciar um novo servidor local, use o comando:
 
