@@ -1,3 +1,11 @@
+html {
+    @media screen and (max-width: 414px) {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 body {
     background-color: $color-gray;
     font-family: 'Dosis', serif;
@@ -5,11 +13,13 @@ body {
     // max-width: 1024px;
     // width: 1024px;
     letter-spacing: 1.8px;
-      overflow-x: hidden;
+    overflow-x: hidden;
     position: relative;
     @media screen and (max-width: 414px) {
         width: 100%;
         max-width: 100%;
+        overflow-x: hidden;
+        margin: 0 auto;
     }
 }
 
@@ -72,7 +82,9 @@ a {
             font-size: 21px;
             line-height: 21px;
             &:first-child {
-                margin-right: 60px;
+                @media screen and (min-width: 414px) {
+                    margin-right: 60px;
+                }
             }
         }
     }
@@ -94,6 +106,11 @@ header {
         height: 40%;
         position: relative;
         float: left;
+        @media screen and (max-width: 414px) {
+            width: 21%;
+            margin-top: 3%;
+            margin-left: 4%;
+        }
     }
     #taca {
         position: relative;
@@ -105,11 +122,8 @@ header {
         pointer-events: none;
         float: left;
         @media screen and (max-width: 414px) {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            margin-left: -51%;
-            width: 90%;
+            margin-left: -71%;
+            width: 74%;
         }
     }
     .endless_summer {
@@ -121,14 +135,10 @@ header {
         left: 50%;
         width: 45%;
         @media screen and (max-width: 414px) {
-            width: 300px;
-            margin: 20% auto 0;
-            img {
-                width: 100%;
-                max-width: 100%;
-                display: block;
-                margin: 0 auto;
-            }
+            clear: both;
+            margin-top: -31%;
+            margin-left: -39%;
+            width: 85%;
         }
     }
     .text-head-wrapper {
@@ -143,11 +153,8 @@ header {
         }
         @media screen and (max-width: 414px) {
             #aperol {
-                position: absolute;
-                bottom: -15%;
-                pointer-events: none;
-                right: 0;
-                width: 40%;
+                margin-top: 98%;
+                width: 43%;
             }
         }
     }
@@ -162,11 +169,9 @@ header {
         float: left;
         margin-left: -18%;
         @media screen and (max-width: 414px) {
-            background-color: #fe5000;
-            padding: 20px 15% 20px 4%;
-            max-width: 90%;
-            margin-left: 8%;
-            margin-top: 5%;
+            clear: both;
+            width: 87%;
+            margin-left: -42%;
         }
         h2 {
             text-align: left;
@@ -177,8 +182,8 @@ header {
             font-size: 3.7vw;
             line-height: 4.3vw;
             @media screen and (max-width: 414px) {
-                font-size: 22px;
-                line-height: 28px;
+                font-size: 7.7vw;
+                line-height: 9.3vw;
             }
         }
         p {
@@ -200,11 +205,11 @@ header {
                 letter-spacing: 0.2vw;
             }
             @media screen and (max-width: 414px) {
-                font-size: 11px;
-                line-height: 18px;
+                line-height: 6.5vw;
+                font-size: 3.4vw;
                 strong {
-                    font-size: 13px;
-                    line-height: 22px;
+                    line-height: 6.5vw;
+                    font-size: 3.4vw;
                 }
             }
         }
@@ -218,6 +223,9 @@ header {
         margin-left: 40px;
         .fa {
             color: #f86f2e;
+        }
+        @media screen and (max-width: 414px) {
+            display: none;
         }
     }
     nav {
@@ -235,12 +243,15 @@ header {
         z-index: 11;
         position: absolute;
         right: 10%;
-        margin-top: 2%;
+        margin-top: 1%;
         z-index: 15;
         background-color: transparent;
         float: left;
         left: 50%;
         margin-left: 43.4%;
+        @media screen and (max-width: 414px) {
+            margin-left: 35.4%;
+        }
         @media screen and (min-width: 416px) {
             &:hover {
                 margin-right: -459px;
@@ -258,11 +269,7 @@ header {
                 }
             }
         }
-        @media screen and (max-width: 414px) {
-            right: 10px;
-            margin-top: -58px;
-            margin-right: 0;
-        }
+        @media screen and (max-width: 414px) {}
     }
     #menu {
         height: 100vh;
@@ -277,9 +284,7 @@ header {
         -o-transition: all 0.2s ease-in-out;
         -ms-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
-        @media screen and (max-width: 414px) {
-            max-width: 100%;
-        }
+        @media screen and (max-width: 414px) {}
         &.active {
             opacity: 100;
             pointer-events: all;
@@ -307,6 +312,8 @@ header {
             height: 100vh;
             @media screen and (max-width: 414px) {
                 width: 100%;
+                left: 0;
+                padding-top: 15%;
             }
             &:hover {
                 text-shadow: 0px 0px 6px #fff;

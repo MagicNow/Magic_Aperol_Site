@@ -13,7 +13,7 @@
               </ul>
             </div>
             <div class="row" id="aperolspritz">
-                   {{ Html::image('assets/images/logo-medium.png', '', array('class' => 'logo', 'id' => 'logo')) }}
+                   {{ Html::image('assets/images/logo_aperol.png', '', array('class' => 'logo', 'id' => 'logo')) }}
 
                {{ Html::image('assets/images/taca.png', '', array('class' => '', 'id' => 'taca')) }}
 
@@ -49,7 +49,7 @@
         <section class="step-02 clearfix">
 
                 {{ Html::image('assets/images/laranja.png', '', array('class' => 'laranja', 'id' => 'laranja')) }}
-                <div class="col-md-02 text-doit">
+                <div class="col-md-02 text-doit hidden-xs">
                     <h3>Em uma taça<br>
                     com gelo<br>
                     e uma fatia<br>
@@ -58,9 +58,18 @@
                   </h3>
                 </div>
                 {{ Html::image('assets/images/facaoseu.png', '', array('class' => 'doit', 'id' => 'doit')) }}
+
                 {{ Html::image('assets/images/gelo1.png', '', array('class' => 'gelo1', 'id' => 'gelo1')) }}
                 {{ Html::image('assets/images/gelo2.png', '', array('class' => 'gelo2', 'id' => 'gelo2')) }}
                 {{ Html::image('assets/images/taca.png', '', array('class' => 'taca2', 'id' => 'taca2')) }}
+               <div class="col-md-02 text-doit visible-xs-block">
+                    <h3>Em uma taça<br>
+                    com gelo<br>
+                    e uma fatia<br>
+                    de laranja<br>
+                    coloque:
+                  </h3>
+                </div>
                 <div class="recipe clearfix ">
                     <div class="part3"><span>3</span> partes de
                         <br> prosecco</div>
@@ -75,7 +84,9 @@
         <section class="step-07 clearfix" id="festascomaperol">
             <h2 class="main_tit">FESTAS COM
               <strong>#APEROLSPRITZ</strong></h2>
-              {{ Html::image('assets/images/foto_Festas.png', '', array('class' => 'img-festas img-responsive')) }}
+
+              {{ Html::image('assets/images/ondas.png', '', array('class' => 'img-festas-onda img-responsive')) }}
+              {{ Html::image('assets/images/foto_Festas.jpg', '', array('class' => 'img-festas img-responsive')) }}
             <div class="party">
                 <h2 class="tit">REVEILON<br>
                   DO GOSTOSO <br><span class="sub_tit">SãO MIGUEL DO GOSTOSO - RN</span></h2>
@@ -153,7 +164,7 @@
 
         </section>
 <section class="step-09 clearfix" id="endlesssummer">
-                {{ Html::image('assets/images/gelo1.png', '', array('class' => 'gelo', 'id' => 'gelo')) }}
+                {{ Html::image('assets/images/gelo1.png', '', array('class' => 'gelo hidden-xs', 'id' => 'gelo')) }}
             <div class="text">
                 <h2 class="tit">#Endless<br>
                   summer</h2>

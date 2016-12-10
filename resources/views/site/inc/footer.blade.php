@@ -1,6 +1,6 @@
     <footer>
 
-            {{ Html::image('assets/images/logo-medium.png', '', array('class' => 'logo', 'id' => 'logofooter')) }}
+            {{ Html::image('assets/images/logo_aperol.png', '', array('class' => 'logo', 'id' => 'logofooter')) }}
             <div class="col-xs-12 col-lg-4 text-center contact">
                 <span class="text-color-orange">
                   SAC: Tel: <a href="tel:08007737599">0800 7737599</a>
