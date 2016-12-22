@@ -22,9 +22,6 @@ $(document).ready(function() {
 
     var menu = $('#menu');
 
-    $(".party-calendar a").click(function(e) {
-        e.preventDefault();
-    });
 
     $(".bt_vejamapa").click(function(e) {
         e.preventDefault();
@@ -34,32 +31,6 @@ $(document).ready(function() {
         $(this).parent().addClass('active');
     });
 
-    $(".bt_detalhes_calendar").click(function(e) {
-        e.preventDefault();
-        var tit = $(this).data('tit');
-        var sub = $(this).data('sub');
-        var link = $(this).data('link');
-        var desc = $(this).data('desc');
-
-        var itemTit = $('.party .tit');
-        var itemSub = $('.party .sub_tit');
-        var itemLink = $('.party .bt_oevento');
-        var itemDesc = $('#partyText');
-        var party = $('.party');
-
-        // $('.bt_detalhes_calendar').removeClass('active');
-        // $(this).addClass('active');
-
-        // party.fadeOut('fast', function() {
-        //     itemTit.text(tit).append(itemSub.text(sub));
-        //     itemLink.attr('href', link);
-        //     itemDesc.text(desc);
-        //     party.fadeIn('slow');
-        // });
-
-    });
-    // $('.kombi-calendar').niceScroll({ cursorcolor: "#fe5000" });
-    // $('#partyText').niceScroll({ cursorcolor: "#fe5000" });
 
     $("#bt-menu").click(function(e) {
         e.preventDefault();

@@ -39,3 +39,6 @@ $ gulp admin-deploy && gulp
 $ php artisan serve
 ```
 
+* Edite os arquivos .html na pasta public (home.html e index.html).
+
+
