@@ -13,13 +13,14 @@ class HomeController extends Controller {
     {
         $section = 'users';
         $posts = Posts::where('active',1)->inRandomOrder()->limit(9)->get();
-
-        // if($request->session()->get('age') == 'sim'){
-        //     return view('site.home',compact('section','posts'));
-        // }else{
-        //     return view('site.age',compact('section','posts'));
-        // }
-        return view('site.home',compact('section','posts'));
+        if($request->session()->get('age') == 'sim'){
+            return view('site.home',compact('section','posts'));
+        }else{
+            
+            return view('site.age',compact('section','posts'));
+            
+        }
+        //return view('site.home',compact('section','posts'));
 
     }
 

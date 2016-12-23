@@ -1615,15 +1615,28 @@ $(document).ready(function() {
     });
 
     //age gate
+    // $("#sim").click(function(e) {
+    //     e.preventDefault();
+    //     location.href = 'home.html'
+    // });
+
+    // $("#nao").click(function(e) {
+    //     e.preventDefault();
+    //     $('.age-gate h2').hide();
+    //     $('.selection').hide();
+    //     $('#nope').fadeIn('slow');
+    // });
+
     $("#sim").click(function(e) {
-        e.preventDefault();
-        location.href = 'home.html'
+      e.preventDefault();
+        $.post("/age", function() {
+            location.reload();
+        });
     });
 
     $("#nao").click(function(e) {
         e.preventDefault();
-        $('.age-gate h2').hide();
-        $('.selection').hide();
+        $('.selection').fadeOut('fast');
         $('#nope').fadeIn('slow');
     });
 
