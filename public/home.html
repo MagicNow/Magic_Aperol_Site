@@ -1,6 +1,47 @@
-@extends('site/master')
+<!doctype html>
+<html class="no-js" lang="pt-BR" dir="ltr">
 
-@section('content')
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Aperol Spritz | Campari Brasil</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta name="csrf-token" content="O1Ep4iz4quqXWvgkDByylwKBD1YXTn6NQTcU87Jv">
+    <meta http-equiv="content-language" content="pt-br" />
+    <!-- <link rel="stylesheet" href="/aperol/assets/styles/owl.carousel.css"> -->
+    <link media="all" type="text/css" rel="stylesheet" href="assets/site/animate.css">
+    <link media="all" type="text/css" rel="stylesheet" href="assets/site/font-awesome.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="assets/site/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="assets/site/styles.css">
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PBZKKG3');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PBZKKG3" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="initial">
         <header class="clearfix">
             <div id="menu" class="pull-right">
@@ -38,7 +79,7 @@
             </div>
         </header>
     </div>
-
+    
     <div class="content clearfix">
         <section class="step-02 clearfix">
             <img src="assets/images/laranja.png" class="laranja" id="laranja" alt="">
@@ -73,9 +114,9 @@
         </section>
         <section class="step step-03">
             <!-- Influencer  -->
-            {{ Html::image('assets/images/andy.png', '', array('class' => 'tit')) }}
+            <img src="assets/images/andy.png" class="tit" alt="">
             <div class="foto">
-            {{ Html::image('assets/images/foto_andy.png', '', array('class' => '')) }}
+            <img src="assets/images/foto_andy.png" class="" alt="">
             </div>
             <p class="desc">É só ver as viagens dele que você sente
                 <br> mais vontade de viver o verão. 
@@ -104,9 +145,9 @@
                     <div class="playlist">
                         <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                         <div class="redes">
-                            <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/facebook.png', '', array('class' => '')) }}</a>
+                            <a href=""><img src="assets/images/siga.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/instagram.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/facebook.png" class="" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -114,9 +155,9 @@
         </section>
         <section class="step step-04">
             <!-- Influencer  -->
-            {{ Html::image('assets/images/maga.png', '', array('class' => 'tit')) }}
+            <img src="assets/images/maga.png" class="tit" alt="">
               <div class="foto">
-            {{ Html::image('assets/images/foto_maga.png', '', array('class' => '')) }}
+            <img src="assets/images/foto_maga.png" class="" alt="">
             </div>
             <p class="desc">Rapidinho você já percebe que ela
                 <br>está sempre fazendo alguma coisa
@@ -145,9 +186,9 @@
                     <div class="playlist">
                         <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                         <div class="redes">
-                            <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/facebook.png', '', array('class' => '')) }}</a>
+                            <a href=""><img src="assets/images/siga.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/instagram.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/facebook.png" class="" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -155,9 +196,9 @@
         </section>
         <section class="step step-05">
             <!-- Influencer  -->
-            {{ Html::image('assets/images/andre.png', '', array('class' => 'tit')) }}
+            <img src="assets/images/andre.png" class="tit" alt="">
               <div class="foto">
-            {{ Html::image('assets/images/foto_andre.png', '', array('class' => '')) }}
+            <img src="assets/images/foto_andre.png" class="" alt="">
             </div>
             <p class="desc">Quando você vê o que ele está
                 <br> fazendo dá até aquela vontade
@@ -187,9 +228,9 @@
                     <div class="playlist">
                         <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                         <div class="redes">
-                            <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/facebook.png', '', array('class' => '')) }}</a>
+                            <a href=""><img src="assets/images/siga.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/instagram.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/facebook.png" class="" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -197,9 +238,9 @@
         </section>
         <section class="step step-06">
             <!-- Influencer  -->
-            {{ Html::image('assets/images/luiza.png', '', array('class' => 'tit')) }}
+            <img src="assets/images/luiza.png" class="tit" alt="">
               <div class="foto">
-            {{ Html::image('assets/images/foto_luiza.png', '', array('class' => '')) }}
+            <img src="assets/images/foto_luiza.png" class="" alt="">
             </div>
             <p class="desc">Ela é uma mistura de viajante com
                 <br>fotógrafa fashion. A mistura deu certo
@@ -229,9 +270,9 @@
                     <div class="playlist">
                         <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                         <div class="redes">
-                            <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/facebook.png', '', array('class' => '')) }}</a>
+                            <a href=""><img src="assets/images/siga.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/instagram.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/facebook.png" class="" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -239,9 +280,9 @@
         </section>
         <section class="step step-10">
             <!-- Influencer  -->
-            {{ Html::image('assets/images/summer.png', '', array('class' => 'tit')) }}
+            <img src="assets/images/summer.png" class="tit" alt="">
               <div class="foto">
-            {{ Html::image('assets/images/foto_summer.png', '', array('class' => '')) }}
+            <img src="assets/images/foto_summer.png" class="" alt="">
             </div>
             <p class="desc">Se o lugar tem o espírito do verão,
                 <br>ele está lá. Ouça a playlist que nosso
@@ -271,9 +312,9 @@
                     <div class="playlist">
                         <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                         <div class="redes">
-                            <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
-                            <a href="">{{ Html::image('assets/images/facebook.png', '', array('class' => '')) }}</a>
+                            <a href=""><img src="assets/images/siga.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/instagram.png" class="" alt=""></a>
+                            <a href=""><img src="assets/images/facebook.png" class="" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -380,4 +421,37 @@
             <img src="assets/images/laranja.png " class="laranja2 " id="laranja2 " alt=" ">
         </section>
     </div>
-@endsection
+    <footer>
+        <img src="assets/images/logo_aperol.png " class="logo " id="logofooter " alt=" ">
+        <div class="col-xs-12 col-lg-4 text-center contact ">
+            <span class="text-color-orange ">
+                  SAC: Tel: <a href="tel:08007737599 ">0800 7737599</a>
+                  e-mail: <a href="mailto:camparibrasil@campari.com " target="_blank ">camparibrasil@campari.com</a>
+                </span>
+            <span class="text-color-orange highlight ">SE BEBER, NÃO DIRIJA. NÃO COMPARTILHE ESSE CONTEÚDO COM MENORES DE 18 ANOS.<br>
+                Conteúdo destinado apenas a maiores de 18 anos. Conteúdo impróprio pode ser removido.</span>
+        </div>
+        <div class="col-12 col-lg-4 social-midia ">
+            <span class="text-color-orange ">SIGA APEROL</span>
+            <ul class="no-bullet ">
+                <li class="icon-instagram ">
+                    <a href="https://www.instagram.com/APEROLSPRITZBRASIL/ " target="_blank ">Instagram</a>
+                </li>
+                <li class="icon-facebook ">
+                    <a href="https://www.facebook.com/aperolspritz.bra/?fref=ts " target="_blank ">Facebook</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!--
+    <script src="/scripts/src/jquery/jquery.min.js "></script>
+    <script src="/scripts/src/vendor/libs/bootstrap.min.js "></script>
+    <script src="/scripts/src/vendor/libs/owl.carousel.min.js "></script>
+  -->
+    <script type="text/javascript ">
+    var baseUrl = 'http://localhost:8000';
+    </script>
+    <script src="assets/site/js/app.js "></script>
+</body>
+
+</html>

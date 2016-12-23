@@ -1615,30 +1615,38 @@ $(document).ready(function() {
     });
 
     //age gate
-    // $("#sim").click(function(e) {
-    //     e.preventDefault();
-    //     location.href = 'home.html'
-    // });
-
-    // $("#nao").click(function(e) {
-    //     e.preventDefault();
-    //     $('.age-gate h2').hide();
-    //     $('.selection').hide();
-    //     $('#nope').fadeIn('slow');
-    // });
-
     $("#sim").click(function(e) {
-      e.preventDefault();
-        $.post("/age", function() {
-            location.reload();
-        });
+        e.preventDefault();
+        location.href = 'home.html'
     });
 
     $("#nao").click(function(e) {
         e.preventDefault();
-        $('.selection').fadeOut('fast');
+        $('.age-gate h2').hide();
+        $('.selection').hide();
         $('#nope').fadeIn('slow');
     });
 
+    // $("#sim").click(function(e) {
+    //   e.preventDefault();
+    //     $.post("/age", function() {
+    //         location.reload();
+    //     });
+    // });
 
+    // $("#nao").click(function(e) {
+    //     e.preventDefault();
+    //     $('.selection').fadeOut('fast');
+    //     $('#nope').fadeIn('slow');
+    // });
+
+    $('.bt_mais').click(function(e) {
+        e.preventDefault();
+        console.log($(this).parents().parents('.step').addClass('active'))
+        $(this).parents().parents('.step').addClass('active');
+    });
+    $('.bt_fechar').click(function(e) {
+        e.preventDefault();
+        $(this).parents().parents('.step').removeClass('active');
+    });
 });

@@ -93,9 +93,9 @@ section {
 
 .desc_details {
     display: none;
-    font-size: 16px;
+    font-size: 13px;
     width: 400px;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: 480px;
     line-height: 27px;
     color: #fff;
@@ -169,7 +169,8 @@ section {
     position: absolute;
     right: 0;
     margin-right: 29px;
-    margin-top: 49px;
+    margin-top: 80px;
+    z-index: 2;
 }
 
 .bt_vejamapa {
@@ -385,7 +386,118 @@ margin:60px 0;
         .part1 {}
     }
 }
+.step{
+    max-width: 1024px;
+    margin: 0 auto;
+    
+    .foto{
+        img{
+            z-index: 2;
+            position: relative;
+        }
+    }
+    .insta{
+            width: 100%;
+            background: #fe5000;
+            position: absolute;
+            left: 0;
+            height: 500px;
+            
+            h2{
+                font-size: 33px;
+                letter-spacing: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-transform: uppercase;
+                line-height: 3.4vw;
+                font-size: 3vw;
+                letter-spacing: 0.3vw;
+                padding-left:140px;
+                margin:80px 15px 15px;
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 131px;
+                    height: 35px;
+                    background-color: transparent;
+                    background: url(../images/title_detail.png) no-repeat;
+                    position: absolute;
+                    z-index: 2;
+                    top: 80px;
+                    left: 15px;
+                }
+                @media screen and (max-width: 414px) {
+                    line-height: 12.4vw;
+                    font-size: 11vw;
+                }
+            }
+            .mural{
+                .imagem{
+                    position: relative;
+                    float:left;
+                    width: 160px;
+                    height: 160px;
+                    a{
+                        width: 160px;
+                        height: 160px;
+                        display: block;
+                    }
+                    img{
+                        width: 160px;
+                        height: 160px;
+                    }
+                    
+                    &.big{
+                        width: 320px;
+                        height: 320px;
+                        a{
+                            width: 320px;
+                            height: 320px;
+                            display: block;
+                        }
+                        img{
+                            width: 320px;
+                            height: 320px;
+                        }
+                    }
+                }
+            }
+            .playlist{
+                float: right;
+                padding-right:30px;
+                text-align: right;
+                position: relative;
+                &::before{
+                    content: 'PLAYLIST Do Andy';
+                    display: block;
+                    background-color: transparent;
+                    position: absolute;
+                    z-index: 1;
+                    font-size: 34px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    -webkit-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    transform: rotate(-90deg);
+                    bottom: 200px;
+                    white-space: nowrap;
+                    left: -167px;
+                }
+                .redes{
+                    a{
+                        margin: 15px 7px;
+                        width: 30px;
+                        height: 30px;
+                        display: inline-block;
 
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+    }
+}
 .step-03 {
     height: 401px;
     margin-top: -42px;
@@ -403,7 +515,7 @@ margin:60px 0;
         margin-top: 10px;
     }
     &.active {
-        height: 839px;
+        height: 900px;
         .desc_details {
             display: block;
         }
@@ -431,6 +543,26 @@ margin:60px 0;
         right: 155px;
         margin-top: 9px;
     }
+    &.active {
+        height: 900px;
+        .desc_details {
+            display: block;
+            margin-left: 165px;
+        }
+        .desc {
+            display: none;
+        }
+        .bt_mais {
+            display: none;
+        }
+        .insta{
+            .playlist{                
+                &::before{
+                    content: 'PLAYLIST Da Magá';
+                }
+            }
+        }
+    }
 }
 
 .step-05 {
@@ -448,6 +580,25 @@ margin:60px 0;
         margin-left: 155px;
         margin-top: 10px;
     }
+    &.active {
+        height: 900px;
+        .desc_details {
+            display: block;
+        }
+        .desc {
+            display: none;
+        }
+        .bt_mais {
+            display: none;
+        }
+        .insta{
+            .playlist{                
+                &::before{
+                    content: 'PLAYLIST Do André';
+                }
+            }
+        }
+    }
 }
 
 .step-06 {
@@ -464,8 +615,62 @@ margin:60px 0;
         right: 165px;
         margin-top: 10px;
     }
+    &.active {
+        height: 900px;
+        .desc_details {
+            display: block;
+            margin-left: 165px;
+        }
+        .desc {
+            display: none;
+        }
+        .bt_mais {
+            display: none;
+        }
+        .insta{
+            .playlist{                
+                &::before{
+                    content: 'PLAYLIST Da Luiza';
+                }
+            }
+        }
+    }
 }
-
+.step-10 {
+    height: 401px;
+    .tit {
+        margin-left: 465px;
+        margin-top: 55px;
+    }
+    .desc {
+        margin-left: 465px;
+        margin-top: 11px;
+    }
+    .foto {
+        left: 0;
+        margin-left: 155px;
+        margin-top: 10px;
+    }
+    &.active {
+        height: 900px;
+        .desc_details {
+            display: block;
+        }
+        .desc {
+            display: none;
+        }
+        .bt_mais {
+            display: none;
+        }
+        .insta{
+            .playlist{                
+                &::before{
+                    content: 'PLAYLIST Do S.H';
+                }
+            }
+        }
+    }
+}
 .step-07 {
     clear: both;
     margin-top: 5%;
