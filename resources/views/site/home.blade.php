@@ -38,67 +38,7 @@
             </div>
         </header>
     </div>
-    <div class="lovers">
-        <section class="step step-03">
-            <!-- Influencer  -->
-            {{ Html::image('assets/images/raul.png', '', array('class' => 'tit')) }}
-            <div class="foto">
-            {{ Html::image('assets/images/foto_raul.png', '', array('class' => '')) }}
-            </div>
-            <p class="desc">Um cara que não tem tempo ruim.
-                <br> Parece até que todo dia pra ele
-                <br> é verão. Play na trilha do Raul.
-                <!-- <a href="#" class="bt_mais" id="detalhes_raul">MAIS</a> -->
-            </p>
-            <p class="desc_details">O Raul é fotógrafo, mas além de tirar umas
-              fotos incríveis, vive as festas e lugares mais <br>
-              surreais que você pode imaginar. Ele sabe bem<br>
-              como transformar tudo em verão e marcar <br>
-              a estação pra sempre, por isso ele está aqui<br>
-              com a gente, dá uma olhada.<br>
 
-                <!-- <a href="#" class="bt_fechar" id="fechar_raul">fechar</a> -->
-            </p>
-        </section>
-        <section class="step step-04">
-            <!-- Influencer  -->
-            {{ Html::image('assets/images/maga.png', '', array('class' => 'tit')) }}
-              <div class="foto">
-            {{ Html::image('assets/images/foto_maga.png', '', array('class' => '')) }}
-            </div>
-            <p class="desc">Rapidinho você já percebe que ela
-                <br>está sempre fazendo alguma coisa
-                <br>diferente. <!-- Ouça a playlist dela aqui. -->
-                <!-- <a href="#" class="bt_mais">MAIS</a> -->
-            </p>
-        </section>
-        <section class="step step-05">
-            <!-- Influencer  -->
-            {{ Html::image('assets/images/andre.png', '', array('class' => 'tit')) }}
-              <div class="foto">
-            {{ Html::image('assets/images/foto_andre.png', '', array('class' => '')) }}
-            </div>
-            <p class="desc">Quando você vê o que ele está
-                <br> fazendo dá até aquela vontade
-                <br> de tentar também. <!-- Pra melhorar
-                <br> no calor, tem também a playlist. -->
-                <!-- <a href="#" class="bt_mais">MAIS</a> -->
-            </p>
-        </section>
-        <section class="step step-06">
-            <!-- Influencer  -->
-            {{ Html::image('assets/images/luiza.png', '', array('class' => 'tit')) }}
-              <div class="foto">
-            {{ Html::image('assets/images/foto_luiza.png', '', array('class' => '')) }}
-            </div>
-            <p class="desc">Enquanto você lê aqui, provavelmente
-                <br>ela está fazendo alguma coisa que
-                <br>você vai querer participar.
-                <br><!-- Ouça a playlist do verão dela. -->
-                <!-- <a href="#" class="bt_mais">MAIS</a> -->
-            </p>
-        </section>
-    </div>
     <div class="content clearfix">
         <section class="step-02 clearfix">
             <img src="assets/images/laranja.png" class="laranja" id="laranja" alt="">
@@ -130,6 +70,78 @@
                 <div class="part1"><span>1</span> parte de água
                     <br> com gás</div>
             </div>
+        </section>
+        <section class="step step-03">
+            <!-- Influencer  -->
+            {{ Html::image('assets/images/andy.png', '', array('class' => 'tit')) }}
+            <div class="foto">
+            {{ Html::image('assets/images/foto_andy.png', '', array('class' => '')) }}
+            </div>
+            <p class="desc">É só ver as viagens dele que você sente
+                <br> mais vontade de viver o verão. 
+                <br> Play na trilha do Andy.
+                <a href="#" class="bt_mais" id="detalhes_raul">MAIS</a>
+            </p>
+            <p class="desc_details">O Raul é fotógrafo, mas além de tirar umas
+              fotos incríveis, vive as festas e lugares mais <br>
+              surreais que você pode imaginar. Ele sabe bem<br>
+              como transformar tudo em verão e marcar <br>
+              a estação pra sempre, por isso ele está aqui<br>
+              com a gente, dá uma olhada.<br>
+
+                <a href="#" class="bt_fechar" id="fechar_raul">fechar</a>
+            </p>
+        </section>
+        <section class="step step-04">
+            <!-- Influencer  -->
+            {{ Html::image('assets/images/maga.png', '', array('class' => 'tit')) }}
+              <div class="foto">
+            {{ Html::image('assets/images/foto_maga.png', '', array('class' => '')) }}
+            </div>
+            <p class="desc">Rapidinho você já percebe que ela
+                <br>está sempre fazendo alguma coisa
+                <br>diferente. <!-- Ouça a playlist dela aqui. -->
+                <a href="#" class="bt_mais">MAIS</a>
+            </p>
+        </section>
+        <section class="step step-05">
+            <!-- Influencer  -->
+            {{ Html::image('assets/images/andre.png', '', array('class' => 'tit')) }}
+              <div class="foto">
+            {{ Html::image('assets/images/foto_andre.png', '', array('class' => '')) }}
+            </div>
+            <p class="desc">Quando você vê o que ele está
+                <br> fazendo dá até aquela vontade
+                <br> de tentar também. Pra melhorar 
+                <br> no calor, tem também a playlist.
+                <a href="#" class="bt_mais">MAIS</a>
+            </p>
+        </section>
+        <section class="step step-06">
+            <!-- Influencer  -->
+            {{ Html::image('assets/images/luiza.png', '', array('class' => 'tit')) }}
+              <div class="foto">
+            {{ Html::image('assets/images/foto_luiza.png', '', array('class' => '')) }}
+            </div>
+            <p class="desc">Ela é uma mistura de viajante com
+                <br>fotógrafa fashion. A mistura deu certo
+                <br>e tem até trilha sonora.
+
+                <a href="#" class="bt_mais">MAIS</a>
+            </p>
+        </section>
+        <section class="step step-05">
+            <!-- Influencer  -->
+            {{ Html::image('assets/images/summer.png', '', array('class' => 'tit')) }}
+              <div class="foto">
+            {{ Html::image('assets/images/foto_summer.png', '', array('class' => '')) }}
+            </div>
+            <p class="desc">Se o lugar tem o espírito do verão,
+                <br>ele está lá. Ouça a playlist que nosso
+                <br>caçador fez pra você.
+
+                <a href="#" class="bt_mais">MAIS</a>
+            </p>
         </section>
         <section class="step-07 clearfix" id="festascomaperol">
             <h2 class="main_tit">FESTAS COM
