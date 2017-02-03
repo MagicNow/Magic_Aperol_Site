@@ -30,17 +30,17 @@ class ApiController extends Controller {
     {
         foreach ($results['data'] as $key => $value) {
             $post = Posts::where('post_id',$value['id'])->first();
-            if(!$post){
-               // $data['name']       = mb_convert_encoding($value['user']['full_name'], "UTF-8", "ASCII");
-                $data['nome']       = utf8_encode($value['user']['full_name']);
-                $data['username']   = $value['user']['username'];
-                $data['post_id']    = $value['id'];
-               // $data['descricao']  = mb_convert_encoding($value['caption']['text'], "UTF-8", "ASCII");
-                $data['descricao']  = utf8_encode($value['caption']['text']);
-                $data['link']       = $value['link'];
-                $data['image']      = $value['images']['standard_resolution']['url'];
-                $data['type']       = $value['type'];
-                $data['video']      = ($value['type'] == 'video') ?  $value['videos']['standard_resolution']['url'] : '';
+            if(!$post && isset($value['user']['full_name']) && !empty($value['user']['full_name'])){
+                $data = [
+                    'name' => utf8_encode($value['user']['full_name']),
+                    'username' => $value['user']['username'],
+                    'post_id' => $value['id'],
+                    'descricao' => utf8_encode($value['caption']['text']),
+                    'link' => $value['link'],
+                    'image' => $value['images']['standard_resolution']['url'],
+                    'type' => $value['type'],
+                    'video' => ($value['type'] == 'video') ?  $value['videos']['standard_resolution']['url'] : ''
+                ];
 
                 Posts::create($data);
             }

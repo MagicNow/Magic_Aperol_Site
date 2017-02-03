@@ -1617,7 +1617,7 @@ $(document).ready(function() {
     //age gate
     $("#sim").click(function(e) {
         e.preventDefault();
-        location.href = 'home.html'
+        location.href = 'home'
     });
 
     $("#nao").click(function(e) {

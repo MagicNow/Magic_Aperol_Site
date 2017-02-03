@@ -10,9 +10,10 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-Route::get('/', ['as'   => 'home','uses' => 'HomeController@index']);
-Route::post('/age', ['as'   => 'age','uses' => 'HomeController@ageGate']);
-Route::get('/getFotos', ['as'   => 'getFotos','uses' => 'HomeController@getFotos']);
+Route::get('/', ['as' => 'base', 'uses' => 'HomeController@index']);
+Route::get('/home', ['as' => 'home', 'uses' => 'HomeController@home']);
+Route::post('/age', ['as' => 'age', 'uses' => 'HomeController@ageGate']);
+Route::get('/getFotos', ['as' => 'getFotos','uses' => 'HomeController@getFotos']);
 
 
 Route::group(['prefix' => 'admin'], function() {
