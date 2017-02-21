@@ -14,15 +14,13 @@ class PostsController extends Controller
 {
     public function __construct()
     {
-        if (Auth::check()) {
-            return redirect()->route('admin.login');
-        }
+        $this->middleware('auth');
     }
 
     public function index()
     {
         $section = 'posts';
-        $posts = Posts::orderBy('id','desc')->get();
+        $posts = Posts::orderBy('id','desc')->paginate(30);
 
         return view('admin.posts.list',compact('posts','section'));
     }

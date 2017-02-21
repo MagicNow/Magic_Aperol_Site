@@ -11,7 +11,7 @@
 @section('main-content')
     <div class="box">
 
-		<div class="box-header"> <a href="{{ route('admin.users.create') }}" class="btn btn-primary">Novo Usuário</a></div><!-- /.box-header -->
+		<div class="box-header"> <a href="{{ url('/admin/register') }}" class="btn btn-primary">Novo Usuário</a></div><!-- /.box-header -->
 		@if (session('sucess'))
           <div class="alert alert-success">
               {{ session('sucess') }}

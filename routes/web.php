@@ -15,13 +15,8 @@ Route::get('/home', ['as' => 'home', 'uses' => 'HomeController@home']);
 Route::post('/age', ['as' => 'age', 'uses' => 'HomeController@ageGate']);
 Route::get('/getFotos', ['as' => 'getFotos','uses' => 'HomeController@getFotos']);
 
-
 Route::group(['prefix' => 'admin'], function() {
-	Route::get('/', ['as'=> 'admin.index','uses' => 'Admin\AdminController@index']);
-    Route::get('login', ['as'=> 'admin.login','uses' => 'Admin\AdminController@index']);
-    Route::post('login', ['uses' => 'Admin\AdminController@login']);
-    Route::post('password/reset', ['as'=> 'admin.password','uses' => 'Admin\AdminController@changePassword']);
-    Route::get('logout', ['as'=> 'admin.logout','uses' => 'Admin\AdminController@logout']);
+	Auth::routes();
 
     //USERS
     Route::get('users', ['as'=> 'admin.users','uses' => 'Admin\UsersController@index']);
@@ -31,10 +26,8 @@ Route::group(['prefix' => 'admin'], function() {
     Route::post('users/store/{id?}', ['as'=> 'admin.users.store','uses' => 'Admin\UsersController@store']);
 	
 	//POSTS
-
     Route::get('posts', ['as'=> 'admin.posts','uses' => 'Admin\PostsController@index']);
     Route::get('posts/status/{id}/{status}', ['as'=> 'admin.posts.status','uses' => 'Admin\PostsController@status']);
-
 });
 
 

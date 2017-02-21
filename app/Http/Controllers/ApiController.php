@@ -29,20 +29,24 @@ class ApiController extends Controller {
     public function setPost($results)
     {
         foreach ($results['data'] as $key => $value) {
-            $post = Posts::where('post_id',$value['id'])->first();
-            if(!$post && isset($value['user']['full_name']) && !empty($value['user']['full_name'])){
-                $data = [
-                    'name' => utf8_encode($value['user']['full_name']),
-                    'username' => $value['user']['username'],
-                    'post_id' => $value['id'],
-                    'descricao' => utf8_encode($value['caption']['text']),
-                    'link' => $value['link'],
-                    'image' => $value['images']['standard_resolution']['url'],
-                    'type' => $value['type'],
-                    'video' => ($value['type'] == 'video') ?  $value['videos']['standard_resolution']['url'] : ''
-                ];
+            try {
+                $post = Posts::where('post_id',$value['id'])->first();
+                if(!$post && isset($value['user']['full_name']) && !empty($value['user']['full_name'])){
+                    $data = [
+                        'name' => utf8_encode($value['user']['full_name']),
+                        'username' => $value['user']['username'],
+                        'post_id' => $value['id'],
+                        'descricao' => utf8_encode($value['caption']['text']),
+                        'link' => $value['link'],
+                        'image' => $value['images']['standard_resolution']['url'],
+                        'type' => $value['type'],
+                        'video' => ($value['type'] == 'video') ?  $value['videos']['standard_resolution']['url'] : ''
+                    ];
 
-                Posts::create($data);
+                    Posts::create($data);
+                }
+            } catch (Exception $e) {
+                // var_dump($e);
             }
         }
         

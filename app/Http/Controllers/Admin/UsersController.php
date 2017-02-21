@@ -17,26 +17,14 @@ class UsersController extends Controller
 {
     public function __construct()
     {
-        if (Auth::check()) {
-            return redirect()->route('admin.login');
-        }
+		$this->middleware('auth');
     }
 
     public function index()
     {
         $section = 'users';
         $users = User::where('id','<>',1)->get();
-        return view('admin.users.list',compact('users','section'));
-    }
-    
-   	public function create()
-    {
-        $section = 'users';
-        $types = [1 => 'ADMIN', 2 => 'MODERADOR', 3 => 'MEDIADOR'];
-        return view('admin.users.create', [
-            'section' => $section,
-            'types'   => $types,
-        ]);
+        return view('admin.users.list', compact('users','section'));
     }
 
     public function edit($id = null)

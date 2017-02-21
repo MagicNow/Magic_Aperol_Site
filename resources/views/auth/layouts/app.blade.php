@@ -6,12 +6,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html lang="en">
 
 @include('admin.partials.htmlheader')
-<body class="skin-blue sidebar-mini {!!$section!!}">
+<body class="skin-blue sidebar-mini">
 <div class="wrapper">
 
     @include('admin.partials.mainheader')
 
-    @include('admin.partials.sidebar')
+	<?php /*
+    @if(Auth::user()->id != 3)
+        @include('admin.partials.sidebar')
+    @endif
+	*/ ?>
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
