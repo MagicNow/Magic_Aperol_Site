@@ -90,8 +90,13 @@ $(document).ready(function() {
         console.log($(this).parents().parents('.step').addClass('active'))
         $(this).parents().parents('.step').addClass('active');
     });
+
     $('.bt_fechar').click(function(e) {
         e.preventDefault();
         $(this).parents().parents('.step').removeClass('active');
+    });
+
+    $('.filler-line').find('.filler').css("background-color", function( index ) {
+        return $(this).parent().find('.text').css('color'); // set color to filler by color text
     });
 });

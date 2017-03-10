@@ -21,14 +21,42 @@
                 <img src="assets/images/endless_summer.png" class="endless_summer" alt="">
                 <div class="text-head-wrapper">
                     <div class="text-head">
-                        <h2>COMO ETERNIZAR <br>O SEU VERÃO</h2>
-                        <p><span class="strike">Verão é olho no olho, muita água,
-                              <br> esquecer o caminho de volta pra casa,
-                              <br> sorrir com quase nada, amar todo
-                              <br> mundo com mais calor.<strong>
-                              <br> Aqui é o lugar pra você fazer</span>
-                            <br> a estação não ter fim.</strong>
-                        </p>
+                        <h2 class="component text-filler title">
+                            <span class="filler-line">
+                                <span class="text mode-layer">COMO ETERNIZAR</span>
+                                <span class="filler"></span>
+                            </span>
+                            <span class="filler-line">
+                                <span class="text mode-layer">O SEU VERÃO</span>
+                                <span class="filler"></span>
+                            </span>
+                        </h2>
+                        <p><span class="component text-filler strike">
+                            <span class="filler-line">
+                                <span class="text mode-layer">Verão é olho no olho, muita água,</span>
+                                <span class="filler"></span>
+                            </span>
+                            <span class="filler-line">
+                                <span class="text mode-layer">esquecer o caminho de volta pra casa,</span>
+                                <span class="filler"></span>
+                            </span>
+                            <span class="filler-line">
+                                <span class="text mode-layer">sorrir com quase nada, amar todo</span>
+                                <span class="filler"></span>
+                            </span>
+                            <span class="filler-line">
+                                <span class="text mode-layer">mundo com mais calor.</span>
+                                <span class="filler"></span>
+                            </span>
+                            <span class="filler-line">
+                                <span class="text mode-layer"><strong>Aqui é o lugar pra você fazer</strong></span>
+                                <span class="filler"></span>
+                            </span>
+                            <span class="filler-line">
+                                <span class="text mode-layer"><strong>a estação não ter fim.</strong></span>
+                                <span class="filler"></span>
+                            </span>
+                        </span></p>
                     </div>
                     <img src="assets/images/aperol_.png" class="" id="aperol" alt="">
                 </div>
@@ -324,13 +352,12 @@
                         <br> <strong>Dá uma olhada.</strong>
                     </p>
                     <div class="kombi-calendar">
-                        <p class="active"> 23/12 a 01/01 <span>São Miguel do Gostoso</span>
-                        <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254303.97497739337!2d-35.870630494803336!3d-5.183846540103131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b40c17ac8d2db5%3A0x9d130d6f66deb617!2sS%C3%A3o+Miguel+do+Gostoso+-+RN!5e0!3m2!1spt-BR!2sbr!4v1482435332480" class="bt_vejamapa">veja o mapa</a></p>
-                        <p> 05/01 <span>Kult Bar - Fortaleza/CE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3707396608465!2d-38.51169548524096!3d-3.729098897286884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7485cf63a62af%3A0x9b64fb9a1e6da86b!2sKult+Bar!5e0!3m2!1spt-BR!2sbr!4v1482435389693" class="bt_vejamapa">veja o mapa</a></p>
-                        <p> 06/01 <span> Órbita Bar - Fortaleza/CE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4037507244143!2d-38.52139868524111!3d-3.7218029972921776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74848d9289df5%3A0x24253774d75725fb!2s%C3%93rbita+Bar!5e0!3m2!1spt-BR!2sbr!4v1482435424919" class="bt_vejamapa">veja o mapa</a></p>
-                        <p> 07/01 a 08/01<span>Guarderia Brasil - Fortaleza/CE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.3042451459005!2d-38.45240768524095!3d-3.7437519972762763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7465172fc994b%3A0xf55dabc737354a61!2sGuarderia+Brasil!5e0!3m2!1spt-BR!2sbr!4v1482435456647" class="bt_vejamapa">veja o mapa</a></p>
-                        <p> 12/01 a 13/01  <span> Colosso Lake Lounge - Fortaleza/CE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1348114839116!2d-38.47184468524094!3d-3.780832997249468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c745eece2c2e0f%3A0x2380683623a21b9c!2sColosso+Lake+Lounge!5e0!3m2!1spt-BR!2sbr!4v1482435498326" class="bt_vejamapa">veja o mapa</a></p>
-                        <p> 14/01 a 15/01  <span> Cumbuco Duro Beach - Fortaleza/CE</span><a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15927.317492325812!2d-38.726742!3d-3.626422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c8703a8c3589fc0!2sDuro+Beach+Hotel!5e0!3m2!1spt-BR!2sbr!4v1482435544645" class="bt_vejamapa">veja o mapa</a></p>
+                        <p class="active"> 09/03 <span>Stuzzi Bar - Leblon</span>
+                            <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117537.24469686231!2d-43.29836318733525!3d-22.985597110028802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x9bd44b5bf8cdf3%3A0x82f167d9d66fc743!2sstuzzi+bar+rj!3m2!1d-22.9856125!2d-43.2283228!5e0!3m2!1spt-BR!2sbr!4v1489145145872" class="bt_vejamapa">veja o mapa</a></p>
+                        <p> 10 a 11/03 <span>Cafofo Pub - Botafogo</span>
+                            <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117568.36561824697!2d-43.25496808803026!3d-22.949806328626682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x997ff01ed6bf81%3A0x20ef40b0a52d5e7d!2scafofo+rj!3m2!1d-22.949821699999998!2d-43.184927699999996!5e0!3m2!1spt-BR!2sbr!4v1489145185957" class="bt_vejamapa">veja o mapa</a></p>
+                        <p> 12/03 <span>PRIMA Bruschetteria - Leblon</span>
+                            <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117537.25461672634!2d-43.29659258733546!3d-22.985585710034716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x9bd44ccbd8aa59%3A0x8017aaf00ba23d51!2sprima+bar+rj!3m2!1d-22.9856011!2d-43.2265522!5e0!3m2!1spt-BR!2sbr!4v1489145222743" class="bt_vejamapa">veja o mapa</a></p>
                     </div>
                 </div>
             </div>

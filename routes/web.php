@@ -20,11 +20,15 @@ Route::group(['prefix' => 'admin'], function() {
 
     //USERS
     Route::get('users', ['as'=> 'admin.users','uses' => 'Admin\UsersController@index']);
-    Route::get('users/create', ['as'=> 'admin.users.create','uses' => 'Admin\UsersController@create']);
-    Route::get('users/edit/{id}', ['as'=> 'admin.users.edit','uses' => 'Admin\UsersController@edit']);
 	Route::get('users/destroy/{id}', ['as'=> 'admin.users.destroy','uses' => 'Admin\UsersController@destroy']);
     Route::post('users/store/{id?}', ['as'=> 'admin.users.store','uses' => 'Admin\UsersController@store']);
-	
+
+    //LOGIN
+    Route::group(array('middleware' => 'auth'), function () {
+        Route::get('register', 'Auth\AuthController@showRegistrationForm');
+        Route::post('register', 'Auth\AuthController@register');
+    });
+
 	//POSTS
     Route::get('posts', ['as'=> 'admin.posts','uses' => 'Admin\PostsController@index']);
     Route::get('posts/status/{id}/{status}', ['as'=> 'admin.posts.status','uses' => 'Admin\PostsController@status']);

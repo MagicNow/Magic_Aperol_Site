@@ -181,6 +181,137 @@ set:function(k,c){var h=e.data(k,"__nicescroll")||!1;h&&h.ishwscroll?h.setScroll
 e)})}});e.fn.getNiceScroll=function(k){return"undefined"==typeof k?new C(this):e.data(this[k],"__nicescroll")||!1};e.extend(e.expr[":"],{nicescroll:function(k){return e.data(k,"__nicescroll")?!0:!1}});e.fn.niceScroll=function(k,c){"undefined"==typeof c&&("object"==typeof k&&!("jquery"in k))&&(c=k,k=!1);var h=new C;"undefined"==typeof c&&(c={});k&&(c.doc=e(k),c.win=e(this));var l=!("doc"in c);!l&&!("win"in c)&&(c.win=e(this));this.each(function(){var k=e(this).data("__nicescroll")||!1;k||(c.doc=l?
 e(this):c.doc,k=new N(c,e(this)),e(this).data("__nicescroll",k));h.push(k)});return 1==h.length?h[0]:h};window.NiceScroll={getjQuery:function(){return e}};e.nicescroll||(e.nicescroll=new C,e.nicescroll.options=F)})(jQuery);
 
+/*
+ * jquery.scrollIntoView
+ *
+ * Version: 0.1.20150317
+ *
+ * Copyright (c) 2015 Darkseal/Ryadel
+ * based on the work of Andrey Sidorov
+ * licensed under MIT license.
+ *
+ * Project Home Page:
+ * http://darkseal.github.io/jquery.scrolling/
+ * 
+ * GitHub repository:
+ * https://github.com/darkseal/jquery.scrolling/
+ *
+ * Project Home Page on Ryadel.com:
+ * http://www.ryadel.com/
+ *
+ */
+(function ($) {
+  var selectors = [];
+
+  var checkBound = false;
+  var checkLock = false;
+
+  var extraOffsetTop = 0;
+  var extraOffsetLeft = 0;
+
+  var optionsAttribute = 'scrolling-options';
+
+  var defaults = {
+    interval: 250,
+    checkScrolling: false,		// set it to "true" to perform an element "scroll-in" check immediately after startup
+    offsetTop: 0,
+    offsetLeft: 0,
+    offsetTopAttribute: 'offset-top',
+    offsetLeftAttribute: 'offset-left',
+    window: null    // set a custom window object or leave it null to use current window.
+                    // pass "top" to use the topmost frame.
+  }
+  var $window;
+  var $wasInView;
+
+  function process() {
+    checkLock = false;
+    for (var index in selectors) {
+      var $inView = $(selectors.join(", ")).filter(function() {
+        return $(this).is(':scrollin');
+      });
+    }
+    $inView.trigger('scrollin', [$inView]);
+    if ($wasInView) {
+      var $notInView = $wasInView.not($inView);
+      $notInView.trigger('scrollout', [$notInView]);
+    }
+    $wasInView = $inView;
+  }
+
+  // "scrollin" custom filter
+  $.expr[':']['scrollin'] = function(element) {
+    var $element = $(element);
+    if (!$element.is(':visible')) {
+      return false;
+    }
+    var opts = $element.data(optionsAttribute);
+    var windowTop = $window.scrollTop();
+    var windowLeft = $window.scrollLeft();
+    var offset = $element.offset();
+    var top = offset.top + extraOffsetTop;
+    var left = offset.left + extraOffsetLeft;
+
+    if (top + $element.height() >= windowTop &&
+        top - ($element.data(opts.offsetTopAttribute) || opts.offsetTop) <= windowTop + $window.height() &&
+        left + $element.width() >= windowLeft &&
+        left - ($element.data(opts.offsetLeftAttribute) || opts.offsetLeft) <= windowLeft + $window.width()) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  $.fn.extend({
+    // watching for element's presence in browser viewport
+    scrolling: function(options) {
+      var opts = $.extend({}, defaults, options || {});
+      var selector = this.selector || this;
+      if (!checkBound) {
+        checkBound = true;
+        var onCheck = function() {
+          if (checkLock) {
+            return;
+          }
+          checkLock = true;
+          setTimeout(process, opts.interval);
+        };
+        $window = $(opts.window || window);
+		
+        if ($window.get(0) != top) {
+            var $b = $($window.get(0).document.body);
+            if ($b) {
+                extraOffsetTop = $b.scrollTop();
+                extraOffsetLeft = $b.scrollLeft();
+            }
+        }
+		
+        $window.scroll(onCheck).resize(onCheck);
+      }
+
+	  var $el = $(selector);
+	  $el.data(optionsAttribute, opts);
+	  
+      if (opts.checkScrolling) {
+        setTimeout(process, opts.interval);
+      }
+      selectors.push(selector);
+      return $el;
+    }
+  });
+
+  $.extend({
+    // force "scroll-in" check for the given element
+    checkScrolling: function() {
+        if (checkBound) {
+        process();
+        return true;
+      };
+      return false;
+    }
+  });
+})(jQuery);
+
 /**
  * jquery.mask.js
  * @version: v1.14.0
@@ -1645,8 +1776,13 @@ $(document).ready(function() {
         console.log($(this).parents().parents('.step').addClass('active'))
         $(this).parents().parents('.step').addClass('active');
     });
+
     $('.bt_fechar').click(function(e) {
         e.preventDefault();
         $(this).parents().parents('.step').removeClass('active');
+    });
+
+    $('.filler-line').find('.filler').css("background-color", function( index ) {
+        return $(this).parent().find('.text').css('color'); // set color to filler by color text
     });
 });
