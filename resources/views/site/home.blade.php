@@ -20,7 +20,7 @@
                 </button>
                 <img src="assets/images/endless_summer.png" class="endless_summer" alt="">
                 <div class="text-head-wrapper">
-                    <div class="text-head">
+                    <div class="text-head content">
                         <h2 class="component text-filler title">
                             <span class="filler-line">
                                 <span class="text mode-layer">COMO ETERNIZAR</span>
