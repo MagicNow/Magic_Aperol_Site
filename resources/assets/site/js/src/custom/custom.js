@@ -22,8 +22,12 @@ $(document).ready(function() {
 
     var $menu = $('#menu');
     var $fillerLine = $('.filler-line');
-    var $content = $('.content');
-    var $self, $element;
+    var $content = $('.content-animate');
+    var $self, $element, $mask, $text;
+
+    $(window).stellar({
+        hideDistantElements: false
+    });
 
     $(".bt_vejamapa").click(function(e) {
         e.preventDefault();
@@ -90,26 +94,55 @@ $(document).ready(function() {
     });
 
     $content
-        .scrolling({ offsetTop: -200 })
+        .scrolling({
+            checkScrolling: true
+        })
         .on('scrollin', function(event, $all_elements) {
-            // scrollIn($all_elements);
-            $self = $($all_elements);
+            $all_elements.each(function(index, el) {
+                $self = $(el);
 
-            if (!$self.hasClass('active')) {
-                $self.addClass('active');
-                $self.find('.component').each(function(index, el) {
-                    $(this).find('.filler-line').each(function(index, el) {
-                        setTimeout(function () {
+                // Text effects
+                $mask = $self.find('.component.text-filler .filler-line .mask');
+                $mask.removeAttr('style');
+
+                $text = $self.find('.text.mode-text');
+                $text.removeAttr('style');
+
+
+
+                if (!$self.hasClass('content-active')) {
+                    $self.addClass('content-active');
+                    // console.log($self.find('.component'));
+                    $self.find('.component').each(function(index, el) {
+                        $(this).find('.fade-animate').each(function(index, el) {
                             $element = $(el);
                             $element.addClass('animate');
-                            // $element.width('100%');
+                        });
 
-                            // setTimeout(function () {
-                            //     $element.width(0);
-                            // }, 400);
-                        }, index * 500)
+                        $(this).find('.filler-line').each(function(index, el) {
+                            setTimeout(function () {
+                                $element = $(el);
+                                $element.addClass('animate');
+                            }, index * 500)
+                        });
                     });
-                });
+                }
+            });
+        })
+        .on('scrollout', function(event, $all_elements) {
+            $self = $($all_elements[0]);
+
+            // Text effects
+            $mask = $self.find('.component.text-filler .filler-line .mask');
+
+            if ($mask.length > 0) {
+                $mask.css('transform', 'translate(-100%, 0%) matrix(1, 0, 0, 1, 0, 0)');
+
+                $text = $self.find('.text.mode-text');
+                $text.css('transform', 'translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0)');
+                
+                $mask.parents('.animate').removeClass('animate');
+                $mask.parents('.content-animate').removeClass('content-active');
             }
         });
 });
@@ -117,21 +150,27 @@ $(document).ready(function() {
 function scrollIn ($all_elements) {
     $self = $($all_elements);
 
-    if (!$self.hasClass('active')) {
+    if (!$self.hasClass('content-active')) {
         $self.find('.filler').each(function(index, el) {
             $element = $(el);
             $element.width('100%');
         });
-        
-        // setTimeout(function () {
-        //     $self.find('.filler').width(0);
-        // }, 400);
-
-        // $self.addClass('active');
-        // // console.log('console2', $self, count+1);
-
-        // setTimeout(function () {
-        //     scrollIn($all_elements, count+1);
-        // }, (count+1) * 200)
     }
+}
+
+function ColorLuminance(hex, lum) {
+    // validate hex string
+    hex = String(hex).replace(/[^0-9a-f]/gi, '');
+    if (hex.length < 6) {
+        hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+    }
+    lum = lum || 0;
+    // convert to decimal and change luminosity
+    var rgb = "#", c, i;
+    for (i = 0; i < 3; i++) {
+        c = parseInt(hex.substr(i*2,2), 16);
+        c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+        rgb += ("00"+c).substr(c.length);
+    }
+    return rgb;
 }

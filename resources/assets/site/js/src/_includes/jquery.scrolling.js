@@ -33,8 +33,8 @@
     checkScrolling: false,		// set it to "true" to perform an element "scroll-in" check immediately after startup
     offsetTop: 0,
     offsetLeft: 0,
-    offsetTopAttribute: 'offset-top',
-    offsetLeftAttribute: 'offset-left',
+    offsetTopAttribute: 'offsetTop',
+    offsetLeftAttribute: 'offsetLeft',
     window: null    // set a custom window object or leave it null to use current window.
                     // pass "top" to use the topmost frame.
   }
@@ -73,6 +73,7 @@
         top - ($element.data(opts.offsetTopAttribute) || opts.offsetTop) <= windowTop + $window.height() &&
         left + $element.width() >= windowLeft &&
         left - ($element.data(opts.offsetLeftAttribute) || opts.offsetLeft) <= windowLeft + $window.width()) {
+
       return true;
     } else {
       return false;

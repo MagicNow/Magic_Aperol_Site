@@ -22,11 +22,7 @@
             </div>
 
     </footer>
-    <!--
-    <script src="/scripts/src/jquery/jquery.min.js"></script>
-    <script src="/scripts/src/vendor/libs/bootstrap.min.js"></script>
-    <script src="/scripts/src/vendor/libs/owl.carousel.min.js"></script>
-  -->
+
   	<script type="text/javascript">
         var baseUrl = '{{ route("home") }}';
     </script>
