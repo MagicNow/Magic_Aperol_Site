@@ -17,18 +17,18 @@ class HomeController extends Controller {
     public function home(Request $request)
     {
         $section = 'users';
-        $posts = Posts::where('active',1)->inRandomOrder()->limit(9)->get();
+        // $posts = Posts::where('active',1)->inRandomOrder()->limit(9)->get();
 
-        return view('site.home', compact('section', 'posts'));
+        return view('site.home', compact('section'));
     }
 
     public function ageGate(Request $request){
         $request->session()->put('age', 'sim');
     }
 
-    public function getFotos($num = 81){
-        $posts = Posts::where('active', 1)->inRandomOrder()->limit($num)->get();
+    // public function getFotos($num = 81){
+    //     $posts = Posts::where('active', 1)->inRandomOrder()->limit($num)->get();
 
-        return json_encode($posts);
-    }
+    //     return json_encode($posts);
+    // }
 }

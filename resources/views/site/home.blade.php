@@ -141,7 +141,7 @@
                                     </div>
                             </div>
                             <div class="playlist">
-                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A4Saz9GKKwMlbj0lpdlbNEY" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                                 <div class="redes">
                                     <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
                                     <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
@@ -186,7 +186,7 @@
                                     </div>
                             </div>
                             <div class="playlist">
-                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A23vxjqwudYKI037diRc21t" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                                 <div class="redes">
                                     <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
                                     <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
@@ -232,7 +232,7 @@
                                     </div>
                             </div>
                             <div class="playlist">
-                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A7d38FphUaMYlcEUIfnIKBL" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                                 <div class="redes">
                                     <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
                                     <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
@@ -278,7 +278,7 @@
                                     </div>
                             </div>
                             <div class="playlist">
-                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A2eVATrNAfQRZSBrVdWe4Ce" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                                 <div class="redes">
                                     <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
                                     <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
@@ -324,7 +324,7 @@
                                     </div>
                             </div>
                             <div class="playlist">
-                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Apakohern%3Aplaylist%3A29V0RIuUOpwlOgIZ8MJ2IC" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A6HPzPzvC1onKvqclXndZX2" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                                 <div class="redes">
                                     <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
                                     <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
@@ -440,7 +440,7 @@
                     <span class="filler-line">
                         <span class="text mode-layer">KOMBI</span>
                         <span class="filler"></span>
-                    </span>
+                    </span><br>
                     <span class="filler-line">
                         <strong class="text mode-layer">SUMMER TOUR</strong>
                         <span class="filler"></span>
@@ -539,6 +539,7 @@
                     </span>
                 </p>
             </div>
+            {{-- 
             <div class="mural clearfix">
                 @foreach ($posts as $post)
                     @if ($post->type === 'image')
@@ -547,6 +548,36 @@
                         </div>
                     @endif
                 @endforeach
+            </div>
+             --}}
+            <div class="mural clearfix">
+                <div class="insta">
+                    <a target="_blank" href="https://www.instagram.com/p/BM9Xv06h55A/"><img src="https://scontent.cdninstagram.com/t51.2885-15/e35/15035024_1861754220748848_3171278515630768128_n.jpg?ig_cache_key=MTM4NjM2ODcwMjAwMTY4NDAzMg%3D%3D.2"></a>
+                </div>
+                <div class="insta">
+                    <a target="_blank" href="https://www.instagram.com/p/BM9VSQ6Dl8I/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s480x480/e35/14488366_1105184499598202_6753518962639634432_n.jpg?ig_cache_key=MTM4NjM1Nzg3NDM4MTE4NDc3Ng%3D%3D.2"></a>
+                </div>
+                <div class="insta">
+                    <a target="_blank" href="https://www.instagram.com/p/BMxeJz5g4ah/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14596721_551696518358978_2308530799747530752_n.jpg?ig_cache_key=MTM4MzAxOTE3NjE3NTgzMDY4OQ%3D%3D.2"></a>
+                </div>
+                <div class="insta">
+                    <a target="_blank" href="https://www.instagram.com/p/BM9VkvUAvD8/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15043968_135190050291188_9118560493936574464_n.jpg?ig_cache_key=MTM4NjM1OTE0Mzk3OTQ3OTI5Mg%3D%3D.2 "></a>
+                </div>
+                <div class="insta">
+                    <a target="_blank" href="https://www.instagram.com/p/BM9WI0jgs5V/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15048135_1855332521378823_2793828869738594304_n.jpg?ig_cache_key=MTM4NjM2MTYyMzUwOTM4ODg4NQ%3D%3D.2); "></a>
+                </div>
+                <div class="insta">
+                    <a target="_blank" href="https://www.instagram.com/p/BM9iCsdhKAc/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14449119_1152950264759907_1169208755032686592_n.jpg?ig_cache_key=MTM4NjQxMzk3OTA2MDE4MzA2OA%3D%3D.2 "></a>
+                </div>
+                <div class="insta">
+                    <a target="_blank" href="https://www.instagram.com/p/BNwHSWRlhjp/"><img src="https://scontent-gru2-1.cdninstagram.com/t51.2885-15/e35/15034563_349106235461087_5810160899658350592_n.jpg?ig_cache_key=MTQwMDY1MTUzMTMwNTc1MjgwOQ%3D%3D.22 "></a>
+                </div>
+                <div class="insta">
+                    <a target="_blank" href="https://www.instagram.com/p/BM9V0DkBSiT/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15099503_161807730953219_1303356638274519040_n.jpg?ig_cache_key=MTM4NjM2MDE5NjUxNTA0NzU3MQ%3D%3D.2 "></a>
+                </div>
+                <div class="insta">
+                    <a target="_blank" href="https://www.instagram.com/p/BM9WmKLhlBI/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/15048015_198403187280821_4495248222377213952_n.jpg?ig_cache_key=MTM4NjM2MzYzOTU5NDExMTA0OA%3D%3D.2 "></a>
+                </div>
             </div>
             <img src="assets/images/laranja.png " class="laranja2 " id="laranja2 " alt="">
         </section>

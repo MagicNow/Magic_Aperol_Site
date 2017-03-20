@@ -2,21 +2,28 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Application Routes
 |--------------------------------------------------------------------------
 |
-| This file is where you may define all of the routes that are handled
-| by your application. Just tell Laravel the URIs it should respond
-| to using a Closure or controller method. Build something great!
+| Here is where you can register all of the routes for an application.
+| It's a breeze. Simply tell Laravel the URIs it should respond to
+| and give it the controller to call when that URI is requested.
 |
 */
+
+Route::get('/api/user', function (Request $request) {
+    return $request->user();
+});
+
+Route::get('/api/instagram', ['as'=> 'api.instagram','uses' => 'ApiController@posts']);
+
 Route::get('/', ['as' => 'base', 'uses' => 'HomeController@index']);
 Route::get('/home', ['as' => 'home', 'uses' => 'HomeController@home']);
 Route::post('/age', ['as' => 'age', 'uses' => 'HomeController@ageGate']);
 Route::get('/getFotos', ['as' => 'getFotos','uses' => 'HomeController@getFotos']);
 
 Route::group(['prefix' => 'admin'], function() {
-	Auth::routes();
+	// Auth::routes();
 
     //USERS
     Route::get('users', ['as'=> 'admin.users','uses' => 'Admin\UsersController@index']);
