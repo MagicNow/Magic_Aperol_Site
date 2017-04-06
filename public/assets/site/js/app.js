@@ -1789,8 +1789,10 @@ $(document).ready(function() {
                 $self = $(el);
 
                 // Text effects
+                /*
                 $mask = $self.find('.component.text-filler .filler-line .mask');
                 $mask.removeAttr('style');
+                */
 
                 $text = $self.find('.text.mode-text');
                 $text.removeAttr('style');
@@ -1806,12 +1808,14 @@ $(document).ready(function() {
                             $element.addClass('animate');
                         });
 
+                        /*
                         $(this).find('.filler-line').each(function(index, el) {
                             setTimeout(function () {
                                 $element = $(el);
                                 $element.addClass('animate');
                             }, index * 500)
                         });
+                        */
                     });
                 }
             });
@@ -1819,7 +1823,16 @@ $(document).ready(function() {
         .on('scrollout', function(event, $all_elements) {
             $self = $($all_elements[0]);
 
+            $text = $self.find('.component.text-filler .filler-line .text');
+
+            if ($text.length > 0) {
+                $text.parents('.animate').removeClass('animate');
+                $text.parents('.content-animate').removeClass('content-active');
+            }
+
             // Text effects
+            
+            /*
             $mask = $self.find('.component.text-filler .filler-line .mask');
 
             if ($mask.length > 0) {
@@ -1831,6 +1844,7 @@ $(document).ready(function() {
                 $mask.parents('.animate').removeClass('animate');
                 $mask.parents('.content-animate').removeClass('content-active');
             }
+            */
         });
 });
 

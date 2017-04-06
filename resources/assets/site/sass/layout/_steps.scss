@@ -1453,6 +1453,11 @@ margin:60px 0;
 	}
 }
 
+@include keyframes(appear) {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
 @keyframes accordion {
 	0% {
 		width: 0;
@@ -1507,6 +1512,11 @@ margin:60px 0;
 	}
 }
 
+.content-active .component.text-filler .filler-line .text {
+	@include animation('appear .5s');
+	animation-fill-mode: forwards;
+}
+
 .component {
 	.fade-animate {
 		opacity: 0;
@@ -1521,23 +1531,30 @@ margin:60px 0;
 		position: relative;
 		display: block;
 
+		/*
 		&.strike {
 			.text.mode-layer {
 				text-decoration: underline;
 			}
 		}
 
+		*/
 		.filler-line {
 			position: relative;
 			display: inline-block;
 			white-space: nowrap;
 			width: 100%;
-
+			
 			&.animate {
+				/*
 				.filler {
 					animation: accordion .5s alternate ease-in-out;
 				}
-
+				.mask {
+					animation: animateMask 1s alternate ease-in-out;
+					animation-fill-mode: forwards;
+				}
+				*/
 				.text {
 					animation: fillerText .5s alternate ease-in-out;
 					animation-fill-mode: forwards;
@@ -1547,11 +1564,6 @@ margin:60px 0;
 						animation: animateText 1s alternate ease-in-out;
 						animation-fill-mode: forwards;
 					}
-				}
-
-				.mask {
-					animation: animateMask 1s alternate ease-in-out;
-					animation-fill-mode: forwards;
 				}
 			}
 
@@ -1566,7 +1578,7 @@ margin:60px 0;
 					// transform: matrix(1, 0, 0, 1, 0, 0);
 				}
 			}
-
+			/*
 			.filler {
 				z-index: 2;
 				position: absolute;
@@ -1601,6 +1613,7 @@ margin:60px 0;
 				height: 100%;
 				overflow: hidden;
 			}
+			*/
 		}
 	}
 }

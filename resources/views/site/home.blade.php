@@ -27,38 +27,30 @@
                     <div class="text-head content-animate">
                         <h2 class="component text-filler title">
                             <span class="filler-line">
-                                <span class="text mode-layer">COMO ETERNIZAR</span>
-                                <span class="filler"></span>
+                                <span class="text">COMO ETERNIZAR</span>
                             </span>
                             <span class="filler-line">
-                                <span class="text mode-layer">O SEU VERÃO</span>
-                                <span class="filler"></span>
+                                <span class="text">O SEU VERÃO</span>
                             </span>
                         </h2>
                         <p><span class="component text-filler strike">
                             <span class="filler-line">
-                                <span class="text mode-layer">Verão é olho no olho, muita água,</span>
-                                <span class="filler"></span>
+                                <span class="text">Verão é olho no olho, muita água,</span>
                             </span>
                             <span class="filler-line">
-                                <span class="text mode-layer">esquecer o caminho de volta pra casa,</span>
-                                <span class="filler"></span>
+                                <span class="text">esquecer o caminho de volta pra casa,</span>
                             </span>
                             <span class="filler-line">
-                                <span class="text mode-layer">sorrir com quase nada, amar todo</span>
-                                <span class="filler"></span>
+                                <span class="text">sorrir com quase nada, amar todo</span>
                             </span>
                             <span class="filler-line">
-                                <span class="text mode-layer">mundo com mais calor.</span>
-                                <span class="filler"></span>
+                                <span class="text">mundo com mais calor.</span>
                             </span>
                             <span class="filler-line">
-                                <span class="text mode-layer"><strong>Aqui é o lugar pra você fazer</strong></span>
-                                <span class="filler"></span>
+                                <span class="text"><strong>Aqui é o lugar pra você fazer</strong></span>
                             </span>
                             <span class="filler-line">
-                                <span class="text mode-layer"><strong>a estação não ter fim.</strong></span>
-                                <span class="filler"></span>
+                                <span class="text"><strong>a estação não ter fim.</strong></span>
                             </span>
                         </span></p>
                     </div>
@@ -340,12 +332,10 @@
             <div class="content-animate main_tit">
                 <h2 class="component text-filler">
                     <span class="filler-line">
-                        <span class="text mode-layer">FESTAS COM</span>
-                        <span class="filler"></span>
+                        <span class="text">FESTAS COM</span>
                     </span>
                     <span class="filler-line">
-                        <strong class="text mode-layer">#APEROLSPRITZ</strong>
-                        <span class="filler"></span>
+                        <strong class="text">#APEROLSPRITZ</strong>
                     </span>
                 </h2>
             </div>
@@ -354,18 +344,15 @@
             <div class="party content-animate">
                 <h2 class="component text-filler tit">
                     <span class="filler-line">
-                        <span class="text mode-layer">Reveillon</span>
-                        <span class="filler"></span>
+                        <span class="text">Reveillon</span>
                     </span>
                     <span class="filler-line">
-                        <span class="text mode-layer">DO GOSTOSO</span>
-                        <span class="filler"></span>
+                        <span class="text">DO GOSTOSO</span>
                     </span><br>
 
                     <span class="component text-filler sub_tit">
                         <span class="filler-line">
-                            <span class="text mode-layer">SãO MIGUEL DO GOSTOSO - RN</span>
-                            <span class="filler"></span>
+                            <span class="text">SãO MIGUEL DO GOSTOSO - RN</span>
                         </span>
                     </span>
                 </h2>
@@ -385,49 +372,31 @@
                     <a href="#" class="bt_detalhes_calendar">
                         <span class="filler-line">
                             <span class="filler-text">Temporada Reveillon Tikal 2017 - Maraú /BA</span>
-                            <span class="mask">
-                                <span class="text mode-text">Temporada Reveillon Tikal 2017 - Maraú /BA</span></span>
-                            </span>
                         </span>
                     </a>
                     <a href="#" class="bt_detalhes_calendar">
                         <span class="filler-line">
                             <span class="filler-text">Reveillon do Gostoso - São Miguel do Gostoso/RN</span>
-                            <span class="mask">
-                                <span class="text mode-text">Reveillon do Gostoso - São Miguel do Gostoso/RN</span></span>
-                            </span>
                         </span>
                     </a>
                     <a href="#" class="bt_detalhes_calendar">
                         <span class="filler-line">
                             <span class="filler-text">Reveillon MAREH NYE 2017 - Cumuruxatiba / BAN</span>
-                            <span class="mask">
-                                <span class="text mode-text">Reveillon MAREH NYE 2017 - Cumuruxatiba / BAN</span></span>
-                            </span>
                         </span>
                     </a>
                     <a href="#" class="bt_detalhes_calendar">
                         <span class="filler-line">
                             <span class="filler-text">Reveillon Taípe</span>
-                            <span class="mask">
-                                <span class="text mode-text">Reveillon Taípe</span></span>
-                            </span>
                         </span>
                     </a>
                     <a href="#" class="bt_detalhes_calendar">
                         <span class="filler-line">
                             <span class="filler-text">Réveillon Vai Tapajós 2017 - Alter Do Chão / AM</span>
-                            <span class="mask">
-                                <span class="text mode-text">Réveillon Vai Tapajós 2017 - Alter Do Chão / AM</span></span>
-                            </span>
                         </span>
                     </a>
                     <a href="#" class="bt_detalhes_calendar">
                         <span class="filler-line">
                             <span class="filler-text">Réveillon Cheers - Rio de Janeiro/ RJ</span>
-                            <span class="mask">
-                                <span class="text mode-text">Réveillon Cheers - Rio de Janeiro/ RJ</span></span>
-                            </span>
                         </span>
                     </a>
                     <p class="bt_detalhes_calendar">e muito mais...</p>
@@ -438,12 +407,10 @@
             <div class="content-animate main_tit">
                 <h2 class="component text-filler">
                     <span class="filler-line">
-                        <span class="text mode-layer">KOMBI</span>
-                        <span class="filler"></span>
+                        <span class="text">KOMBI</span>
                     </span><br>
                     <span class="filler-line">
-                        <strong class="text mode-layer">SUMMER TOUR</strong>
-                        <span class="filler"></span>
+                        <strong class="text">SUMMER TOUR</strong>
                     </span>
                 </h2>
             </div>
@@ -465,27 +432,18 @@
                             <p class="active"> 
                                 <span class="filler-line">
                                     <span class="filler-text">09/03 <span class="location">Stuzzi Bar - Leblon</span></span>
-                                    <span class="mask">
-                                        <span class="text mode-text">09/03 <span class="location">Stuzzi Bar - Leblon</span></span>
-                                    </span>
                                 </span>
                                 <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117537.24469686231!2d-43.29836318733525!3d-22.985597110028802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x9bd44b5bf8cdf3%3A0x82f167d9d66fc743!2sstuzzi+bar+rj!3m2!1d-22.9856125!2d-43.2283228!5e0!3m2!1spt-BR!2sbr!4v1489145145872" class="bt_vejamapa">veja o mapa</a>
                             </p>
                             <p> 
                                 <span class="filler-line">
                                     <span class="filler-text">10 a 11/03 <span class="location">Cafofo Pub - Botafogo</span></span>
-                                    <span class="mask">
-                                        <span class="text mode-text">10 a 11/03 <span class="location">Cafofo Pub - Botafogo</span></span>
-                                    </span>
                                 </span>
                                 <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117568.36561824697!2d-43.25496808803026!3d-22.949806328626682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x997ff01ed6bf81%3A0x20ef40b0a52d5e7d!2scafofo+rj!3m2!1d-22.949821699999998!2d-43.184927699999996!5e0!3m2!1spt-BR!2sbr!4v1489145185957" class="bt_vejamapa">veja o mapa</a>
                             </p>
                             <p> 
                                 <span class="filler-line">
                                     <span class="filler-text">12/03 <span class="location">PRIMA Bruschetteria - Leblon</span></span>
-                                    <span class="mask">
-                                        <span class="text mode-text">12/03 <span class="location">PRIMA Bruschetteria - Leblon</span></span>
-                                    </span>
                                 </span>
                                 <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117537.25461672634!2d-43.29659258733546!3d-22.985585710034716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x9bd44ccbd8aa59%3A0x8017aaf00ba23d51!2sprima+bar+rj!3m2!1d-22.9856011!2d-43.2265522!5e0!3m2!1spt-BR!2sbr!4v1489145222743" class="bt_vejamapa">veja o mapa</a></p>
                         </div>
@@ -498,44 +456,35 @@
             <div class="text-container content-animate">
                 <h2 class="component text-filler tit">
                     <span class="filler-line">
-                        <span class="text mode-layer">#Endless</span>
-                        <span class="filler"></span>
+                        <span class="text">#Endless</span>
                     </span>
                     <span class="filler-line">
-                        <span class="text mode-layer">summer</span>
-                        <span class="filler"></span>
+                        <span class="text">summer</span>
                     </span>
                 </h2>
                 <p class="component text-filler">
                     <strong class="filler-line">
-                        <span class="text mode-layer strike">Já está eternizando o seu</span>
-                        <span class="filler"></span>
+                        <span class="text strike">Já está eternizando o seu</span>
                     </strong><br>
                     <strong class="filler-line">
-                        <span class="text mode-layer strike">verão? Então poste uma</span>
-                        <span class="filler"></span>
+                        <span class="text strike">verão? Então poste uma</span>
                     </strong><br>
                     <strong class="filler-line">
-                        <span class="text mode-layer strike">foto com <b></b></span>
-                        <span class="filler"></span>
+                        <span class="text strike">foto com <b></b></span>
                     </strong><br>
                     <span class="filler-line">
-                        <b class="text mode-layer">#EndlessSummer E</b>
-                        <span class="filler"></span>
+                        <b class="text">#EndlessSummer E</b>
                     </span><br>
                     <span class="filler-line">
-                        <b class="text mode-layer">@APEROLSPRITZBRASIL</b>
-                        <span class="filler"></span>
+                        <b class="text">@APEROLSPRITZBRASIL</b>
                     </span><br>
 
 
                     <span class="filler-line strike">
-                        <b class="text mode-layer strike gray">que você pode aparecer</b>
-                        <span class="filler"></span>
+                        <b class="text strike gray">que você pode aparecer</b>
                     </span><br>
                     <span class="filler-line strike">
-                        <b class="text mode-layer gray">aqui no mural.</b>
-                        <span class="filler"></span>
+                        <b class="text gray">aqui no mural.</b>
                     </span>
                 </p>
             </div>
