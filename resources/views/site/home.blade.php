@@ -35,22 +35,22 @@
                         </h2>
                         <p><span class="component text-filler strike">
                             <span class="filler-line">
-                                <span class="text">Verão é olho no olho, muita água,</span>
+                                <u class="text">Verão é olho no olho, muita água,</u>
                             </span>
                             <span class="filler-line">
-                                <span class="text">esquecer o caminho de volta pra casa,</span>
+                                <u class="text">esquecer o caminho de volta pra casa,</u>
                             </span>
                             <span class="filler-line">
-                                <span class="text">sorrir com quase nada, amar todo</span>
+                                <u class="text">sorrir com quase nada, amar todo</u>
                             </span>
                             <span class="filler-line">
-                                <span class="text">mundo com mais calor.</span>
+                                <u class="text">mundo com mais calor.</u>
                             </span>
                             <span class="filler-line">
-                                <span class="text"><strong>Aqui é o lugar pra você fazer</strong></span>
+                                <u class="text"><strong>Aqui é o lugar pra você fazer</strong></u>
                             </span>
                             <span class="filler-line">
-                                <span class="text"><strong>a estação não ter fim.</strong></span>
+                                <u class="text"><strong>a estação não ter fim.</strong></u>
                             </span>
                         </span></p>
                     </div>
@@ -100,20 +100,24 @@
                     <br> com gás</div>
             </div>
         </section>
-        <section class="step step-03 content-animate" data-offset-top="-300">
+        <section class="step step-11 content-animate" data-offset-top="-300">
             <div class="component">
                 <div class="fade-animate">
                     <!-- Influencer  -->
-                    {{ Html::image('assets/images/andy.png', '', array('class' => 'tit')) }}
+                    {{ Html::image('assets/images/titi.png', '', array('class' => 'tit')) }}
                     <div class="foto">
-                    {{ Html::image('assets/images/foto_andy.png', '', array('class' => '')) }}
+                    {{ Html::image('assets/images/foto_titi.png', '', array('class' => '')) }}
                     </div>
-                    <p class="desc">É só ver as viagens dele que você sente
-                        <br> mais vontade de viver o verão. 
-                        <br> Play na trilha do Andy.
+                    <p class="desc">A Titi manda muito bem quando o assunto é eternizar o verão<br>
+                        nos quatro cantos do planeta. Ela te conta as melhores<br>
+                        histórias, <strong>e você se inspira para fazer seu verão durar<br>
+                        o ano todo.</strong>
                         <a href="#" class="bt_mais" id="detalhes_raul">MAIS</a>
                     </p>
-                    <div class="desc_details">O Andy já passou por todos os cantos do mundo e sabe como fazer o verão não ter fim. Enquanto ele mostra o verão dele, você se inspira e eterniza o seu, sem medo de ser feliz.<br>
+                    <?php /* <div class="desc_details">A Titi manda muito bem quando o assunto é eternizar o verão<br>
+                        nos quatro cantos do planeta. Ela te conta as melhores<br>
+                        histórias, <strong>e você se inspira para fazer seu verão durar<br>
+                        o ano todo.</strong><br>
                         <a href="#" class="bt_fechar" id="fechar_raul">fechar</a>
                         <div class="insta">
                             <h2>#EndlessSummer</h2>
@@ -142,6 +146,57 @@
                             </div>
                         </div>
                     </div>
+                </div> */ ?>
+            </div>
+        </section>
+        <section class="step step-12 content-animate">
+            <div class="component">
+                <div class="fade-animate">
+                    <!-- Influencer  -->
+                    {{ Html::image('assets/images/caio.png', '', array('class' => 'tit')) }}
+                      <div class="foto">
+                    {{ Html::image('assets/images/foto_caio.png', '', array('class' => '')) }}
+                    </div>
+                    <p class="desc">O Caio sabe que verão tem tudo a ver com moda<br>
+                    e estilo. Confira as histórias divertidas que ele<br>
+                    tem pra contar, <strong>e aproveite pra eternizar o seu<br>
+                    verão com muito bom humor.</strong> <!-- Ouça a playlist dela aqui. -->
+                        <a href="#" class="bt_mais">MAIS</a>
+                    </p>
+                    <?php /* 
+                    <div class="desc_details">O Caio sabe que verão tem tudo a ver com moda<br>
+                    e estilo. Confira as histórias divertidas que ele<br>
+                    tem pra contar, <strong>e aproveite pra eternizar o seu<br>
+                    verão com muito bom humor.</strong><br>
+                        <a href="#" class="bt_fechar" id="fechar_raul">fechar</a>
+                        <div class="insta">
+                            <h2>#EndlessSummer</h2>
+                            <div class="mural">
+                                    <div class="imagem">
+                                        <a target="_blank" href="https://www.instagram.com/p/BNsM5Ymg9XE/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15338344_1070818073047913_5976556965021614080_n.jpg?ig_cache_key=MTM5OTU1MDMwNDE4OTY2Njc1Ng%3D%3D.2"></a>
+                                        <a target="_blank" href="https://www.instagram.com/p/BNXPHHoAMQ7/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15035676_125309227954148_6453861121622278144_n.jpg?ig_cache_key=MTM5MzY0OTA2OTYxNTc5MzIxMQ%3D%3D.2"></a>
+                                    </div>
+                            
+                                    <div class="imagem">
+                                        <a target="_blank" href="https://www.instagram.com/p/BNXOAElgPv6/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15258715_367614400242038_1596692128518373376_n.jpg?ig_cache_key=MTM5MzY0NDE4NzI2OTc5MDcxNA%3D%3D.2"></a>
+                                        <a target="_blank" href="https://www.instagram.com/p/BNWaOdEgaS-/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14540638_1811763152412680_4169739501486211072_n.jpg?ig_cache_key=MTM5MzQxNjQ3NzIxMzgyODI4Ng%3D%3D.2"></a>
+                                    </div>
+                                    
+                                    <div class="imagem big">
+                                        <a target="_blank" href="https://www.instagram.com/p/BMo-qmQBwC8/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14606988_265810817150398_3449376479815663616_n.jpg?ig_cache_key=MTM4MDYyODg5MTk2MTg1MjA5Mg%3D%3D.2"></a>
+                                    </div>
+                            </div>
+                            <div class="playlist">
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A23vxjqwudYKI037diRc21t" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
+                                <div class="redes">
+                                    <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
+                                    <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
+                                    <a href="">{{ Html::image('assets/images/facebook.png', '', array('class' => '')) }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    */ ?>
                 </div>
             </div>
         </section>
@@ -153,9 +208,11 @@
                       <div class="foto">
                     {{ Html::image('assets/images/foto_maga.png', '', array('class' => '')) }}
                     </div>
-                    <p class="desc">Rapidinho você já percebe que ela
-                        <br>está sempre fazendo alguma coisa
-                        <br>diferente. <!-- Ouça a playlist dela aqui. -->
+                    <p class="desc">Rapidinho você já percebe que ela<br>
+                    está sempre fazendo alguma coisa<br>
+                    diferente. <strong>Se quer novidades no seu<br>
+                    verão eterno</strong>, ouça a playlist que<br>
+                    ela preparou!<!-- Ouça a playlist dela aqui. -->
                         <a href="#" class="bt_mais">MAIS</a>
                     </p>
                     <div class="desc_details">A cool hunter toda colorida sabe bem como fazer um verão ser eterno. Agora ela está com a gente pra mostrar como está sendo o verão dela e te inspirar a eternizar o seu.<br>
@@ -190,52 +247,6 @@
                 </div>
             </div>
         </section>
-        <section class="step step-05 content-animate">
-            <div class="component">
-                <div class="fade-animate">
-                    <!-- Influencer  -->
-                    {{ Html::image('assets/images/andre.png', '', array('class' => 'tit')) }}
-                      <div class="foto">
-                    {{ Html::image('assets/images/foto_andre.png', '', array('class' => '')) }}
-                    </div>
-                    <p class="desc">Quando você vê o que ele está
-                        <br> fazendo dá até aquela vontade
-                        <br> de tentar também. Pra melhorar 
-                        <br> no calor, tem também a playlist.
-                        <a href="#" class="bt_mais">MAIS</a>
-                    </p>
-                    <div class="desc_details">O carioca viaja o mundo fotografando para as revistas fashion e segue à risca a missão de viver um verão eterno. Dá uma olhada na estação dele e diz se eternizar o seu verão não é uma boa ideia.<br>
-                        <a href="#" class="bt_fechar" id="fechar_raul">fechar</a>
-                        <div class="insta">
-                            <h2>#EndlessSummer</h2>
-                            <div class="mural">
-                                    <div class="imagem">
-                                        <a target="_blank" href="https://www.instagram.com/p/BJ9UOmOB83V/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14262756_1148773848535358_1180699552_n.jpg?ig_cache_key=MTMzMjMxMDAyODgxMjAxMzAxMw%3D%3D.2"></a>
-                                        <a target="_blank" href="https://www.instagram.com/p/BJ8TDjkh1Fo/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14063133_913071248837198_1462068227_n.jpg?ig_cache_key=MTMzMjAyMzM5NzAzMDc3NzE5Mg%3D%3D.2"></a>
-                                    </div>
-                            
-                                    <div class="imagem">
-                                        <a target="_blank" href="https://www.instagram.com/p/BH-cKl-hRCh/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/13767646_1148944195149430_791593759_n.jpg?ig_cache_key=MTI5NjU5NzYxNjAwMzcxNTIzMw%3D%3D.2"></a>
-                                        <a target="_blank" href="https://www.instagram.com/p/BK6oqRgjmMD/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14374007_162860237498548_149776582037209088_n.jpg?ig_cache_key=MTM0OTU2OTg2NTIyOTE2NTMxNQ%3D%3D.2"></a>
-                                    </div>
-                                    
-                                    <div class="imagem big">
-                                        <a target="_blank" href="https://www.instagram.com/p/BN5DnL9D8Ex/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15403516_178364982631658_5328881819544715264_n.jpg?ig_cache_key=MTQwMzE2ODY0NTkzNzM0ODkxMw%3D%3D.2"></a>
-                                    </div>
-                            </div>
-                            <div class="playlist">
-                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A7d38FphUaMYlcEUIfnIKBL" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
-                                <div class="redes">
-                                    <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
-                                    <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
-                                    <a href="">{{ Html::image('assets/images/facebook.png', '', array('class' => '')) }}</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="step step-06 content-animate">
             <div class="component">
                 <div class="fade-animate">
@@ -244,9 +255,9 @@
                       <div class="foto">
                     {{ Html::image('assets/images/foto_luiza.png', '', array('class' => '')) }}
                     </div>
-                    <p class="desc">Ela é uma mistura de viajante com
-                        <br>fotógrafa fashion. A mistura deu certo
-                        <br>e tem até trilha sonora.
+                    <p class="desc">Ela ama viagens, fotografia e moda.<br>
+                        Uma vida agitada como a dela tem<br>
+                        até trilha sonora!
 
                         <a href="#" class="bt_mais">MAIS</a>
                     </p>
@@ -282,6 +293,52 @@
                 </div>
             </div>
         </section>
+        <section class="step step-05 content-animate">
+            <div class="component">
+                <div class="fade-animate">
+                    <!-- Influencer  -->
+                    {{ Html::image('assets/images/andre.png', '', array('class' => 'tit')) }}
+                      <div class="foto">
+                    {{ Html::image('assets/images/foto_andre.png', '', array('class' => '')) }}
+                    </div>
+                    <p class="desc">Quando você vê o que ele está<br>
+                        fazendo dá até aquela vontade<br>
+                        de tentar também. <strong>Pra entrar na vibe,<br>
+                        tem até uma playlist.</strong>
+                        <a href="#" class="bt_mais">MAIS</a>
+                    </p>
+                    <div class="desc_details">O carioca viaja o mundo fotografando para as revistas fashion e segue à risca a missão de viver um verão eterno. Dá uma olhada na estação dele e diz se eternizar o seu verão não é uma boa ideia.<br>
+                        <a href="#" class="bt_fechar" id="fechar_raul">fechar</a>
+                        <div class="insta">
+                            <h2>#EndlessSummer</h2>
+                            <div class="mural">
+                                    <div class="imagem">
+                                        <a target="_blank" href="https://www.instagram.com/p/BJ9UOmOB83V/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14262756_1148773848535358_1180699552_n.jpg?ig_cache_key=MTMzMjMxMDAyODgxMjAxMzAxMw%3D%3D.2"></a>
+                                        <a target="_blank" href="https://www.instagram.com/p/BJ8TDjkh1Fo/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14063133_913071248837198_1462068227_n.jpg?ig_cache_key=MTMzMjAyMzM5NzAzMDc3NzE5Mg%3D%3D.2"></a>
+                                    </div>
+                            
+                                    <div class="imagem">
+                                        <a target="_blank" href="https://www.instagram.com/p/BH-cKl-hRCh/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/13767646_1148944195149430_791593759_n.jpg?ig_cache_key=MTI5NjU5NzYxNjAwMzcxNTIzMw%3D%3D.2"></a>
+                                        <a target="_blank" href="https://www.instagram.com/p/BK6oqRgjmMD/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14374007_162860237498548_149776582037209088_n.jpg?ig_cache_key=MTM0OTU2OTg2NTIyOTE2NTMxNQ%3D%3D.2"></a>
+                                    </div>
+                                    
+                                    <div class="imagem big">
+                                        <a target="_blank" href="https://www.instagram.com/p/BN5DnL9D8Ex/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15403516_178364982631658_5328881819544715264_n.jpg?ig_cache_key=MTQwMzE2ODY0NTkzNzM0ODkxMw%3D%3D.2"></a>
+                                    </div>
+                            </div>
+                            <div class="playlist">
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A7d38FphUaMYlcEUIfnIKBL" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
+                                <div class="redes">
+                                    <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
+                                    <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
+                                    <a href="">{{ Html::image('assets/images/facebook.png', '', array('class' => '')) }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="step step-10 content-animate">
             <div class="component">
                 <div class="fade-animate">
@@ -290,9 +347,9 @@
                       <div class="foto">
                     {{ Html::image('assets/images/foto_summer.png', '', array('class' => '')) }}
                     </div>
-                    <p class="desc">Se o lugar tem o espírito do verão,
-                        <br>ele está lá. Ouça a playlist que nosso
-                        <br>caçador fez pra você.
+                    <p class="desc">Se o lugar tem o espírito do verão,<br>
+                        ele está lá. E nós também! Ouça a playlist<br>
+                        e <strong>entre no clima do verão eterno!</strong>
 
                         <a href="#" class="bt_mais">MAIS</a>
                     </p>
@@ -317,6 +374,51 @@
                             </div>
                             <div class="playlist">
                                 <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A6HPzPzvC1onKvqclXndZX2" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
+                                <div class="redes">
+                                    <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
+                                    <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>
+                                    <a href="">{{ Html::image('assets/images/facebook.png', '', array('class' => '')) }}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="step step-03 content-animate">
+            <div class="component">
+                <div class="fade-animate">
+                    <!-- Influencer  -->
+                    {{ Html::image('assets/images/andy.png', '', array('class' => 'tit')) }}
+                    <div class="foto">
+                    {{ Html::image('assets/images/foto_andy.png', '', array('class' => '')) }}
+                    </div>
+                    <p class="desc">É só ver as viagens dele que você sente
+                        <br> mais vontade de viver o verão. 
+                        <br> <strong>Play na trilha do Andy.</strong>
+                        <a href="#" class="bt_mais" id="detalhes_raul">MAIS</a>
+                    </p>
+                    <div class="desc_details">O Andy já passou por todos os cantos do mundo e sabe como fazer o verão não ter fim. Enquanto ele mostra o verão dele, você se inspira e eterniza o seu, sem medo de ser feliz.<br>
+                        <a href="#" class="bt_fechar" id="fechar_raul">fechar</a>
+                        <div class="insta">
+                            <h2>#EndlessSummer</h2>
+                            <div class="mural">
+                                    <div class="imagem">
+                                        <a target="_blank" href="https://www.instagram.com/p/BNxcqHUBc3V/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15338534_605755209618859_4063660801481768960_n.jpg?ig_cache_key=MTQwMTAyNjk5ODQ2MTM4NjE5Nw%3D%3D.2"></a>
+                                        <a target="_blank" href="https://www.instagram.com/p/BNz4HjEBvF0/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15337129_304061466654518_6592449026090598400_n.jpg?ig_cache_key=MTQwMTcxMDcxODMzMTg0MjkzMg%3D%3D.2"></a>
+                                    </div>
+                            
+                                    <div class="imagem">
+                                        <a target="_blank" href="https://www.instagram.com/p/BLuCz6BBkBJ/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14718292_327121344313030_7998886399887540224_n.jpg?ig_cache_key=MTM2NDA0MDEwMDIyMDM4NzQwMQ%3D%3D.2"></a>
+                                        <a target="_blank" href="https://www.instagram.com/p/BN2MVdXBTEf/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15306788_182532032211558_6102819464401649664_n.jpg?ig_cache_key=MTQwMjM2MjU4NTE2NDM2MjAxNQ%3D%3D.2"></a>
+                                    </div>
+                                    
+                                    <div class="imagem big">
+                                        <a target="_blank" href="https://www.instagram.com/p/BNz4HjEBvF0/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15337129_304061466654518_6592449026090598400_n.jpg?ig_cache_key=MTQwMTcxMDcxODMzMTg0MjkzMg%3D%3D.2"></a>
+                                    </div>
+                            </div>
+                            <div class="playlist">
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aendlesssummerbr%3Aplaylist%3A4Saz9GKKwMlbj0lpdlbNEY" width="226" height="290" frameborder="0" allowtransparency="true"></iframe>
                                 <div class="redes">
                                     <a href="">{{ Html::image('assets/images/siga.png', '', array('class' => '')) }}</a>
                                     <a href="">{{ Html::image('assets/images/instagram.png', '', array('class' => '')) }}</a>

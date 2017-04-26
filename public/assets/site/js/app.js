@@ -1767,8 +1767,12 @@ $(document).ready(function() {
 
     $('.bt_mais').click(function(e) {
         e.preventDefault();
-        console.log($(this).parents().parents('.step').addClass('active'))
-        $(this).parents().parents('.step').addClass('active');
+        var $step = $(this).parents().parents('.step');
+        var $desc = $step.find('.desc_details');
+
+        if ($desc.length > 0) {
+            $step.addClass('active');
+        }
     });
 
     $('.bt_fechar').click(function(e) {

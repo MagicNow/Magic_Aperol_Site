@@ -386,6 +386,7 @@ margin:60px 0;
 		.part1 {}
 	}
 }
+
 .step{
 	max-width: 1024px;
 	margin: 0 auto;
@@ -500,12 +501,124 @@ margin:60px 0;
 			}
 	}
 }
+
+.step-11 {
+	height: 409px;
+	margin-top: -42px;
+
+	.tit {
+		margin-left: 408px;
+		margin-top: 28px;
+	}
+
+	.desc {
+		margin-left: 475px;
+		margin-top: 0;
+	}
+
+	.foto {
+		left: 0;
+		margin-left: 170px;
+		margin-top: 25px;
+	}
+
+	&.active {
+		height: 900px;
+
+		.desc_details {
+			display: block;
+			width: 450px;
+			margin-top: 0;
+			margin-left: 475px;
+			line-height: 22px;
+		}
+
+		.desc {
+			display: none;
+		}
+
+		.bt_mais {
+			display: none;
+		}
+
+		.insta {
+			margin-top: 65px;
+
+			.playlist{
+				&::before{
+					content: 'PLAYLIST Da Titi';
+				}
+			}
+		}
+	}
+}
+
+.step-12 {
+	height: 408px;
+
+	&:before{
+		content: '';
+		display: block;
+		width: 788px;
+		height: 327px;
+		background-color: #fe5000;
+		position: absolute;
+		z-index: -1;
+		margin-top: 50px;
+		margin-left:130px !important; 
+	}
+	&:after{
+		top: 70px;
+		right: 49px;
+	}
+	.tit {
+		margin-left: 251px;
+		margin-top: 82px;
+	}
+	.desc {
+		margin-left: 187px;
+		margin-top: 0;
+	}
+
+	.foto {
+		right: 147px;
+		margin-top: 16px;
+	}
+
+	&.active {
+		height: 900px;
+		.desc_details {
+			display: block;
+			margin-left: 187px;
+			margin-top: 0;
+			line-height: 22px;
+		}
+
+		.desc {
+			display: none;
+		}
+
+		.bt_mais {
+			display: none;
+		}
+
+		.insta{
+			.playlist{
+				&::before{
+					content: 'PLAYLIST Do Caio';
+				}
+			}
+		}
+	}
+}
+
 .step-03 {
 	height: 401px;
 	margin-top: -42px;
+
 	.tit {
 		margin-left: 468px;
-		margin-top: 28px;
+		margin-top: 70px;
 	}
 	.desc {
 		margin-left: 488px;
@@ -531,39 +644,43 @@ margin:60px 0;
 }
 
 .step-04 {
-	height: 401px;
+	height: 420px;
+
 	&:before{
 		content: '';
 		display: block;
-		width: 788px;
+		width: 785px;
 		height: 327px;
 		background-color: #fe5000;
 		position: absolute;
 		z-index: -1;
-		margin-top: 50px;
-		margin-left:130px !important; 
+		margin-top: 45px;
 	}
 	&:after{
-		top: 70px;
-		right: 49px;
+		top: 59px;
+		right: 49px !important;
+	}
+	.bt_mais{
+		margin-top: 6px;
 	}
 	.tit {
-		margin-left: 251px;
-		margin-top: 82px;
+		margin-left: 474px;
+		margin-top: 55px;
 	}
 	.desc {
-		margin-left: 267px;
-		margin-top: 26px;
+		margin-left: 487px;
+		margin-top: 11px;
+		line-height: 22px;
 	}
 	.foto {
-		right: 147px;
-		margin-top: 16px;
+		left: 0;
+		margin-left: 170px;
+		margin-top: 9px;
 	}
 	&.active {
 		height: 900px;
 		.desc_details {
 			display: block;
-			margin-left: 165px;
 		}
 		.desc {
 			display: none;
@@ -572,6 +689,8 @@ margin:60px 0;
 			display: none;
 		}
 		.insta{
+			margin-top: 60px;
+
 			.playlist{                
 				&::before{
 					content: 'PLAYLIST Da Magá';
@@ -626,6 +745,8 @@ margin:60px 0;
 			display: none;
 		}
 		.insta{
+			margin-top: 60px;
+
 			.playlist{                
 				&::before{
 					content: 'PLAYLIST Do André';
@@ -688,42 +809,46 @@ margin:60px 0;
 		}
 	}
 }
+
 .step-10 {
-	height: 401px;
+	height: 424px;
+
 	&:before{
 		content: '';
 		display: block;
-		width: 785px;
+		width: 788px;
 		height: 327px;
 		background-color: #fe5000;
 		position: absolute;
 		z-index: -1;
-		margin-top: 28px;
+		margin-top: 33px;
+		margin-left:130px !important; 
 	}
 	&:after{
-		top: 43px;
-		right: 49px !important;
-	}
-	.bt_mais{
-		margin-top: 28px;
+		top: 49px;
+		left: 86px !important;
 	}
 	.tit {
-		margin-left: 471px;
-		margin-top: 39px;
+		margin-left: 185px;
+		margin-top: 52px;
 	}
 	.desc {
-		margin-left: 488px;
-		margin-top: 0px;
+		margin-left: 180px;
+		margin-top: 4px;
 	}
 	.foto {
-		left: 0;
-		margin-left: 170px;
-		margin-top: -7px;
+		right: 147px;
+		margin-top: -3px;
 	}
+	.bt_mais{
+		margin-top: 20px;
+	}
+
 	&.active {
 		height: 900px;
 		.desc_details {
 			display: block;
+			margin-left: 165px;
 		}
 		.desc {
 			display: none;
@@ -732,14 +857,21 @@ margin:60px 0;
 			display: none;
 		}
 		.insta{
+			margin-top: 15px;
+
 			.playlist{                
 				&::before{
 					content: 'PLAYLIST Do S.H';
 				}
 			}
 		}
+
+		.bt_fechar {
+			margin-top: 78px;
+		}
 	}
 }
+
 .step-07 {
 	clear: both;
 	margin-top: 5%;
