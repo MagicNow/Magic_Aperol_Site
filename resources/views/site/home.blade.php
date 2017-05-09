@@ -100,7 +100,7 @@
                     <br> com gás</div>
             </div>
         </section>
-        <section class="step step-11 content-animate" data-offset-top="-300">
+        <section class="step step-11 content-animate step-align-right" data-offset-top="-300">
             <div class="component">
                 <div class="fade-animate">
                     <!-- Influencer  -->
@@ -149,7 +149,7 @@
                 </div> */ ?>
             </div>
         </section>
-        <section class="step step-12 content-animate">
+        <section class="step step-12 content-animate step-align-left">
             <div class="component">
                 <div class="fade-animate">
                     <!-- Influencer  -->
@@ -200,7 +200,7 @@
                 </div>
             </div>
         </section>
-        <section class="step step-04 content-animate">
+        <section class="step step-04 content-animate step-align-right">
             <div class="component">
                 <div class="fade-animate">
                     <!-- Influencer  -->
@@ -247,7 +247,7 @@
                 </div>
             </div>
         </section>
-        <section class="step step-06 content-animate">
+        <section class="step step-06 content-animate step-align-left">
             <div class="component">
                 <div class="fade-animate">
                     <!-- Influencer  -->
@@ -293,7 +293,7 @@
                 </div>
             </div>
         </section>
-        <section class="step step-05 content-animate">
+        <section class="step step-05 content-animate step-align-right">
             <div class="component">
                 <div class="fade-animate">
                     <!-- Influencer  -->
@@ -339,7 +339,7 @@
                 </div>
             </div>
         </section>
-        <section class="step step-10 content-animate">
+        <section class="step step-10 content-animate step-align-left">
             <div class="component">
                 <div class="fade-animate">
                     <!-- Influencer  -->
@@ -385,7 +385,7 @@
                 </div>
             </div>
         </section>
-        <section class="step step-03 content-animate">
+        <section class="step step-03 content-animate step-align-right">
             <div class="component">
                 <div class="fade-animate">
                     <!-- Influencer  -->

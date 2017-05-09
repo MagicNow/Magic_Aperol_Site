@@ -97,9 +97,10 @@ header {
     // background: url('../images/background-step-01.png') right no-repeat;
     min-height: 506px;
     position: relative;
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 768px) {
         background: url() #ebdfd9;
         height: auto;
+        min-height: 0;
     }
     .logo {
         overflow: hidden;

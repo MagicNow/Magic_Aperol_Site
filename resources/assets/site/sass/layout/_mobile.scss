@@ -2,48 +2,33 @@
 
     }
 
-    @media (max-width:1600px) {
-
-    }
-
-    @media (min-width:1300px) {
-
-    }
-
-    @media (min-width:769px) {
-
-    }
-
     @media (max-width:1300px) {
 
     }
+
+    @media (min-width:1000px) {
+        .step-09 {
+            .text-container {
+                width: 100%;
+                clear: both;
+                margin-left: -50%;
+            }
+        }
+    }
+
     @media (max-width:768px) {
         .step {
+            .desc br {
+                display: none;
+            }
+
             .desc_details{
                 width: 346px;
                 margin-left: 400px;
             }
             .insta{
-                height: 870px;
                 h2{
                     margin-top: 57px;
-                }
-                .mural{
-                    padding-left: 60px;
-                    height: 340px;
-                }
-                .playlist{
-                    float:initial;
-                    text-align: right;
-                    position: relative;
-                    margin: 40px auto;
-                    width: 275px;
-                    &:before{
-                        left: -120px;
-                    }
-                    .redes{
-                        text-align: center;
-                    }
                 }
             }
         }
@@ -64,60 +49,24 @@
             .desc{
                 margin-left: 400px;
             }
-            &.active{
-                height: 1300px;
-            }
         }
 
         .step-04{
-            &::before{
-                margin-right: 50px !important;
-                margin-left: 0 !important;
-                width: 730px;
+            .tit{
+                margin-left: 400px;
             }
 
-            &::after{
-                top: 180px;
-                left: 0px !important;
-            }
-            .tit{
-                margin-left: 40px;
-            }
-            .foto{
-                margin-left: 0;
-                margin-right: -70px;
-            }
-            .desc{
-                margin-left: 40px;
-            }
-            &.active{
-                height: 1300px;
-                .desc_details{
-                    margin-left: 40px;
-                }
+            .bt_fechar{
+                margin-top: 70px;
             }
         }
 
         .step-05{
-            &::before{
-                margin-left: 50px !important;
-            }
             &::after{
                 top: 195px;
                 right: -15px !important;
             }
-            .tit{
-                margin-left: 400px;
-            }
-            .foto{
-                margin-left: 90px;
-            }
-            .desc{
-                margin-left: 400px;
-            }
-            &.active{
-                height: 1300px;
-            }
+
             .insta{
                 margin-top: 5px;
             }
@@ -150,40 +99,45 @@
             .bt_mais{
                 margin-top: 25px;
             }
-            &.active{
-                height: 1300px;
-                .desc_details{
-                    margin-left: 40px;
-                }
-            }
             .insta{
                 margin-top: 5px;
             }
         }
 
         .step-10{
-            &::before{
-                margin-left: 50px !important;
-            }
             &::after{
                 top: 150px;
                 right: -15px !important;
             }
+
+            // &.active{
+            //     height: 1300px;
+            // }
+        }
+
+        .step-12{
             .tit{
-                margin-left: 400px;
-                width: 47%;
+                margin-left: 40px;
+                max-width: 80%;
             }
             .foto{
-                margin-left: 90px;
+                margin-left: 0;
+                margin-right: -70px;
             }
             .desc{
-                margin-left: 400px;
+                margin-left: 40px;
+                margin-top: 15px;
             }
-            &.active{
-                height: 1300px;
+            .bt_mais{
+                margin-top: 25px;
+            }
+
+            .insta{
+                margin-top: 5px;
             }
         }
     }
+
     @media (max-width:375px) {
         .step {
             .desc_details{
@@ -191,9 +145,9 @@
                 margin-left: 180px;
                 font-size: 8px;
 
-                .bt_fechar{
-                    margin-top: 43px;
-                }
+                // .bt_fechar{
+                //     margin-top: 43px;
+                // }
             }
             .foto{
                 img{
@@ -201,8 +155,8 @@
                 }
             }
             .insta{
-                height: 690px;
-                margin-top: -7px;
+                // height: 690px;
+                // margin-top: -7px;
                 h2{
                     margin-top: 15px;
                     font-size: 17px;
@@ -213,47 +167,47 @@
                         background-size: 70px;
                     }
                 }
-                .mural{
-                    padding-left: 0;
-                    height: 200px;
-                    .imagem{
-                        width: 95px;
-                        height: 95px;
-                        a{
-                            width: 95px;
-                            height: 95px;
-                            img{
-                                width: 95px;
-                                height: 95px;
-                            }
-                        }
-                        &.big{
-                            width: 185px;
-                            height: 190px;
-                            a{
-                                width: 190px;
-                                height: 190px;
-                                img{
-                                    width: 190px;
-                                    height: 190px;
-                                }
-                            }
-                        }
-                    }
-                }
-                .playlist{
-                    float:initial;
-                    text-align: right;
-                    position: relative;
-                    margin: 40px auto;
-                    width: 275px;
-                    &:before{
-                        left: -120px;
-                    }
-                    .redes{
-                        text-align: center;
-                    }
-                }
+                // .mural{
+                //     padding-left: 0;
+                //     height: 200px;
+                //     .imagem{
+                //         width: 95px;
+                //         height: 95px;
+                //         a{
+                //             width: 95px;
+                //             height: 95px;
+                //             img{
+                //                 width: 95px;
+                //                 height: 95px;
+                //             }
+                //         }
+                //         &.big{
+                //             width: 185px;
+                //             height: 190px;
+                //             a{
+                //                 width: 190px;
+                //                 height: 190px;
+                //                 img{
+                //                     width: 190px;
+                //                     height: 190px;
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+                // .playlist{
+                //     float:initial;
+                //     text-align: right;
+                //     position: relative;
+                //     margin: 40px auto;
+                //     width: 275px;
+                //     &:before{
+                //         left: -120px;
+                //     }
+                //     .redes{
+                //         text-align: center;
+                //     }
+                // }
             }
         }
         .step-03{
@@ -268,153 +222,15 @@
                 width: 50px;
                 height: 21px;
             }
-            .tit{
-                margin-left: 180px;
-                width: 130px;
-            }
-            .foto{
-                margin-left: 40px;
-                margin-top: 55px;
-                &:before{
-                    margin-left: -93px !important;
-                    bottom: 75px !important;
-                    font-size: 20px;
-                }
-            }
-            .desc{
-                margin-left: 184px;
-                font-size: 10px;
-                margin-top: 10px;
-                .bt_mais{
-                    margin-left: -95px;
-                }
-            }
-            &.active{
-                height: 1100px;
-            }
         }
 
         .step-04{
-            &::before{
-                margin-right: 50px !important;
-                margin-left: 0 !important;
-                width: 350px;
-            }
-
             &::after{
                 top: 124px;
                 background-size: 50px;
                 width: 50px;
                 height: 21px;
                 left: 8px !important;
-            }
-            .tit{
-                margin-left: 10px;
-                width: 190px;
-                margin-top: 65px;
-            }
-            .foto{
-                margin-left: 0;
-                margin-right: -105px;
-                margin-top: 50px;
-                &:before{
-                    bottom: 75px !important;
-                    font-size: 20px;
-                    margin-right: 50px;
-                    right: -139px;
-                }
-            }
-            .desc{
-                margin-left: 10px;
-                width: 198px;
-                margin-top: 10px;
-            }
-            &.active{
-                height: 1100px;
-                .desc_details{
-                    margin-left: 40px;
-                }
-            }
-        }
-
-        .step-05{
-            &::before{
-                margin-left: 20px !important;
-                
-            }
-            &::after{
-                top: 102px;
-                right: 8px !important;
-                background-size: 50px;
-                width: 50px;
-                height: 21px;
-            }
-            .tit{
-                margin-left: 180px;
-                width: 160px;
-            }
-            .foto{
-                margin-left: 40px;
-                margin-top: 44px;
-                &:before{
-                    margin-left: -93px !important;
-                    bottom: 75px !important;
-                    font-size: 20px;
-                }
-            }
-            .desc{
-                margin-left: 184px;
-                font-size: 10px;
-                margin-top: 10px;
-                .bt_mais{
-                    margin-left: -95px;
-                }
-            }
-            &.active{
-                height: 1100px;
-            }
-        }
-
-        .step-06{
-            &::before{
-                margin-right: 50px !important;
-                margin-left: 0 !important;
-                width: 350px;
-            }
-
-            &::after{
-                top: 124px;
-                background-size: 50px;
-                width: 50px;
-                height: 21px;
-                left: 8px !important;
-            }
-            .tit{
-                margin-left: 10px;
-                width: 190px;
-                margin-top: 65px;
-            }
-            .foto{
-                margin-left: 0;
-                margin-right: -105px;
-                margin-top: 33px;
-                &:before{
-                    bottom: 75px !important;
-                    font-size: 20px;
-                    margin-right: 50px;
-                    right: -139px;
-                }
-            }
-            .desc{
-                margin-left: 10px;
-                width: 198px;
-                margin-top: 10px;
-            }
-            &.active{
-                height: 1100px;
-                .desc_details{
-                    margin-left: 40px;
-                }
             }
         }
 
@@ -433,26 +249,6 @@
             .tit{
                 margin-left: 180px;
                 width: 160px;
-            }
-            .foto{
-                margin-left: 40px;
-                margin-top: 28px;
-                &:before{
-                    margin-left: -93px !important;
-                    bottom: 75px !important;
-                    font-size: 20px;
-                }
-            }
-            .desc{
-                margin-left: 184px;
-                font-size: 10px;
-                margin-top: 10px;
-                .bt_mais{
-                    margin-left: -95px;
-                }
-            }
-            &.active{
-                height: 1100px;
             }
         }
     }
