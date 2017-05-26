@@ -471,7 +471,7 @@
                   summer vibe. Por isso, em 2017, <br>
                   estaremos nas melhores festas Sunset <br>
                   do Brasil, para ajudar você a sentir <br>
-                  </span>
+                  </span><br>
                   a energia do verão!
                 </p>
                 <a href="#festascomaperol" class="bt_oevento">O EVENTO</a>
