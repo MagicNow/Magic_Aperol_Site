@@ -480,6 +480,8 @@
                 <div class="party-calendar component text-filler">
                     <h3 class="tit">FESTAS</h3>
 
+                    <p class="bt_detalhes_calendar">Junho</p>
+
                     <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
                         <span class="filler-line">
                             <span class="filler-text">Fun Festival - Brasília - 02/06</span>
@@ -545,8 +547,34 @@
                             <span class="filler-text">Tardezinha - Rio de Janeiro - 25/06</span>
                         </span>
                     </a>
+                    <p class="bt_detalhes_calendar">Julho</p>
+                    <a href="http://fabricaagencia.com/eventos/baila-comigo/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Baila Comigo  Rio de Janeiro - 01/07</span>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/AgenciaNewFun/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Puta Farra - São Paulo - 14/07</span>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Selvagem - Rio de Janeiro - 15/07</span>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Selvagem - São Paulo - 22/07</span>
+                        </span>
+                    </a>
+                    <a href="http://fabricaagencia.com/eventos/outros-500/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Outros 500 - Rio de Janeiro - 22/07</span>
+                        </span>
+                    </a>
 
-                    <p class="bt_detalhes_calendar">e muito mais...</p>
+                    <!-- <p class="bt_detalhes_calendar">e muito mais...</p> -->
                 </div>
             </div>
         </section>
