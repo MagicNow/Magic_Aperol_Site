@@ -4,6 +4,13 @@ footer {
     border-bottom: 10px solid $color-orange;
     padding-top: 5%;
     font-weight: bold;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        display: inline-block;
+        background: none;
+    }
+
     // Logo
     .logo {
         overflow: hidden;

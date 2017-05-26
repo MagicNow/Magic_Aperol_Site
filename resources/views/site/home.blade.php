@@ -479,100 +479,101 @@
             <div class="content-animate party-container" data-offset-top="0">
                 <div class="party-calendar component text-filler">
                     <h3 class="tit">FESTAS</h3>
+                    <div class="party-calendar-content">
+                        <p class="bt_detalhes_calendar">Junho</p>
 
-                    <p class="bt_detalhes_calendar">Junho</p>
-
-                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Fun Festival - Brasília - 02/06</span>
-                        </span>
-                    </a>
-                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Fun Festival - Brasília - 03/06</span>
-                        </span>
-                    </a>
-                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Fun Festival - Brasília - 04/06</span>
-                        </span>
-                    </a>
-                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Fun Festival - Brasília - 11/06</span>
-                        </span>
-                    </a>
-                    <a href="http://fabricaagencia.com/eventos/tardezinha/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Tardezinha - Rio de Janeiro - 11/06</span>
-                        </span>
-                    </a>
-                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Fun Festival - Brasília - 15/06</span>
-                        </span>
-                    </a>
-                    <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Selvagem - São Paulo - 17/06</span>
-                        </span>
-                    </a>
-                    <a href="https://www.facebook.com/festariosunset/?fref=ts" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Rio Sunset - Campos - 17/06</span>
-                        </span>
-                    </a>
-                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Fun Festival - Brasília - 17/06</span>
-                        </span>
-                    </a>
-                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Fun Festival - Brasília - 18/06</span>
-                        </span>
-                    </a>
-                    <a href="https://www.facebook.com/events/273632119750583/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A882868441752558%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A882868441752558%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Tamo Gigante - São Paulo - 23/06</span>
-                        </span>
-                    </a>
-                    <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Selvagem - Rio de Janeiro - 24/06</span>
-                        </span>
-                    </a>
-                    <a href="http://fabricaagencia.com/eventos/tardezinha/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Tardezinha - Rio de Janeiro - 25/06</span>
-                        </span>
-                    </a>
-                    <p class="bt_detalhes_calendar">Julho</p>
-                    <a href="http://fabricaagencia.com/eventos/baila-comigo/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Baila Comigo  Rio de Janeiro - 01/07</span>
-                        </span>
-                    </a>
-                    <a href="https://www.facebook.com/AgenciaNewFun/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Puta Farra - São Paulo - 14/07</span>
-                        </span>
-                    </a>
-                    <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Selvagem - Rio de Janeiro - 15/07</span>
-                        </span>
-                    </a>
-                    <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Selvagem - São Paulo - 22/07</span>
-                        </span>
-                    </a>
-                    <a href="http://fabricaagencia.com/eventos/outros-500/" target="_blank" class="bt_detalhes_calendar">
-                        <span class="filler-line">
-                            <span class="filler-text">Outros 500 - Rio de Janeiro - 22/07</span>
-                        </span>
-                    </a>
+                        <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Fun Festival - Brasília - 02/06</span>
+                            </span>
+                        </a>
+                        <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Fun Festival - Brasília - 03/06</span>
+                            </span>
+                        </a>
+                        <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Fun Festival - Brasília - 04/06</span>
+                            </span>
+                        </a>
+                        <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Fun Festival - Brasília - 11/06</span>
+                            </span>
+                        </a>
+                        <a href="http://fabricaagencia.com/eventos/tardezinha/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Tardezinha - Rio de Janeiro - 11/06</span>
+                            </span>
+                        </a>
+                        <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Fun Festival - Brasília - 15/06</span>
+                            </span>
+                        </a>
+                        <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Selvagem - São Paulo - 17/06</span>
+                            </span>
+                        </a>
+                        <a href="https://www.facebook.com/festariosunset/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Rio Sunset - Campos - 17/06</span>
+                            </span>
+                        </a>
+                        <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Fun Festival - Brasília - 17/06</span>
+                            </span>
+                        </a>
+                        <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Fun Festival - Brasília - 18/06</span>
+                            </span>
+                        </a>
+                        <a href="https://www.facebook.com/events/273632119750583/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A882868441752558%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A882868441752558%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Tamo Gigante - São Paulo - 23/06</span>
+                            </span>
+                        </a>
+                        <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Selvagem - Rio de Janeiro - 24/06</span>
+                            </span>
+                        </a>
+                        <a href="http://fabricaagencia.com/eventos/tardezinha/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Tardezinha - Rio de Janeiro - 25/06</span>
+                            </span>
+                        </a>
+                        <p class="bt_detalhes_calendar">Julho</p>
+                        <a href="http://fabricaagencia.com/eventos/baila-comigo/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Baila Comigo  Rio de Janeiro - 01/07</span>
+                            </span>
+                        </a>
+                        <a href="https://www.facebook.com/AgenciaNewFun/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Puta Farra - São Paulo - 14/07</span>
+                            </span>
+                        </a>
+                        <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Selvagem - Rio de Janeiro - 15/07</span>
+                            </span>
+                        </a>
+                        <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Selvagem - São Paulo - 22/07</span>
+                            </span>
+                        </a>
+                        <a href="http://fabricaagencia.com/eventos/outros-500/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line">
+                                <span class="filler-text">Outros 500 - Rio de Janeiro - 22/07</span>
+                            </span>
+                        </a>
+                    </div>
 
                     <!-- <p class="bt_detalhes_calendar">e muito mais...</p> -->
                 </div>

@@ -1710,6 +1710,7 @@ $(document).ready(function() {
     var $menu = $('#menu');
     var $fillerLine = $('.filler-line');
     var $content = $('.content-animate');
+    var $party = $('.party-calendar-content');
     var $self, $element, $mask, $text;
 
     $(window).stellar({
@@ -1783,6 +1784,8 @@ $(document).ready(function() {
     $fillerLine.find('.filler').css("background-color", function( index ) {
         return $(this).parent().find('.text').css('color'); // set color to filler by color text
     });
+
+    $party.niceScroll();
 
     $content
         .scrolling({
