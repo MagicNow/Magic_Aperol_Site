@@ -82,7 +82,7 @@
                     <img src="assets/images/taca.png" class="taca2 fade-animate" id="taca2" alt="">
                 </div>
             </div>
-            
+
             <div class="col-md-02 text-doit visible-xs-block">
                 <h3>Em uma taça<br>
                     com gelo<br>
@@ -126,12 +126,12 @@
                                         <a target="_blank" href="https://www.instagram.com/p/BNxcqHUBc3V/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15338534_605755209618859_4063660801481768960_n.jpg?ig_cache_key=MTQwMTAyNjk5ODQ2MTM4NjE5Nw%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BNz4HjEBvF0/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15337129_304061466654518_6592449026090598400_n.jpg?ig_cache_key=MTQwMTcxMDcxODMzMTg0MjkzMg%3D%3D.2"></a>
                                     </div>
-                            
+
                                     <div class="imagem">
                                         <a target="_blank" href="https://www.instagram.com/p/BLuCz6BBkBJ/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14718292_327121344313030_7998886399887540224_n.jpg?ig_cache_key=MTM2NDA0MDEwMDIyMDM4NzQwMQ%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BN2MVdXBTEf/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15306788_182532032211558_6102819464401649664_n.jpg?ig_cache_key=MTQwMjM2MjU4NTE2NDM2MjAxNQ%3D%3D.2"></a>
                                     </div>
-                                    
+
                                     <div class="imagem big">
                                         <a target="_blank" href="https://www.instagram.com/p/BNz4HjEBvF0/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15337129_304061466654518_6592449026090598400_n.jpg?ig_cache_key=MTQwMTcxMDcxODMzMTg0MjkzMg%3D%3D.2"></a>
                                     </div>
@@ -163,7 +163,7 @@
                     verão com muito bom humor.</strong> <!-- Ouça a playlist dela aqui. -->
                         <a href="#" class="bt_mais">MAIS</a>
                     </p>
-                    <?php /* 
+                    <?php /*
                     <div class="desc_details">O Caio sabe que verão tem tudo a ver com moda<br>
                     e estilo. Confira as histórias divertidas que ele<br>
                     tem pra contar, <strong>e aproveite pra eternizar o seu<br>
@@ -176,12 +176,12 @@
                                         <a target="_blank" href="https://www.instagram.com/p/BNsM5Ymg9XE/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15338344_1070818073047913_5976556965021614080_n.jpg?ig_cache_key=MTM5OTU1MDMwNDE4OTY2Njc1Ng%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BNXPHHoAMQ7/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15035676_125309227954148_6453861121622278144_n.jpg?ig_cache_key=MTM5MzY0OTA2OTYxNTc5MzIxMQ%3D%3D.2"></a>
                                     </div>
-                            
+
                                     <div class="imagem">
                                         <a target="_blank" href="https://www.instagram.com/p/BNXOAElgPv6/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15258715_367614400242038_1596692128518373376_n.jpg?ig_cache_key=MTM5MzY0NDE4NzI2OTc5MDcxNA%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BNWaOdEgaS-/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14540638_1811763152412680_4169739501486211072_n.jpg?ig_cache_key=MTM5MzQxNjQ3NzIxMzgyODI4Ng%3D%3D.2"></a>
                                     </div>
-                                    
+
                                     <div class="imagem big">
                                         <a target="_blank" href="https://www.instagram.com/p/BMo-qmQBwC8/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14606988_265810817150398_3449376479815663616_n.jpg?ig_cache_key=MTM4MDYyODg5MTk2MTg1MjA5Mg%3D%3D.2"></a>
                                     </div>
@@ -224,12 +224,12 @@
                                         <a target="_blank" href="https://www.instagram.com/p/BNsM5Ymg9XE/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15338344_1070818073047913_5976556965021614080_n.jpg?ig_cache_key=MTM5OTU1MDMwNDE4OTY2Njc1Ng%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BNXPHHoAMQ7/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15035676_125309227954148_6453861121622278144_n.jpg?ig_cache_key=MTM5MzY0OTA2OTYxNTc5MzIxMQ%3D%3D.2"></a>
                                     </div>
-                            
+
                                     <div class="imagem">
                                         <a target="_blank" href="https://www.instagram.com/p/BNXOAElgPv6/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15258715_367614400242038_1596692128518373376_n.jpg?ig_cache_key=MTM5MzY0NDE4NzI2OTc5MDcxNA%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BNWaOdEgaS-/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14540638_1811763152412680_4169739501486211072_n.jpg?ig_cache_key=MTM5MzQxNjQ3NzIxMzgyODI4Ng%3D%3D.2"></a>
                                     </div>
-                                    
+
                                     <div class="imagem big">
                                         <a target="_blank" href="https://www.instagram.com/p/BMo-qmQBwC8/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14606988_265810817150398_3449376479815663616_n.jpg?ig_cache_key=MTM4MDYyODg5MTk2MTg1MjA5Mg%3D%3D.2"></a>
                                     </div>
@@ -270,12 +270,12 @@
                                         <a target="_blank" href="https://www.instagram.com/p/BN8E2zRjA92/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15337163_1364038893641353_837648300667568128_n.jpg?ig_cache_key=MTQwNDAxODU0MTkyNTc2NDk4Mg%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BNpP3WwjWBr/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14515662_957404211070513_133645668420943872_n.jpg?ig_cache_key=MTM5ODcxODkzMzk4MTAyODQ1OQ%3D%3D.2"></a>
                                     </div>
-                            
+
                                     <div class="imagem">
                                         <a target="_blank" href="https://www.instagram.com/p/BNm_YUOj5OD/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15276699_813098805510003_7798008090804092928_n.jpg?ig_cache_key=MTM5ODA4MzQ4MjI2MTg4NTgyNw%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BNfg-Ypj0BM/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15337100_1157172181066956_8413150250583195648_n.jpg?ig_cache_key=MTM5NTk3OTQzNDA3MTExMzgwNA%3D%3D.2"></a>
                                     </div>
-                                    
+
                                     <div class="imagem big">
                                         <a target="_blank" href="https://www.instagram.com/p/BNCmaR3DUNn/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14561748_563806120490467_8090315486136369152_n.jpg?ig_cache_key=MTM4Nzg0MDU2NjgzNDU3ODI3OQ%3D%3D.2"></a>
                                     </div>
@@ -316,12 +316,12 @@
                                         <a target="_blank" href="https://www.instagram.com/p/BJ9UOmOB83V/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14262756_1148773848535358_1180699552_n.jpg?ig_cache_key=MTMzMjMxMDAyODgxMjAxMzAxMw%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BJ8TDjkh1Fo/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14063133_913071248837198_1462068227_n.jpg?ig_cache_key=MTMzMjAyMzM5NzAzMDc3NzE5Mg%3D%3D.2"></a>
                                     </div>
-                            
+
                                     <div class="imagem">
                                         <a target="_blank" href="https://www.instagram.com/p/BH-cKl-hRCh/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/13767646_1148944195149430_791593759_n.jpg?ig_cache_key=MTI5NjU5NzYxNjAwMzcxNTIzMw%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BK6oqRgjmMD/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14374007_162860237498548_149776582037209088_n.jpg?ig_cache_key=MTM0OTU2OTg2NTIyOTE2NTMxNQ%3D%3D.2"></a>
                                     </div>
-                                    
+
                                     <div class="imagem big">
                                         <a target="_blank" href="https://www.instagram.com/p/BN5DnL9D8Ex/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15403516_178364982631658_5328881819544715264_n.jpg?ig_cache_key=MTQwMzE2ODY0NTkzNzM0ODkxMw%3D%3D.2"></a>
                                     </div>
@@ -362,12 +362,12 @@
                                         <a target="_blank" href="https://www.instagram.com/p/BNb3EpNj0q_/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/s750x750/sh0.08/e35/15275702_334684303578231_3818140323150823424_n.jpg?ig_cache_key=MTM5NDk1MDcyMTI4ODIyNzUxOQ%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BNX-iRIjKuC/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/s750x750/sh0.08/e35/15099449_740504849436460_6125359160713281536_n.jpg?ig_cache_key=MTM5Mzg1NzY0MzQzNzQwMzAxMA%3D%3D.2"></a>
                                     </div>
-                            
+
                                     <div class="imagem">
                                         <a target="_blank" href="https://www.instagram.com/p/BNOrSEQja4n/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/s750x750/sh0.08/e35/15099611_1804824356426292_5210320699037581312_n.jpg?ig_cache_key=MTM5MTIzOTY5MjQyNzMwODU4Mw%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BMUvk2njk2Y/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/s750x750/sh0.08/e35/14677358_1634227873543250_3509497230161608704_n.jpg?ig_cache_key=MTM3NDkzMzAyNjk4NzcyNDE4NA%3D%3D.2"></a>
                                     </div>
-                                    
+
                                     <div class="imagem big">
                                         <a target="_blank" href="https://www.instagram.com/p/BLI1qwijkTu/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/s750x750/sh0.08/e35/14592165_1123629547685853_4286867631924838400_n.jpg?ig_cache_key=MTM1MzU2NzcyMjgyNzMwMjEyNg%3D%3D.2"></a>
                                     </div>
@@ -394,7 +394,7 @@
                     {{ Html::image('assets/images/foto_andy.png', '', array('class' => '')) }}
                     </div>
                     <p class="desc">É só ver as viagens dele que você sente
-                        <br> mais vontade de viver o verão. 
+                        <br> mais vontade de viver o verão.
                         <br> <strong>Play na trilha do Andy.</strong>
                         <a href="#" class="bt_mais" id="detalhes_raul">MAIS</a>
                     </p>
@@ -407,12 +407,12 @@
                                         <a target="_blank" href="https://www.instagram.com/p/BNxcqHUBc3V/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15338534_605755209618859_4063660801481768960_n.jpg?ig_cache_key=MTQwMTAyNjk5ODQ2MTM4NjE5Nw%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BNz4HjEBvF0/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15337129_304061466654518_6592449026090598400_n.jpg?ig_cache_key=MTQwMTcxMDcxODMzMTg0MjkzMg%3D%3D.2"></a>
                                     </div>
-                            
+
                                     <div class="imagem">
                                         <a target="_blank" href="https://www.instagram.com/p/BLuCz6BBkBJ/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/14718292_327121344313030_7998886399887540224_n.jpg?ig_cache_key=MTM2NDA0MDEwMDIyMDM4NzQwMQ%3D%3D.2"></a>
                                         <a target="_blank" href="https://www.instagram.com/p/BN2MVdXBTEf/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15306788_182532032211558_6102819464401649664_n.jpg?ig_cache_key=MTQwMjM2MjU4NTE2NDM2MjAxNQ%3D%3D.2"></a>
                                     </div>
-                                    
+
                                     <div class="imagem big">
                                         <a target="_blank" href="https://www.instagram.com/p/BNz4HjEBvF0/"><img src="https://instagram.fpoa4-1.fna.fbcdn.net/t51.2885-15/e35/15337129_304061466654518_6592449026090598400_n.jpg?ig_cache_key=MTQwMTcxMDcxODMzMTg0MjkzMg%3D%3D.2"></a>
                                     </div>
@@ -446,24 +446,33 @@
             <div class="party content-animate">
                 <h2 class="component text-filler tit">
                     <span class="filler-line">
-                        <span class="text">Reveillon</span>
+                        <span class="text">Em busca do</span>
                     </span>
                     <span class="filler-line">
-                        <span class="text">DO GOSTOSO</span>
+                        <span class="text">Sunset Perfeito</span>
                     </span><br>
 
-                    <span class="component text-filler sub_tit">
+                    <!-- <span class="component text-filler sub_tit">
                         <span class="filler-line">
                             <span class="text">SãO MIGUEL DO GOSTOSO - RN</span>
                         </span>
-                    </span>
+                    </span> -->
                 </h2>
-                <p id="partyText"><span class="strike">O Reveillon mais Gostoso do Brasil nasce
+                <!-- <p id="partyText"><span class="strike">O Reveillon mais Gostoso do Brasil nasce
                     <br> no ano de 2016, em uma das praias mais
                     <br> paradisíacas do nordeste Brasileiro.
                     <br> Serão 5 dias de diversão com muito sol,
                     <br> mar, praia, alegria, esporte</span>
                     <br> e muita azaração
+                </p> -->
+                <p id="partyText">
+                  <span class="strike">
+                  A gente não cansa de buscar a melhor <br>
+                  summer vibe. Por isso, em 2017, <br>
+                  estaremos nas melhores festas Sunset <br>
+                  do Brasil, para ajudar você a sentir <br>
+                  </span>
+                  a energia do verão!
                 </p>
                 <a href="#festascomaperol" class="bt_oevento">O EVENTO</a>
             </div>
@@ -471,36 +480,72 @@
                 <div class="party-calendar component text-filler">
                     <h3 class="tit">FESTAS</h3>
 
-                    <a href="#" class="bt_detalhes_calendar">
+                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
                         <span class="filler-line">
-                            <span class="filler-text">Temporada Reveillon Tikal 2017 - Maraú /BA</span>
+                            <span class="filler-text">Fun Festival - Brasília - 02/06</span>
                         </span>
                     </a>
-                    <a href="#" class="bt_detalhes_calendar">
+                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
                         <span class="filler-line">
-                            <span class="filler-text">Reveillon do Gostoso - São Miguel do Gostoso/RN</span>
+                            <span class="filler-text">Fun Festival - Brasília - 03/06</span>
                         </span>
                     </a>
-                    <a href="#" class="bt_detalhes_calendar">
+                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
                         <span class="filler-line">
-                            <span class="filler-text">Reveillon MAREH NYE 2017 - Cumuruxatiba / BAN</span>
+                            <span class="filler-text">Fun Festival - Brasília - 04/06</span>
                         </span>
                     </a>
-                    <a href="#" class="bt_detalhes_calendar">
+                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
                         <span class="filler-line">
-                            <span class="filler-text">Reveillon Taípe</span>
+                            <span class="filler-text">Fun Festival - Brasília - 11/06</span>
                         </span>
                     </a>
-                    <a href="#" class="bt_detalhes_calendar">
+                    <a href="http://fabricaagencia.com/eventos/tardezinha/" target="_blank" class="bt_detalhes_calendar">
                         <span class="filler-line">
-                            <span class="filler-text">Réveillon Vai Tapajós 2017 - Alter Do Chão / AM</span>
+                            <span class="filler-text">Tardezinha - Rio de Janeiro - 11/06</span>
                         </span>
                     </a>
-                    <a href="#" class="bt_detalhes_calendar">
+                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
                         <span class="filler-line">
-                            <span class="filler-text">Réveillon Cheers - Rio de Janeiro/ RJ</span>
+                            <span class="filler-text">Fun Festival - Brasília - 15/06</span>
                         </span>
                     </a>
+                    <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Selvagem - São Paulo - 17/06</span>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/festariosunset/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Rio Sunset - Campos - 17/06</span>
+                        </span>
+                    </a>
+                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Fun Festival - Brasília - 17/06</span>
+                        </span>
+                    </a>
+                    <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Fun Festival - Brasília - 18/06</span>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/events/273632119750583/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A882868441752558%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A882868441752558%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Tamo Gigante - São Paulo - 23/06</span>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Selvagem - Rio de Janeiro - 24/06</span>
+                        </span>
+                    </a>
+                    <a href="http://fabricaagencia.com/eventos/tardezinha/" target="_blank" class="bt_detalhes_calendar">
+                        <span class="filler-line">
+                            <span class="filler-text">Tardezinha - Rio de Janeiro - 25/06</span>
+                        </span>
+                    </a>
+
                     <p class="bt_detalhes_calendar">e muito mais...</p>
                 </div>
             </div>
@@ -531,19 +576,19 @@
                     </p>
                     <div class="content-animate">
                         <div class="kombi-calendar component text-filler">
-                            <p class="active"> 
+                            <p class="active">
                                 <span class="filler-line">
                                     <span class="filler-text">09/03 <span class="location">Stuzzi Bar - Leblon</span></span>
                                 </span>
                                 <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117537.24469686231!2d-43.29836318733525!3d-22.985597110028802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x9bd44b5bf8cdf3%3A0x82f167d9d66fc743!2sstuzzi+bar+rj!3m2!1d-22.9856125!2d-43.2283228!5e0!3m2!1spt-BR!2sbr!4v1489145145872" class="bt_vejamapa">veja o mapa</a>
                             </p>
-                            <p> 
+                            <p>
                                 <span class="filler-line">
                                     <span class="filler-text">10 a 11/03 <span class="location">Cafofo Pub - Botafogo</span></span>
                                 </span>
                                 <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117568.36561824697!2d-43.25496808803026!3d-22.949806328626682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x997ff01ed6bf81%3A0x20ef40b0a52d5e7d!2scafofo+rj!3m2!1d-22.949821699999998!2d-43.184927699999996!5e0!3m2!1spt-BR!2sbr!4v1489145185957" class="bt_vejamapa">veja o mapa</a>
                             </p>
-                            <p> 
+                            <p>
                                 <span class="filler-line">
                                     <span class="filler-text">12/03 <span class="location">PRIMA Bruschetteria - Leblon</span></span>
                                 </span>
@@ -590,7 +635,7 @@
                     </span>
                 </p>
             </div>
-            {{-- 
+            {{--
             <div class="mural clearfix">
                 @foreach ($posts as $post)
                     @if ($post->type === 'image')
