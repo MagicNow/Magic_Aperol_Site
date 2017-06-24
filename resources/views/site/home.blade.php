@@ -607,21 +607,21 @@
                         <div class="kombi-calendar component text-filler">
                             <p class="active">
                                 <span class="filler-line">
-                                    <span class="filler-text">09/03 <span class="location">Stuzzi Bar - Leblon</span></span>
+                                    <span class="filler-text">23 e 24/06 <span class="location">Versão Brasileira - Brasília</span></span>
                                 </span>
-                                <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117537.24469686231!2d-43.29836318733525!3d-22.985597110028802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x9bd44b5bf8cdf3%3A0x82f167d9d66fc743!2sstuzzi+bar+rj!3m2!1d-22.9856125!2d-43.2283228!5e0!3m2!1spt-BR!2sbr!4v1489145145872" class="bt_vejamapa">veja o mapa</a>
+                                <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.8926779336125!2d-47.89243968514484!3d-15.809611989041779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ada830a9edb%3A0xaf557e412b9165c5!2sVers%C3%A3o+Brasileira!5e0!3m2!1spt-BR!2sbr!4v1498334981196" class="bt_vejamapa">veja o mapa</a>
                             </p>
                             <p>
                                 <span class="filler-line">
-                                    <span class="filler-text">10 a 11/03 <span class="location">Cafofo Pub - Botafogo</span></span>
+                                    <span class="filler-text">30/06 <span class="location">Mercadito - Brasília</span></span>
                                 </span>
-                                <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117568.36561824697!2d-43.25496808803026!3d-22.949806328626682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x997ff01ed6bf81%3A0x20ef40b0a52d5e7d!2scafofo+rj!3m2!1d-22.949821699999998!2d-43.184927699999996!5e0!3m2!1spt-BR!2sbr!4v1489145185957" class="bt_vejamapa">veja o mapa</a>
+                                <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.9847276596497!2d-47.887413085144864!3d-15.804759289044762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ad9248ce1d9%3A0x27b483fb5b8a7ce0!2sMercadito+Bar+e+Restaurante!5e0!3m2!1spt-BR!2sbr!4v1498335026729" class="bt_vejamapa">veja o mapa</a>
                             </p>
                             <p>
                                 <span class="filler-line">
-                                    <span class="filler-text">12/03 <span class="location">PRIMA Bruschetteria - Leblon</span></span>
+                                    <span class="filler-text">01/07 <span class="location">Mercadito - Brasília</span></span>
                                 </span>
-                                <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d117537.25461672634!2d-43.29659258733546!3d-22.985585710034716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x9bd44ccbd8aa59%3A0x8017aaf00ba23d51!2sprima+bar+rj!3m2!1d-22.9856011!2d-43.2265522!5e0!3m2!1spt-BR!2sbr!4v1489145222743" class="bt_vejamapa">veja o mapa</a></p>
+                                <a href="#" data-evento="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.9847276596497!2d-47.887413085144864!3d-15.804759289044762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ad9248ce1d9%3A0x27b483fb5b8a7ce0!2sMercadito+Bar+e+Restaurante!5e0!3m2!1spt-BR!2sbr!4v1498335071143" class="bt_vejamapa">veja o mapa</a></p>
                         </div>
                     </div>
                 </div>
