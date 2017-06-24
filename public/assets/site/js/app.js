@@ -1785,7 +1785,9 @@ $(document).ready(function() {
         return $(this).parent().find('.text').css('color'); // set color to filler by color text
     });
 
-    $party.niceScroll();
+    $party.niceScroll({
+        autohidemode: false
+    });
 
     $content
         .scrolling({

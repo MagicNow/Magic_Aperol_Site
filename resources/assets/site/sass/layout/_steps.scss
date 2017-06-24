@@ -4,6 +4,7 @@ section {
 
 .party-calendar-content {
 	height: 247px;
+	padding-right: 10px;
 }
 
 .foto {
@@ -1263,6 +1264,7 @@ margin:60px 0;
 		.tit {
 			color: #fe5000;
 			font-size: 17px;
+			margin-right: 10px;
 			letter-spacing: 10px;
 			text-transform: uppercase;
 			font-weight: bold;
@@ -1774,7 +1776,7 @@ margin:60px 0;
 		left: 50%;
 		width: 25%;
 		position: relative;
-		z-index: 2;
+		z-index: 5;
 		float: left;
 		margin-left: -23%;
 
@@ -1786,7 +1788,8 @@ margin:60px 0;
 		position: relative;
 		width: 50%;
 		overflow: hidden;
-		left: 50%;
+		// left: 50%;
+		left: 0;
 		margin-left: 0;
 		margin-top: -1%;
 		z-index: 5;
