@@ -573,6 +573,77 @@
                                 <span class="filler-text">Outros 500 - Rio de Janeiro - 22/07</span>
                             </span>
                         </a>
+                        <p class="bt_detalhes_calendar">Agosto</p>
+                        <a href="https://www.agencianewfun.com.br/fextinha" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Fextinha - 04/08</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/festapostal/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Postal - São Paulo - 05/08</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/Tardezinha/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Tardezinha - São Paulo - 05/08</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/marehmusic/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Babel - São Paulo - 12/08</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Selvagem - São Paulo - 12/08</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/festaselvagem/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Selvagem - Rio de Janeiro - 26/08</span></span>
+                        </a>
+                        <p class="bt_detalhes_calendar">Setembro</p>
+                        <a href="https://www.facebook.com/veraonalaje/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Verão na Laje - Rio de Janeiro - 08/09</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/BailaCmg/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Baila Comigo - Rio de Janeiro - 16/09</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/festariosunset/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text"></span>Rio Sunset - São Paulo - 20/09</span>
+                        </a>
+                        <p class="bt_detalhes_calendar">Outubro</p>
+                        <a href="https://www.facebook.com/festaerrejota/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Errejota - Rio de Janeiro - 07/10</span></span>
+                        </a>
+                        <a href="Https://www.facebook.com/festapostal/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text"></span>Postal - São Paulo - 21/10</span>
+                        </a>
+                        <a href="https://www.facebook.com/veraonalaje/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Verão na Laje - Rio de Janeiro - 21/10</span></span>
+                        </a>
+                        <a href="https://www.agencianewfun.com.br/tamogigante" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text"></span>Tamo Gigante - 27/10</span>
+                        </a>
+                        <p class="bt_detalhes_calendar">Novembro</p>
+                        <a href="https://www.facebook.com/marehmusic/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Babel - São Paulo - 11/11</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/Tardezinha/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Tardezinha - Rio de Janeiro - 12/11</span></span>
+                        </a>
+                        <a href="https://www.agencianewfun.com.br/fextinha" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Fextinha de Rodeio - 24/11</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/BailaCmg/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Baila Comigo - Rio de Janeiro - 25/11</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/Tardezinha/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Tardezinha - Rio de Janeiro - 26/11</span></span>
+                        </a>
+                        <p class="bt_detalhes_calendar">Dezembro</p>
+                        <a href="https://www.facebook.com/Tardezinha/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text"></span>Tardezinha - Rio de Janeiro - 02/12</span>
+                        </a>
+                        <a href="https://www.facebook.com/festaoutros500/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Outros 500 - Rio de Janeiro - 09/12</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/festapostal/?fref=ts" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Postal - São Paulo - 15/12</span></span>
+                        </a>
+                        <a href="https://www.facebook.com/Tardezinha/" target="_blank" class="bt_detalhes_calendar">
+                            <span class="filler-line"><span class="filler-text">Tardezinha - Rio de Janeiro - 16/12</span></span>
+                        </a>
                     </div>
 
                     <!-- <p class="bt_detalhes_calendar">e muito mais...</p> -->
