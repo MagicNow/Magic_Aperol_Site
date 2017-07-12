@@ -57,6 +57,232 @@ d.parent(".dropdown-menu").length&&(d=d.closest("li.dropdown").addClass("active"
   };
 }(DOMParser));
 
+/**
+ * @license e-Calendar v0.9.3
+ * (c) 2014-2016 - Jhonis de Souza
+ * License: GNU
+ */
+
+(function($) {
+
+    var eCalendar = function(options, object) {
+        // Initializing global variables
+        var adDay = new Date().getDate();
+        var adMonth = new Date().getMonth();
+        var adYear = new Date().getFullYear();
+        var dDay = adDay;
+        var dMonth = adMonth;
+        var dYear = adYear;
+        var instance = object;
+
+        var settings = $.extend({}, $.fn.eCalendar.defaults, options);
+
+        function lpad(value, length, pad) {
+            if (typeof pad == 'undefined') {
+                pad = '0';
+            }
+            var p;
+            for (var i = 0; i < length; i++) {
+                p += pad;
+            }
+            return (p + value).slice(-length);
+        }
+
+        var mouseOver = function() {
+            $(this).addClass('c-nav-btn-over');
+        };
+        var mouseLeave = function() {
+            $(this).removeClass('c-nav-btn-over');
+        };
+        var mouseOverEvent = function() {
+            $(this).addClass('c-event-over');
+            var d = $(this).attr('data-event-day');
+            $('div.c-event-item[data-event-day="' + d + '"]').addClass('c-event-over');
+        };
+        var mouseLeaveEvent = function() {
+            $(this).removeClass('c-event-over')
+            var d = $(this).attr('data-event-day');
+            $('div.c-event-item[data-event-day="' + d + '"]').removeClass('c-event-over');
+        };
+        var mouseOverItem = function() {
+            $(this).addClass('c-event-over');
+            var d = $(this).attr('data-event-day');
+            $('div.c-event[data-event-day="' + d + '"]').addClass('c-event-over');
+        };
+        var mouseLeaveItem = function() {
+            $(this).removeClass('c-event-over')
+            var d = $(this).attr('data-event-day');
+            $('div.c-event[data-event-day="' + d + '"]').removeClass('c-event-over');
+        };
+        var nextMonth = function() {
+            if (dMonth < 11) {
+                dMonth++;
+            } else {
+                dMonth = 0;
+                dYear++;
+            }
+            print();
+        };
+        var previousMonth = function() {
+            if (dMonth > 0) {
+                dMonth--;
+            } else {
+                dMonth = 11;
+                dYear--;
+            }
+            print();
+        };
+
+        function loadEvents() {
+            if (typeof settings.url != 'undefined' && settings.url != '') {
+                $.ajax({
+                    url: settings.url,
+                    async: false,
+                    success: function(result) {
+                        settings.events = result;
+                    }
+                });
+            }
+        }
+
+        function print() {
+            loadEvents();
+            var dWeekDayOfMonthStart = new Date(dYear, dMonth, 1).getDay() - settings.firstDayOfWeek;
+            if (dWeekDayOfMonthStart < 0) {
+                dWeekDayOfMonthStart = 6 - ((dWeekDayOfMonthStart + 1) * -1);
+            }
+            var dLastDayOfMonth = new Date(dYear, dMonth + 1, 0).getDate();
+            var dLastDayOfPreviousMonth = new Date(dYear, dMonth + 1, 0).getDate() - dWeekDayOfMonthStart + 1;
+
+            var cBody = $('<div/>').addClass('c-grid');
+            var cBodyWrap = $('.calendar-container .nav .controls');
+            var cBodyWrapTit = $('.calendar-container .tit_cal span');
+            cBodyWrap.html('');
+            cBodyWrapTit.html('');
+            var cEvents = $('<div/>').addClass('c-event-grid');
+            var cEventsBody = $('<div/>').addClass('c-event-body');
+            cEvents.append($('<div/>').addClass('c-event-title c-pad-top').html(settings.eventTitle));
+            cEvents.append(cEventsBody);
+            var cNext = $('<div/>').addClass('c-next c-grid-title c-pad-top');
+            var cMonth = $('<strong/>'); //$('<div/>').addClass('c-month c-grid-title c-pad-top');
+            var cPrevious = $('<div/>').addClass('c-previous c-grid-title c-pad-top');
+            cPrevious.html(settings.textArrows.previous);
+            cMonth.html(settings.months[dMonth]); //+ ' ' + dYear);
+            cNext.html(settings.textArrows.next);
+
+            cPrevious.on('mouseover', mouseOver).on('mouseleave', mouseLeave).on('click', previousMonth);
+            cNext.on('mouseover', mouseOver).on('mouseleave', mouseLeave).on('click', nextMonth);
+
+            cBodyWrap.append(cPrevious);
+            cBodyWrapTit.append(cMonth);
+            cBodyWrap.append(cNext);
+            var dayOfWeek = settings.firstDayOfWeek;
+            for (var i = 0; i < 7; i++) {
+                if (dayOfWeek > 6) {
+                    dayOfWeek = 0;
+                }
+                var cWeekDay = $('<div/>').addClass('c-week-day c-pad-top');
+                cWeekDay.html(settings.weekDays[dayOfWeek]);
+                cBody.append(cWeekDay);
+                dayOfWeek++;
+            }
+            var day = 1;
+            var dayOfNextMonth = 1;
+            for (var i = 0; i < 42; i++) {
+                var cDay = $('<div/>');
+                if (i < dWeekDayOfMonthStart) {
+                    cDay.addClass('c-day-previous-month c-pad-top');
+                    cDay.html(dLastDayOfPreviousMonth++);
+                } else if (day <= dLastDayOfMonth) {
+                    cDay.addClass('c-day c-pad-top');
+                    if (day == dDay && adMonth == dMonth && adYear == dYear) {
+                        cDay.addClass('c-today');
+                    }
+                    for (var j = 0; j < settings.events.length; j++) {
+                        var d = settings.events[j].datetime;
+                        if (d.getDate() == day && d.getMonth() == dMonth && d.getFullYear() == dYear) {
+                            cDay.addClass('c-event').attr('data-event-day', d.getDate());
+                            cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent);
+                        }
+                    }
+                    cDay.html(day++);
+                } else {
+                    cDay.addClass('c-day-next-month c-pad-top');
+                    cDay.html(dayOfNextMonth++);
+                }
+                cBody.append(cDay);
+            }
+            var eventList = $('<div/>').addClass('c-event-list');
+            for (var i = 0; i < settings.events.length; i++) {
+                var d = settings.events[i].datetime;
+                if (d.getMonth() == dMonth && d.getFullYear() == dYear) {
+                    var date = lpad(d.getDate(), 2); //+ '/' + lpad(d.getMonth() + 1, 2) + ' ' + lpad(d.getHours(), 2) + ':' + lpad(d.getMinutes(), 2);
+                    var item = $('<div/>').addClass('c-event-item');
+                    var title = $('<div/>').addClass('title').html('<div class="e-data">' + date + '</div>  ' + settings.events[i].title + '<br/>');
+                    var description = $('<div/>').addClass('description').html(settings.events[i].description + '<br/>');
+                    item.attr('data-event-day', d.getDate());
+                    item.on('mouseover', mouseOverItem).on('mouseleave', mouseLeaveItem);
+                    item.append(title).append(description);
+
+                    // Add the url to the description if is set
+                    if (settings.events[i].url !== undefined) {
+                        /**
+                         * If the setting url_blank is set and is true, the target of the url
+                         * will be "_blank"
+                         */
+                        type_url = settings.events[i].url_blank !== undefined &&
+                            settings.events[i].url_blank === true ?
+                            '_blank' : '';
+                        description.wrap('<a href="' + settings.events[i].url + '" target="' + type_url + '" ></a>');
+                    }
+
+                    eventList.append(item);
+                }
+            }
+            $(instance).addClass('calendar');
+            cEventsBody.append(eventList);
+            $(instance).html(cBody).append(cEvents);
+
+            $('.nicescroll-rails').remove();
+
+            $('.c-event-body').niceScroll({
+                cursorwidth: 10,
+                emulatetouch: true,
+                cursorcolor: '#fe5000',
+                cursorborder: 'none',
+                cursorborderradius: 20,
+                autohidemode: false,
+                background: "#000",
+                cursorfixedheight: "10"
+            }).resize();
+        }
+
+        return print();
+    }
+
+    $.fn.eCalendar = function(oInit) {
+        return this.each(function() {
+            return eCalendar(oInit, $(this));
+        });
+    };
+
+    // plugin defaults
+    $.fn.eCalendar.defaults = {
+        weekDays: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'],
+        months: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+        textArrows: { previous: '<', next: '>' },
+        eventTitle: 'Eventos',
+        url: '',
+        events: [
+            { title: 'Evento de Abertura', description: 'Abertura das Olimpíadas Rio 2016', datetime: new Date(2016, new Date().getMonth(), 12, 17) },
+            { title: 'Tênis de Mesa', description: 'BRA x ARG - Semifinal', datetime: new Date(2016, new Date().getMonth(), 23, 16) },
+            { title: 'Ginástica Olímpica', description: 'Classificatórias de equipes', datetime: new Date(2016, new Date().getMonth(), 31, 16) }
+        ],
+        firstDayOfWeek: 0
+    };
+
+}(jQuery));
+
 /*
  jquery.fullscreen 1.1.4
  https://github.com/kayahr/jquery-fullscreen-plugin
@@ -1710,12 +1936,59 @@ $(document).ready(function() {
     var $menu = $('#menu');
     var $fillerLine = $('.filler-line');
     var $content = $('.content-animate');
-    var $party = $('.party-calendar-content');
     var $self, $element, $mask, $text;
 
     $(window).stellar({
         hideDistantElements: false
     });
+
+    $('#calendar').eCalendar({
+        textArrows: { previous: '', next: '' },
+        events: [
+            { title: 'FUNN FESTIVAL (BSB)', description: 'Em comemoração à Semana Mundial do Meio Ambiente, apresentamos Funn Festival, um festival amigo da Natureza.Inspirado em grandes festivais europeus, será possível curtir aquele friozinho maravilhoso de Junho com variedade de rótulos de vinho ou, até mesmo, tomar uma cerveja especial no aconchegante Bier Garden, devidamente inspirado nos nossos amigos germânicos. Para completar a experiência, tudo isso ocorrerá em um dos maiores parques urbanos do mundo. Isso mesmo! No nosso Parque da Cidade em Brasília!', datetime: new Date(2017, 06, 02), url: 'http://www.funnfestival.com.br/', url_blank: true },
+            { title: 'FUNN FESTIVAL (BSB)', description: 'Em comemoração à Semana Mundial do Meio Ambiente, apresentamos Funn Festival, um festival amigo da Natureza.Inspirado em grandes festivais europeus, será possível curtir aquele friozinho maravilhoso de Junho com variedade de rótulos de vinho ou, até mesmo, tomar uma cerveja especial no aconchegante Bier Garden, devidamente inspirado nos nossos amigos germânicos. Para completar a experiência, tudo isso ocorrerá em um dos maiores parques urbanos do mundo. Isso mesmo! No nosso Parque da Cidade em Brasília!', datetime: new Date(2017, 06, 03), url: 'http://www.funnfestival.com.br/', url_blank: true },
+            { title: 'FUNN FESTIVAL (BSB)', description: 'Em comemoração à Semana Mundial do Meio Ambiente, apresentamos Funn Festival, um festival amigo da Natureza.Inspirado em grandes festivais europeus, será possível curtir aquele friozinho maravilhoso de Junho com variedade de rótulos de vinho ou, até mesmo, tomar uma cerveja especial no aconchegante Bier Garden, devidamente inspirado nos nossos amigos germânicos. Para completar a experiência, tudo isso ocorrerá em um dos maiores parques urbanos do mundo. Isso mesmo! No nosso Parque da Cidade em Brasília!', datetime: new Date(2017, 06, 04), url: 'http://www.funnfestival.com.br/', url_blank: true },
+            { title: 'FUNN FESTIVAL (BSB)', description: 'Em comemoração à Semana Mundial do Meio Ambiente, apresentamos Funn Festival, um festival amigo da Natureza.Inspirado em grandes festivais europeus, será possível curtir aquele friozinho maravilhoso de Junho com variedade de rótulos de vinho ou, até mesmo, tomar uma cerveja especial no aconchegante Bier Garden, devidamente inspirado nos nossos amigos germânicos. Para completar a experiência, tudo isso ocorrerá em um dos maiores parques urbanos do mundo. Isso mesmo! No nosso Parque da Cidade em Brasília!', datetime: new Date(2017, 06, 10), url: 'http://www.funnfestival.com.br/', url_blank: true },
+            { title: 'TARDEZINHA (RJ)', description: 'O tradicional fim de tarde carioca. Cerveja gelada, a legitima roda de samba do Thiaguinho e os melhores Djs do Rio! Simples assim!', datetime: new Date(2017, 06, 11), url: 'https://www.facebook.com/Tardezinha/', url_blank: true },
+            { title: 'FUNN FESTIVAL (BSB)', description: 'Em comemoração à Semana Mundial do Meio Ambiente, apresentamos Funn Festival, um festival amigo da Natureza.Inspirado em grandes festivais europeus, será possível curtir aquele friozinho maravilhoso de Junho com variedade de rótulos de vinho ou, até mesmo, tomar uma cerveja especial no aconchegante Bier Garden, devidamente inspirado nos nossos amigos germânicos. Para completar a experiência, tudo isso ocorrerá em um dos maiores parques urbanos do mundo. Isso mesmo! No nosso Parque da Cidade em Brasília!', datetime: new Date(2017, 06, 11), url: 'http://www.funnfestival.com.br/', url_blank: true },
+            { title: 'FUNN FESTIVAL (BSB)', description: 'Em comemoração à Semana Mundial do Meio Ambiente, apresentamos Funn Festival, um festival amigo da Natureza.Inspirado em grandes festivais europeus, será possível curtir aquele friozinho maravilhoso de Junho com variedade de rótulos de vinho ou, até mesmo, tomar uma cerveja especial no aconchegante Bier Garden, devidamente inspirado nos nossos amigos germânicos. Para completar a experiência, tudo isso ocorrerá em um dos maiores parques urbanos do mundo. Isso mesmo! No nosso Parque da Cidade em Brasília!', datetime: new Date(2017, 06, 15), url: 'http://www.funnfestival.com.br/', url_blank: true },
+            { title: 'SELVAGEM (SP)                 ', description: 'Selvagem é o nome da dupla formada pelos DJs Millos Kaiser e Trepanado, bem como suas festas que acontecem em São Paulo e no Rio de Janeiro.<br> Quando se trata de música, canalizam-a com uma abordagem anárquica, misturando discoteca, casa, rock, techno, funk e alma de todas as épocas e lugares.', datetime: new Date(2017, 06, 17), url: 'https://www.facebook.com/festaselvagem/', url_blank: true },
+            { title: 'RIO SUNSET', description: '', datetime: new Date(2017, 06, 17), url: 'https://www.facebook.com/festariosunset/?fref=ts', url_blank: true },
+            { title: 'FUNN FESTIVAL (BSB)', description: 'Em comemoração à Semana Mundial do Meio Ambiente, apresentamos Funn Festival, um festival amigo da Natureza.Inspirado em grandes festivais europeus, será possível curtir aquele friozinho maravilhoso de Junho com variedade de rótulos de vinho ou, até mesmo, tomar uma cerveja especial no aconchegante Bier Garden, devidamente inspirado nos nossos amigos germânicos. Para completar a experiência, tudo isso ocorrerá em um dos maiores parques urbanos do mundo. Isso mesmo! No nosso Parque da Cidade em Brasília!', datetime: new Date(2017, 06, 17), url: 'http://www.funnfestival.com.br/', url_blank: true },
+            { title: 'FUNN FESTIVAL (BSB)', description: 'Em comemoração à Semana Mundial do Meio Ambiente, apresentamos Funn Festival, um festival amigo da Natureza.Inspirado em grandes festivais europeus, será possível curtir aquele friozinho maravilhoso de Junho com variedade de rótulos de vinho ou, até mesmo, tomar uma cerveja especial no aconchegante Bier Garden, devidamente inspirado nos nossos amigos germânicos. Para completar a experiência, tudo isso ocorrerá em um dos maiores parques urbanos do mundo. Isso mesmo! No nosso Parque da Cidade em Brasília!', datetime: new Date(2017, 06, 18), url: 'http://www.funnfestival.com.br/', url_blank: true },
+            { title: 'TAMO GIGANTE', description: 'Muita gente falou,muito nós ouvimos!<br>Cada história com um fim,  cada história com um culpado, uma história melhor que a outra!<br>Mas sempre tivemos um sentimento muito especial que nos unia, a PAIXÃO por festas!<br>Essa paixão uniu novamente dois grupos.. Sendo assim, senhoras e senhores, em um LOCAL INÉDITO em São Paulo, um Estádio onde nunca houve uma festa antes.... é com muito prazer que anunciamos que, pelo bem da nação, a @agencianewfun e a @fun2ubrasil  se uniram para uma noite PERFEITA! <br>Com vocês... @TamoGigante !', datetime: new Date(2017, 06, 23), url: 'https://www.agencianewfun.com.br/tamogigante', url_blank: true },
+            { title: 'SELVAGEM (RJ)', description: 'Selvagem é o nome da dupla formada pelos DJs Millos Kaiser e Trepanado, bem como suas festas que acontecem em São Paulo e no Rio de Janeiro.<br> Quando se trata de música, canalizam-a com uma abordagem anárquica, misturando discoteca, casa, rock, techno, funk e alma de todas as épocas e lugares.', datetime: new Date(2017, 06, 24), url: 'https://www.facebook.com/festaselvagem/', url_blank: true },
+            { title: 'TARDEZINHA (RJ)', description: 'O tradicional fim de tarde carioca. Cerveja gelada, a legitima roda de samba do Thiaguinho e os melhores Djs do Rio! Simples assim!', datetime: new Date(2017, 06, 25), url: 'https://www.facebook.com/Tardezinha/', url_blank: true },
+            { title: 'BAILA COMIGO (RJ)', description: 'A chamada novidade teria tudo pra ser uma coisa rara nos dias de hoje, mas um dos aspectos mais fascinantes deste universo é exatamente sua capacidade de desafiar a criatividade humana, de modo que se é muito raro que se invente algo absolutamente desconhecido, é cada vez mais comum que a mescla de gêneros e estilos dê origem a projetos surpreendentes – e que soem novos ritmos aos nossos ouvidos. Assim é que os estilos vão se misturando, influenciando uns aos outros e os resultados de uniões muitas vezes improváveis se convertem em grandes sucessos. Foi tendo essa reflexão que pensamos, vamos unir ritmos musicais super dançantes, e desafiar nossa criatividade criando um novo conceito de evento ?<br>Nossa musa inspiradora foi a rainha do Rock Nacional, Rita Lee. Temos uma trilha sonora que transita por vários gêneros, num hibridismo envolvente, oriunda de fontes como o Tropicalismo, Música Brasileira, R&B, Future Bass, Black Music, Reggaeton e Tropical House.<br>Nosso segredo é uma loucura gostosa, com sabor de tutti frutti. Baila comigo!?', datetime: new Date(2017, 07, 01), url: 'https://www.facebook.com/BailaCmg/?fref=ts', url_blank: true },
+            { title: 'SELVAGEM (RJ)', description: 'Selvagem é o nome da dupla formada pelos DJs Millos Kaiser e Trepanado, bem como suas festas que acontecem em São Paulo e no Rio de Janeiro.<br> Quando se trata de música, canalizam-a com uma abordagem anárquica, misturando discoteca, casa, rock, techno, funk e alma de todas as épocas e lugares.', datetime: new Date(2017, 07, 15), url: 'https://www.facebook.com/festaselvagem/', url_blank: true },
+            { title: 'SELVAGEM (SP)', description: 'Selvagem é o nome da dupla formada pelos DJs Millos Kaiser e Trepanado, bem como suas festas que acontecem em São Paulo e no Rio de Janeiro.<br> Quando se trata de música, canalizam-a com uma abordagem anárquica, misturando discoteca, casa, rock, techno, funk e alma de todas as épocas e lugares.', datetime: new Date(2017, 07, 22), url: 'https://www.facebook.com/festaselvagem/', url_blank: true },
+            { title: 'OUTROS 500 (RJ)', description: 'Um fenômeno chamado OUTROS 500! #FestaOutros500', datetime: new Date(2017, 07, 22), url: 'https://www.facebook.com/festaoutros500/?fref=ts', url_blank: true },
+            { title: 'FEXTINHA', description: 'O jeito é de festa do interior, mas a vibe é de agito open air, sem hora para acabar. Essa é a FEXTINHA, projeto idealizado para ser festa com clima de diversão, bagunça e sacanagem, além de muita bebida e música alta, no volume máximo, pra todo mundo cantar e dançar até o fim – e ainda deixar aquele gostinho de quero mais!<br>Com duração de 12 horas, vale chegar cedo para não perder nenhum detalhe, e levar o óculos de sol na bolsa. A intenção é ver o sol nascer e ter animação até o meio dia do dia seguinte. Nós somos a FEXTINHA!', datetime: new Date(2017, 08, 04), url: 'https://www.agencianewfun.com.br/fextinha', url_blank: true },
+            { title: 'POSTAL (SP)', description: 'A gente acredita que uma boa festa não precisa de muito: um lugar especial, os amigos ao redor e aquela música que te coloca um sorriso no rosto. Assim a gente até consegue beber menos e se divertir mais. <br>Hoje é dia de Postal.', datetime: new Date(2017, 08, 05), url: 'Https://www.facebook.com/festapostal/?fref=ts', url_blank: true },
+            { title: 'TARDEZINHA (SP)', description: 'O tradicional fim de tarde carioca. Cerveja gelada, a legitima roda de samba do Thiaguinho e os melhores Djs do Rio! Simples assim!', datetime: new Date(2017, 08, 05), url: 'https://www.facebook.com/Tardezinha/', url_blank: true },
+            { title: 'BABEL (SP)', description: '', datetime: new Date(2017, 08, 12), url: 'https://www.facebook.com/marehmusic/', url_blank: true },
+            { title: 'SELVAGEM (SP)', description: 'Selvagem é o nome da dupla formada pelos DJs Millos Kaiser e Trepanado, bem como suas festas que acontecem em São Paulo e no Rio de Janeiro.<br> Quando se trata de música, canalizam-a com uma abordagem anárquica, misturando discoteca, casa, rock, techno, funk e alma de todas as épocas e lugares.', datetime: new Date(2017, 08, 12), url: 'https://www.facebook.com/festaselvagem/', url_blank: true },
+            { title: 'SELVAGEM (RJ)', description: 'Selvagem é o nome da dupla formada pelos DJs Millos Kaiser e Trepanado, bem como suas festas que acontecem em São Paulo e no Rio de Janeiro.<br> Quando se trata de música, canalizam-a com uma abordagem anárquica, misturando discoteca, casa, rock, techno, funk e alma de todas as épocas e lugares.', datetime: new Date(2017, 08, 26), url: 'https://www.facebook.com/festaselvagem/', url_blank: true },
+            { title: 'VERÃO NA LAJE (RJ)', description: 'O verão na laje mais charmosa da cidade. O projeto surge com o intuito de unir o verão, roda de samba, uma boa mpb e um funk para agitar a pista.', datetime: new Date(2017, 09, 02), url: 'https://www.facebook.com/veraonalaje/', url_blank: true },
+            { title: 'RIO SUNSET (RJ)', description: '', datetime: new Date(2017, 09, 08), url: 'https://www.facebook.com/festariosunset/?fref=ts', url_blank: true },
+            { title: 'BAILA COMIGO (RJ)', description: 'A chamada novidade teria tudo pra ser uma coisa rara nos dias de hoje, mas um dos aspectos mais fascinantes deste universo é exatamente sua capacidade de desafiar a criatividade humana, de modo que se é muito raro que se invente algo absolutamente desconhecido, é cada vez mais comum que a mescla de gêneros e estilos dê origem a projetos surpreendentes – e que soem novos ritmos aos nossos ouvidos. Assim é que os estilos vão se misturando, influenciando uns aos outros e os resultados de uniões muitas vezes improváveis se convertem em grandes sucessos. Foi tendo essa reflexão que pensamos, vamos unir ritmos musicais super dançantes, e desafiar nossa criatividade criando um novo conceito de evento ?<br>Nossa musa inspiradora foi a rainha do Rock Nacional, Rita Lee. Temos uma trilha sonora que transita por vários gêneros, num hibridismo envolvente, oriunda de fontes como o Tropicalismo, Música Brasileira, R&B, Future Bass, Black Music, Reggaeton e Tropical House.<br>Nosso segredo é uma loucura gostosa, com sabor de tutti frutti. Baila comigo!?', datetime: new Date(2017, 09, 16), url: 'https://www.facebook.com/BailaCmg/?fref=ts', url_blank: true },
+            { title: 'RIO SUNSET (SP)', description: '', datetime: new Date(2017, 09, 30), url: 'https://www.facebook.com/festariosunset/?fref=ts', url_blank: true },
+            { title: 'ERREJOTA (RJ)', description: 'Que o Rio é abençoado por Deus e bonito por natureza não é novidade pra ninguém, mas não é só isso. O estilo de vida do povo carioca também inspira o mundo, e nada melhor que uma festa para captar essa essência! Bem-Vindo à ERREJOTA, a festa mais carioca do mundo!', datetime: new Date(2017, 10, 07), url: 'https://www.facebook.com/festaerrejota/?fref=ts', url_blank: true },
+            { title: 'POSTAL (SP)', description: 'A gente acredita que uma boa festa não precisa de muito: um lugar especial, os amigos ao redor e aquela música que te coloca um sorriso no rosto. Assim a gente até consegue beber menos e se divertir mais. <br>Hoje é dia de Postal.', datetime: new Date(2017, 10, 21), url: 'Https://www.facebook.com/festapostal/?fref=ts', url_blank: true },
+            { title: 'VERÃO NA LAJE (RJ)', description: 'O verão na laje mais charmosa da cidade. O projeto surge com o intuito de unir o verão, roda de samba, uma boa mpb e um funk para agitar a pista.', datetime: new Date(2017, 10, 21), url: 'https://www.facebook.com/veraonalaje/', url_blank: true },
+            { title: 'TAMO GIGANTE', description: 'Muita gente falou,muito nós ouvimos!<br>Cada história com um fim,  cada história com um culpado, uma história melhor que a outra!<br>Mas sempre tivemos um sentimento muito especial que nos unia, a PAIXÃO por festas!<br>Essa paixão uniu novamente dois grupos.. Sendo assim, senhoras e senhores, em um LOCAL INÉDITO em São Paulo, um Estádio onde nunca houve uma festa antes.... é com muito prazer que anunciamos que, pelo bem da nação, a @agencianewfun e a @fun2ubrasil  se uniram para uma noite PERFEITA! <br>Com vocês... @TamoGigante !', datetime: new Date(2017, 10, 27), url: 'https://www.agencianewfun.com.br/tamogigante', url_blank: true },
+            { title: 'BABEL (SP)', description: '', datetime: new Date(2017, 11, 11), url: 'https://www.facebook.com/marehmusic/', url_blank: true },
+            { title: 'TARDEZINHA (RJ)', description: 'O tradicional fim de tarde carioca. Cerveja gelada, a legitima roda de samba do Thiaguinho e os melhores Djs do Rio! Simples assim!', datetime: new Date(2017, 11, 12), url: 'https://www.facebook.com/Tardezinha/', url_blank: true },
+            { title: 'FEXTINHA DE RODEIO', description: 'O jeito é de festa do interior, mas a vibe é de agito open air, sem hora para acabar. Essa é a FEXTINHA, projeto idealizado para ser festa com clima de diversão, bagunça e sacanagem, além de muita bebida e música alta, no volume máximo, pra todo mundo cantar e dançar até o fim – e ainda deixar aquele gostinho de quero mais!<br>Com duração de 12 horas, vale chegar cedo para não perder nenhum detalhe, e levar o óculos de sol na bolsa. A intenção é ver o sol nascer e ter animação até o meio dia do dia seguinte. Nós somos a FEXTINHA!', datetime: new Date(2017, 11, 24), url: 'https://www.agencianewfun.com.br/fextinha', url_blank: true },
+            { title: 'BAILA COMIGO (RJ)', description: 'A chamada novidade teria tudo pra ser uma coisa rara nos dias de hoje, mas um dos aspectos mais fascinantes deste universo é exatamente sua capacidade de desafiar a criatividade humana, de modo que se é muito raro que se invente algo absolutamente desconhecido, é cada vez mais comum que a mescla de gêneros e estilos dê origem a projetos surpreendentes – e que soem novos ritmos aos nossos ouvidos. Assim é que os estilos vão se misturando, influenciando uns aos outros e os resultados de uniões muitas vezes improváveis se convertem em grandes sucessos. Foi tendo essa reflexão que pensamos, vamos unir ritmos musicais super dançantes, e desafiar nossa criatividade criando um novo conceito de evento ?<br>Nossa musa inspiradora foi a rainha do Rock Nacional, Rita Lee. Temos uma trilha sonora que transita por vários gêneros, num hibridismo envolvente, oriunda de fontes como o Tropicalismo, Música Brasileira, R&B, Future Bass, Black Music, Reggaeton e Tropical House.<br>Nosso segredo é uma loucura gostosa, com sabor de tutti frutti. Baila comigo!?', datetime: new Date(2017, 11, 25), url: 'https://www.facebook.com/BailaCmg/?fref=ts', url_blank: true },
+            { title: 'TARDEZINHA (RJ)', description: 'O tradicional fim de tarde carioca. Cerveja gelada, a legitima roda de samba do Thiaguinho e os melhores Djs do Rio! Simples assim!', datetime: new Date(2017, 11, 26), url: 'https://www.facebook.com/Tardezinha/', url_blank: true },
+            { title: 'TARDEZINHA (RJ)', description: 'O tradicional fim de tarde carioca. Cerveja gelada, a legitima roda de samba do Thiaguinho e os melhores Djs do Rio! Simples assim!', datetime: new Date(2017, 12, 02), url: 'https://www.facebook.com/Tardezinha/', url_blank: true },
+            { title: 'OUTROS 500 (RJ)', description: 'Um fenômeno chamado OUTROS 500! #FestaOutros500', datetime: new Date(2017, 12, 09), url: 'https://www.facebook.com/festaoutros500/?fref=ts', url_blank: true },
+            { title: 'POSTAL (SP)', description: 'A gente acredita que uma boa festa não precisa de muito: um lugar especial, os amigos ao redor e aquela música que te coloca um sorriso no rosto. Assim a gente até consegue beber menos e se divertir mais. <br>Hoje é dia de Postal.', datetime: new Date(2017, 12, 15), url: 'Https://www.facebook.com/festapostal/?fref=ts', url_blank: true },
+            { title: 'TARDEZINHA (RJ)', description: 'O tradicional fim de tarde carioca. Cerveja gelada, a legitima roda de samba do Thiaguinho e os melhores Djs do Rio! Simples assim!', datetime: new Date(2017, 12, 16), url: 'https://www.facebook.com/Tardezinha/', url_blank: true }
+        ]
+    });
+
 
     $(".bt_vejamapa").click(function(e) {
         e.preventDefault();
@@ -1781,14 +2054,9 @@ $(document).ready(function() {
         $(this).parents().parents('.step').removeClass('active');
     });
 
-    $fillerLine.find('.filler').css("background-color", function( index ) {
+    $fillerLine.find('.filler').css("background-color", function(index) {
         return $(this).parent().find('.text').css('color'); // set color to filler by color text
     });
-
-    $party.niceScroll({
-        autohidemode: false
-    });
-
     $content
         .scrolling({
             checkScrolling: true
@@ -1840,7 +2108,7 @@ $(document).ready(function() {
             }
 
             // Text effects
-            
+
             /*
             $mask = $self.find('.component.text-filler .filler-line .mask');
 
@@ -1849,15 +2117,17 @@ $(document).ready(function() {
 
                 $text = $self.find('.text.mode-text');
                 $text.css('transform', 'translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0)');
-                
+
                 $mask.parents('.animate').removeClass('animate');
                 $mask.parents('.content-animate').removeClass('content-active');
             }
             */
         });
+
+
 });
 
-function scrollIn ($all_elements) {
+function scrollIn($all_elements) {
     $self = $($all_elements);
 
     if (!$self.hasClass('content-active')) {
@@ -1872,15 +2142,16 @@ function ColorLuminance(hex, lum) {
     // validate hex string
     hex = String(hex).replace(/[^0-9a-f]/gi, '');
     if (hex.length < 6) {
-        hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+        hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
     }
     lum = lum || 0;
     // convert to decimal and change luminosity
-    var rgb = "#", c, i;
+    var rgb = "#",
+        c, i;
     for (i = 0; i < 3; i++) {
-        c = parseInt(hex.substr(i*2,2), 16);
+        c = parseInt(hex.substr(i * 2, 2), 16);
         c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
-        rgb += ("00"+c).substr(c.length);
+        rgb += ("00" + c).substr(c.length);
     }
     return rgb;
 }

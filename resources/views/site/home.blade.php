@@ -431,6 +431,7 @@
             </div>
         </section>
         <section class="step-07 clearfix" id="festascomaperol">
+            <img src="assets/images/party.png" class="img-festas img-responsive" alt="">
             <div class="content-animate main_tit">
                 <h2 class="component text-filler">
                     <span class="filler-line">
@@ -442,7 +443,7 @@
                 </h2>
             </div>
             <img src="assets/images/ondas.png" class="img-festas-onda img-responsive" alt="" data-stellar-ratio="1.5">
-            <img src="assets/images/foto_Festas.jpg" class="img-festas img-responsive" alt="">
+
             <div class="party content-animate">
                 <h2 class="component text-filler tit">
                     <span class="filler-line">
@@ -451,35 +452,28 @@
                     <span class="filler-line">
                         <span class="text">Sunset Perfeito</span>
                     </span><br>
-
-                    <!-- <span class="component text-filler sub_tit">
-                        <span class="filler-line">
-                            <span class="text">SãO MIGUEL DO GOSTOSO - RN</span>
-                        </span>
-                    </span> -->
                 </h2>
-                <!-- <p id="partyText"><span class="strike">O Reveillon mais Gostoso do Brasil nasce
-                    <br> no ano de 2016, em uma das praias mais
-                    <br> paradisíacas do nordeste Brasileiro.
-                    <br> Serão 5 dias de diversão com muito sol,
-                    <br> mar, praia, alegria, esporte</span>
-                    <br> e muita azaração
-                </p> -->
                 <p id="partyText">
                   <span class="strike">
                   A gente não cansa de buscar a melhor <br>
                   summer vibe. Por isso, em 2017, <br>
-                  estaremos nas melhores festas Sunset <br>
-                  do Brasil, para ajudar você a sentir <br>
-                  </span><br>
-                  a energia do verão!
+                  estaremos nas melhores festas Sunset
+                  do Brasil.</span><br>
+                  Para ajudar você a sentir a energia do verão!
                 </p>
-                <a href="#festascomaperol" class="bt_oevento">O EVENTO</a>
             </div>
-            <div class="content-animate party-container" data-offset-top="0">
+            <div class="calendar-container">
+            <div class="nav">
+              <h3 class="tit_cal">calendário <br>das festas<br><span></span> </h3>
+              <div class="controls"></div>
+            </div>
+                <img src="assets/images/calendar.png" class="img-calendar img-responsive" alt="">
+                <div id="calendar"></div>
+            </div>
+             <!--  <div class="content-animate party-container" data-offset-top="0">
                 <div class="party-calendar component text-filler">
-                    <h3 class="tit">FESTAS</h3>
-                    <div class="party-calendar-content">
+                  <h3 class="tit">FESTAS</h3> -->
+                    <!-- <div class="party-calendar-content">
                         <p class="bt_detalhes_calendar">Junho</p>
 
                         <a href="http://www.funnfestival.com.br/" target="_blank" class="bt_detalhes_calendar">
@@ -645,10 +639,8 @@
                             <span class="filler-line"><span class="filler-text">Tardezinha - Rio de Janeiro - 16/12</span></span>
                         </a>
                     </div>
-
-                    <!-- <p class="bt_detalhes_calendar">e muito mais...</p> -->
                 </div>
-            </div>
+            </div>-->
         </section>
         <section class="step-08 clearfix" id="kombisummertour">
             <div class="content-animate main_tit">
