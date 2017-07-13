@@ -431,7 +431,13 @@
             </div>
         </section>
         <section class="step-07 clearfix" id="festascomaperol">
-            <img src="assets/images/party.png" class="img-festas img-responsive" alt="">
+          <div class="content-animate">
+            <div class="component">
+               <div class="fade-animate">
+                  <img src="assets/images/party.png" class="img-festas img-responsive" alt="">
+                </div>
+              </div>
+            </div>
             <div class="content-animate main_tit">
                 <h2 class="component text-filler">
                     <span class="filler-line">

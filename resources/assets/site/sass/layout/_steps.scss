@@ -127,7 +127,7 @@ section {
     width: 100%;
     float: none;
     position: absolute;
-    margin-top: 49%;
+    margin-top: 41%;
     margin-left: -38%;
     pointer-events: all;
     z-index: 9999;
@@ -226,6 +226,7 @@ section {
         width: 47%;
         left: 50%;
         clear: both;
+        pointer-events: none;
         @media screen and (max-width: 768px) {
             margin-top: 5%;
             float: none;
@@ -319,7 +320,7 @@ section {
             left: 10%;
         }
         .c-grid {
-            pointer-events: all;
+            pointer-events: none;
             @media screen and (max-width: 768px) {
                 width: 100%;
                 float: none;
@@ -330,12 +331,12 @@ section {
             text-decoration: underline;
             color: #000;
             text-transform: uppercase;
-            line-height: 2.7vw;
+            line-height: 2.3vw;
             font-size: 1.3vw;
             font-weight: bold;
             padding-right: 15%;
             @media screen and (max-width: 768px) {
-                line-height: 5.3vw;
+                line-height: 4.3vw;
                 font-size: 3.7vw;
             }
         }
@@ -344,7 +345,7 @@ section {
             line-height: 4.7vw;
             font-size: 6.5vw;
             position: absolute;
-            margin-left: -17%;
+            margin-left: -14%;
             margin-top: 2%;
             @media screen and (max-width: 768px) {
                 line-height: 10.7vw;
