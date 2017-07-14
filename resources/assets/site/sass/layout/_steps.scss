@@ -129,7 +129,7 @@ section {
     position: absolute;
     margin-top: 41%;
     margin-left: -38%;
-    pointer-events: all;
+    pointer-events: none;
     z-index: 9999;
     @media screen and (max-width: 768px) {
         position: relative;
@@ -167,9 +167,10 @@ section {
     overflow: hidden;
     padding-left: 13%;
     z-index: 99999;
+    pointer-events: all;
     @media screen and (max-width: 768px) {
-        height: 40vh;
-        margin-top: 10%;
+        height: 55vh;
+        margin-top: 15%;
     }
 }
 
@@ -201,6 +202,12 @@ section {
     position: relative;
     padding-left: 10px;
     margin-bottom: 20px;
+    a {
+      display: block;
+      pointer-events: all;
+      z-index: 9999;
+      position: relative;
+    }
 }
 
 .c-event-over {
@@ -320,7 +327,7 @@ section {
             left: 10%;
         }
         .c-grid {
-            pointer-events: none;
+            pointer-events: all;
             @media screen and (max-width: 768px) {
                 width: 100%;
                 float: none;
@@ -348,8 +355,10 @@ section {
             margin-left: -14%;
             margin-top: 2%;
             @media screen and (max-width: 768px) {
-                line-height: 10.7vw;
-                font-size: 9.5vw;
+                line-height: 8.7vw;
+                font-size: 8.5vw;
+                margin-left: -17%;
+                margin-top: 0;
             }
         }
     }

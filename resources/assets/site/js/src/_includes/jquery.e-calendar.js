@@ -40,6 +40,22 @@
             var d = $(this).attr('data-event-day');
             $('div.c-event-item[data-event-day="' + d + '"]').addClass('c-event-over');
         };
+
+        var clickEvent = function() {
+            var preview = $('.c-event-body');
+            var d = $(this).attr('data-event-day');
+            var getElem = $('div.c-event-item[data-event-day="' + d + '"]');
+            $('html, body').animate({
+                scrollTop: $("#calendar").offset().top
+            }, 1000);
+            var elPos = getElem.offset().top;
+            var previewPos = preview.offset().top;
+            var topPos = elPos - previewPos;
+
+            preview.animate({
+                scrollTop: '+=' + topPos
+            }, 200);
+        };
         var mouseLeaveEvent = function() {
             $(this).removeClass('c-event-over')
             var d = $(this).attr('data-event-day');
@@ -100,7 +116,7 @@
             var cBodyWrapTit = $('.calendar-container .tit_cal span');
             cBodyWrap.html('');
             cBodyWrapTit.html('');
-            var cEvents = $('<div/>').addClass('c-event-grid');
+            var cEvents = $('<div/>').addClass('c-event-grid').attr('id', 'c-event-grid');;
             var cEventsBody = $('<div/>').addClass('c-event-body');
             cEvents.append($('<div/>').addClass('c-event-title c-pad-top').html(settings.eventTitle));
             cEvents.append(cEventsBody);
@@ -143,7 +159,7 @@
                         var d = settings.events[j].datetime;
                         if (d.getDate() == day && d.getMonth() == dMonth && d.getFullYear() == dYear) {
                             cDay.addClass('c-event').attr('data-event-day', d.getDate());
-                            cDay.on('mouseover', mouseOverEvent).on('mouseleave', mouseLeaveEvent);
+                            cDay.on('click', clickEvent);
                         }
                     }
                     cDay.html(day++);
@@ -188,7 +204,7 @@
 
             $('.c-event-body').niceScroll({
                 cursorwidth: 10,
-                emulatetouch: true,
+                emulatetouch: false,
                 cursorcolor: '#fe5000',
                 cursorborder: 'none',
                 cursorborderradius: 20,
