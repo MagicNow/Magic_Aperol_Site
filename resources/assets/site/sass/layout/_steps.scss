@@ -123,14 +123,14 @@ section {
 }
 
 .c-event-grid {
-    height: inherit;
-    width: 100%;
-    float: none;
-    position: absolute;
-    margin-top: 41%;
-    margin-left: -38%;
-    pointer-events: none;
-    z-index: 9999;
+  height: inherit;
+  width: 100%;
+  float: none;
+  position: absolute;
+  margin-top: 63%;
+  margin-left: -46%;
+  pointer-events: none;
+  z-index: 9999;
     @media screen and (max-width: 768px) {
         position: relative;
         margin-top: 15%;
@@ -163,9 +163,9 @@ section {
 
 .c-event-body {
     background-color: transparent;
-    height: 20vh;
+    height: 25vh;
     overflow: hidden;
-    padding-left: 13%;
+    padding-left: 15%;
     z-index: 99999;
     pointer-events: all;
     @media screen and (max-width: 768px) {
@@ -184,7 +184,8 @@ section {
     font-size: 25px;
     line-height: 30px;
     line-height: 3.7vw;
-    font-size: 2.8vw;
+    font-size: 2.5vw;
+    letter-spacing: 0.4vw;
     @media screen and (max-width: 768px) {
         line-height: 5.9vw;
         font-size: 4.7vw;
@@ -203,10 +204,10 @@ section {
     padding-left: 10px;
     margin-bottom: 20px;
     a {
-      display: block;
-      pointer-events: all;
-      z-index: 9999;
-      position: relative;
+        display: block;
+        pointer-events: all;
+        z-index: 9999;
+        position: relative;
     }
 }
 
@@ -228,9 +229,9 @@ section {
     .img-calendar {
         float: left;
         position: relative;
-        margin-top: -1%;
-        margin-left: -33%;
-        width: 47%;
+        margin-top: 1%;
+        margin-left: -32.5%;
+        width: 46%;
         left: 50%;
         clear: both;
         pointer-events: none;
@@ -244,18 +245,19 @@ section {
         }
     }
     .tit_cal {
-        pointer-events: none;
-        color: #000;
-        line-height: 2.57vw;
-        font-size: 2.8vw;
-        letter-spacing: 0.1vw;
-        font-family: 'Dosis';
-        font-weight: bold;
-        text-transform: uppercase;
-        position: absolute;
-        margin-top: 12%;
-        width: 100%;
-        margin-left: 2%;
+  pointer-events: none;
+  color: #000;
+  line-height: 2.57vw;
+  font-size: 2.7vw;
+  letter-spacing: 0.1vw;
+  font-family: 'Dosis';
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  margin-top: 13%;
+  width: 31%;
+  margin-left: 2%;
+  text-align: center;
         strong {
             line-height: 6.57vw;
             font-size: 6.2vw;
@@ -275,7 +277,7 @@ section {
         position: relative;
         width: 100%;
         .controls {
-            margin-top: 38%;
+            margin-top: 41%;
             position: absolute;
             width: 100%;
             pointer-events: none;
@@ -295,7 +297,7 @@ section {
                 cursor: pointer;
                 height: 55px;
                 background-repeat: no-repeat;
-                background-position: center top;
+                background-position: center;
                 padding: 0;
             }
             .c-previous {
@@ -304,16 +306,16 @@ section {
                 cursor: pointer;
                 height: 55px;
                 background-repeat: no-repeat;
-                background-position: center top;
+                background-position: center;
                 padding: 0;
             }
         }
     }
     .calendar {
-        width: 70%;
+        width: 49%;
         float: left;
-        margin-left: -4.9%;
-        margin-top: 19%;
+        margin-left: 4.1%;
+        margin-top: 21%;
         position: absolute;
         height: auto;
         pointer-events: none;
@@ -348,12 +350,12 @@ section {
             }
         }
         .e-data {
-            float: left;
-            line-height: 4.7vw;
-            font-size: 6.5vw;
-            position: absolute;
-            margin-left: -14%;
-            margin-top: 2%;
+  float: left;
+  line-height: 4.7vw;
+  font-size: 6.5vw;
+  position: absolute;
+  margin-left: -18%;
+  margin-top: 11%;
             @media screen and (max-width: 768px) {
                 line-height: 8.7vw;
                 font-size: 8.5vw;
@@ -1372,7 +1374,7 @@ section {
 .step-07 {
     clear: both;
     margin-top: 10%;
-    padding-bottom: 30%;
+    padding-bottom: 20%;
     .main_tit {
         font-size: 28px;
         line-height: 35px;
